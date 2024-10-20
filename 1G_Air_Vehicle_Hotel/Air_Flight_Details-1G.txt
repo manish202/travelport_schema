@@ -1,0 +1,33 @@
+Air Flight Details-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:FlightDetailsReq TargetBranch="TPKIKSBUT" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:AirSegment xmlns:air="http://www.travelport.com/schema/air_v50_0" Key="rnHP8YTqWDKA/WijdAAAAA==" Group="1" Carrier="UA" FlightNumber="216" Origin="ATL" Destination="ORD" DepartureTime="2023-04-08T06:30:00.000-04:00" ArrivalTime="2023-04-08T07:39:00.000-05:00" FlightTime="129" TravelTime="129" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General" ProviderCode="1G" ClassOfService="Y"/>
+
+      </air:FlightDetailsReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Flight Details-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:FlightDetailsRsp TransactionId="5A50A7A20A0D6A95679A88DFC29F6D40" ResponseTime="157" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <air:AirSegment Key="rnHP8YTqWDKA/WijdAAAAA==" Group="1" Carrier="UA" FlightNumber="216" ProviderCode="1G" Origin="ATL" Destination="ORD" DepartureTime="2023-04-08T06:30:00.000-04:00" ArrivalTime="2023-04-08T07:39:00.000-05:00" FlightTime="129" TravelTime="129" ClassOfService="Y" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" OptionalServicesIndicator="false" AvailabilitySource="S" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" AvailabilityDisplayType="General">
+            <air:FlightDetails Key="NQzP8YVqWDKAv0p+cAAAAA==" Origin="ATL" Destination="ORD" DepartureTime="2023-04-08T06:30:00.000-04:00" ArrivalTime="2023-04-08T07:39:00.000-05:00" FlightTime="129" TravelTime="129" OriginTerminal="N" DestinationTerminal="1" AutomatedCheckin="false">
+               <air:Meals>NoMealService</air:Meals>
+               <air:InFlightServices>Non-smoking</air:InFlightServices>
+               <air:InFlightServices>ADDITIONAL PASSENGER DATA REQUIRED</air:InFlightServices>
+            </air:FlightDetails>
+         </air:AirSegment>
+         <air:CO2Emissions TotalValue="266.17" Unit="KG/PerPerson" Category="Economy" Source="WWW.CLIMATENEUTRALGROUP.COM/EN/">
+            <air:CO2Emission AirSegmentRef="rnHP8YTqWDKA/WijdAAAAA==" Value="266.17"/>
+         </air:CO2Emissions>
+         <air:CO2Emissions TotalValue="266.17" Unit="KG/PerPerson" Category="Premium" Source="WWW.CLIMATENEUTRALGROUP.COM/EN/">
+            <air:CO2Emission AirSegmentRef="rnHP8YTqWDKA/WijdAAAAA==" Value="266.17"/>
+         </air:CO2Emissions>
+      </air:FlightDetailsRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

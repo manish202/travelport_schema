@@ -1,0 +1,20 @@
+UR Cancel-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <univ:UniversalRecordCancelReq TargetBranch="TPKIKSBUT" AuthorizedBy="TEST" UniversalRecordLocatorCode="234BCD" Version="3">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </univ:UniversalRecordCancelReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+UR Cancel-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordCancelRsp TransactionId="5A5160340A0D6A940CE23A7CD051FB92" ResponseTime="1077" xmlns:universal="http://www.travelport.com/schema/universal_v50_0">
+         <universal:ProviderReservationStatus CreateDate="2023-02-16T13:00:52.862+00:00" ModifiedDate="2023-02-16T13:02:08.262+00:00" ProviderCode="1G" LocatorCode="345678" Cancelled="true"/>
+      </universal:UniversalRecordCancelRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

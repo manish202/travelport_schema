@@ -1,0 +1,76 @@
+Air Fare Rules using FareRuleKey-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <air:AirFareRulesReq AuthorizedBy="TEST" TargetBranch="TPKIKSBUT" FareRuleType="short" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <air:FareRuleKey FareInfoRef="J7Na/jAZ3BKAhGdAAAAAAA==" ProviderCode="1G">gws-eJxNjLEOwjAMRD8mut02aUW2WKRTUZFoO3Tp/38GFwOCi23JvsurtZrYRUzH+q+EM+2OfW3AAmP7dofmQQ3KbYFQWN3N58ZEh2SxsH5PcUSQ0SiOoxtdn/l4NhpvMn1FgoyTujLbEZnY/hexeduCNJQrpJQvfLrNBiqI/QBizhfatS8B</air:FareRuleKey>
+      </air:AirFareRulesReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Air Fare Rules using FareRuleKey-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:AirFareRulesRsp TransactionId="5A50A1180A0D6A921E18D0D7FBA133A1" ResponseTime="511" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <air:FareRule FareInfoRef="J7Na/jAZ3BKAhGdAAAAAAA==" RuleNumber="ECK2" ProviderCode="1G">
+            <air:FareRuleShort Category="1" TableNumber="">
+               <air:FareRuleNameValue Name="Eligibility" Value=""/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="2" TableNumber="">
+               <air:FareRuleNameValue Name="Day/Time" Value=""/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="3" TableNumber="">
+               <air:FareRuleNameValue Name="Seasonal" Value=""/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="4" TableNumber="">
+               <air:FareRuleNameValue Name="Flight App" Value=""/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="5" TableNumber="">
+               <air:FareRuleNameValue Name="Advance Res/Tkt" Value="RES REQ 21D.TKT REQ 1D AFT RES.TKT REQ 21D BEF DEP."/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="6" TableNumber="">
+               <air:FareRuleNameValue Name="Minimum Stay" Value=""/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="7" TableNumber="">
+               <air:FareRuleNameValue Name="Maximum Stay" Value=""/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="8" TableNumber="">
+               <air:FareRuleNameValue Name="Stopovers" Value="NOT PERMITTED"/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="9" TableNumber="">
+               <air:FareRuleNameValue Name="Transfers/Routing" Value="CONDITIONS APPLY"/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="10" TableNumber="">
+               <air:FareRuleNameValue Name="Combinability" Value="SOJ/CT2/CT2/EOE"/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="11" TableNumber="">
+               <air:FareRuleNameValue Name="Blackouts" Value=""/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="12" TableNumber="">
+               <air:FareRuleNameValue Name="Surcharges" Value="CONDITIONS APPLY"/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="13" TableNumber="">
+               <air:FareRuleNameValue Name="Accompanied" Value=""/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="14" TableNumber="">
+               <air:FareRuleNameValue Name="Travel Restrictions" Value=""/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="15" TableNumber="">
+               <air:FareRuleNameValue Name="Sales Restrictions" Value="CONDITIONS APPLY"/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="16" TableNumber="">
+               <air:FareRuleNameValue Name="Penalties" Value="CXL-NONREF/CHG BEF DEP FREE/CHG AFT DEP FREE"/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="19" TableNumber="">
+               <air:FareRuleNameValue Name="Children's Discounts" Value="ACC CHD 2-11 100PCT.CBC 2-11 100PCT"/>
+            </air:FareRuleShort>
+            <air:FareRuleShort Category="22" TableNumber="">
+               <air:FareRuleNameValue Name="All other Disc" Value=""/>
+            </air:FareRuleShort>
+         </air:FareRule>
+      </air:AirFareRulesRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

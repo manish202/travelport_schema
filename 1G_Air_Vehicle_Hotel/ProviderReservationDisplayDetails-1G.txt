@@ -1,0 +1,30 @@
+ProviderReservationDisplayDetails-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <univ:ProviderReservationDisplayDetailsReq AuthorizedBy="TEST" TargetBranch="TPKIKSBUT" ProviderCode="1G" ProviderLocatorCode="345678" ProviderReservationDetail="true" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </univ:ProviderReservationDisplayDetailsReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+ProviderReservationDisplayDetails-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:ProviderReservationDisplayDetailsRsp TransactionId="5A50DA0B0A0D6A95679A88DFBCB2DBC8" ResponseTime="1351" xmlns:universal="http://www.travelport.com/schema/universal_v50_0">
+         <universal:DisplayDetails ProviderReservationDetail="true">
+            <universal:DisplayDetail Name="OwningAgencyPCC" Value="PCCP"/>
+            <universal:DisplayDetail Name="CreatingAgentSignOn" Value="PCCPGWS"/>
+            <universal:DisplayDetail Name="CreatingAgentDuty" Value="AG"/>
+            <universal:DisplayDetail Name="CreatingAgencyIATA" Value="99999992"/>
+            <universal:DisplayDetail Name="PrepaidTicketAdviceIndicator" Value="N"/>
+            <universal:DisplayDetail Name="BFBorrowed" Value="N"/>
+            <universal:DisplayDetail Name="GlobalPNR" Value="N"/>
+            <universal:DisplayDetail Name="PastDateQuickRetrievedPNR" Value="N"/>
+            <universal:DisplayDetail Name="PNRPurgeDate" Value="20230802"/>
+         </universal:DisplayDetails>
+      </universal:ProviderReservationDisplayDetailsRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

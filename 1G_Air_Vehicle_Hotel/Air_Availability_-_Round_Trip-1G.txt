@@ -1,0 +1,391 @@
+Air Availability - Round Trip-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:AvailabilitySearchReq AuthorizedBy="TEST" TraceId="PP_1G_001" TargetBranch="TPKIKSBUT" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:Airport Code="ORD"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:Airport Code="ATL"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2023-04-07"/>
+            <air:AirLegModifiers></air:AirLegModifiers>
+         </air:SearchAirLeg>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:Airport Code="ATL"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:Airport Code="ORD"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2023-04-08"/>
+            <air:AirLegModifiers></air:AirLegModifiers>
+         </air:SearchAirLeg>
+         <air:AirSearchModifiers>
+            <air:PreferredProviders>
+               <com:Provider Code="1G"/>
+            </air:PreferredProviders>
+            <air:PermittedCarriers>
+               <com:Carrier Code="UA"/>
+            </air:PermittedCarriers>
+         </air:AirSearchModifiers>
+         <com:SearchPassenger Code="ADT"/>
+         <com:SearchPassenger Code="ADT"/>
+      </air:AvailabilitySearchReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Availability - Round Trip-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:AvailabilitySearchRsp TraceId="PP_1G_001" TransactionId="5A5003820A0D6A935CA32C9B4853664F" ResponseTime="759" DistanceUnits="MI" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:NextResultReference>H4sIAAAAAAAAAJ1Uz08TQRR+bSm/rBJAicEgGg3ogd3SQpuKFwREzPIjlJhYgsnQnS6D251ldgqLMSZ64eTZaOJJJTHxDzAx8apHY7wZD4azfwAnnJluKSsq0T3szrz53vfe+96bffMD4h6DzlW0jrQKJ7Y2yhjaNIjH/Yefe55+QM9jEJmCBo/cw74LANGNBvkWTgNFWtaslLdBeHFFs0xPQyZyOWaeJk7K1NEmfM5QkS/Qu9gxHn3tJXvt21FoXoRjiLEFUsYyDofBRUM46DUqXVCVqYltvUqjS2TexUVSIkXECXVGBIOJ3TpD7giG6zb2ybKNDzMZksnjxFFbDh2GlEK3kWPpec6IYwlI3GK04nLoPHA45XBsYSZOW8qUYVXjGjyAuAGNlBGL1HYJl9F1YmI2JjIKbHG+D/fdCgsUCImp8q8JeTjvV+dufXr/JPs4CqDaAoIldwTLn1X48m7pypmtnaUaW0S0N/N/XFB9IlGIGNDmYcSKK2oOxtGmx0H7e6PyYfyIz0D7N2Xq8RsK0EW8OYZLmGFTAmconyTrYhbhuKvMgZ3DhXBaQTbyQujjiKsqRacTXhBJ7mX32kT3uVjPi4kQLJeOnmOFHBEiC4XPhyoLClKXsBazXkxjARKmsNZKKEAbcdaRTVQBBergApygpZKHeR2S4KGim1epiSQ1h9MGZZYu97rEhIrkAeEMqhYZ3x+JLuGkSSdNYvazfHvVN1cXv+3K6WHQGwYtIw9r18Srht7b2/0+u6S9iEL0JjSRaWLbxBPXkIytMOpQm1qbHLp/ya9+JrWDyNbt2A0pYX84WFHBtKn8bN3hYp5Xll9/bC+tZef6Y3LAvUNJ1nKTZSv8th55dj/VvaPwGy3QNMGL+uT0gu+70r3vyJlUfa63LyZ0FaNtE/GvOTA8rbYIHLKEB1MZRUhXLk6KP1BsdMEQn7PpZDKZTabSueFkdig3ODCcTSczyeFMJpVK5lICNzs/LjKVbtGKfDerf4RctapmylUC1Kdj33BKKnvn8kuQm+7Av6cavc8NWFX09G+iD6Vyg5m0ii6zdP2f/P1Gdl0GAAA=</common_v50_0:NextResultReference>
+         <air:FlightDetailsList>
+            <air:FlightDetails Key="rnHP8YTqWDKAeWijdAAAAA==" Origin="ORD" Destination="ATL" DepartureTime="2023-04-07T07:00:00.000-05:00" ArrivalTime="2023-04-07T09:59:00.000-04:00" FlightTime="119" TravelTime="119" GroundTime="0" Equipment="738" OnTimePerformance="60" OriginTerminal="1" DestinationTerminal="N"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAgWijdAAAAA==" Origin="ORD" Destination="ATL" DepartureTime="2023-04-07T10:40:00.000-05:00" ArrivalTime="2023-04-07T13:39:00.000-04:00" FlightTime="119" TravelTime="119" GroundTime="0" Equipment="320" OnTimePerformance="60" OriginTerminal="1" DestinationTerminal="N"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAiWijdAAAAA==" Origin="ORD" Destination="ATL" DepartureTime="2023-04-07T13:57:00.000-05:00" ArrivalTime="2023-04-07T16:56:00.000-04:00" FlightTime="119" TravelTime="119" GroundTime="0" Equipment="320" OnTimePerformance="70" OriginTerminal="1" DestinationTerminal="N"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAkWijdAAAAA==" Origin="ORD" Destination="ATL" DepartureTime="2023-04-07T18:30:00.000-05:00" ArrivalTime="2023-04-07T21:37:00.000-04:00" FlightTime="127" TravelTime="127" GroundTime="0" Equipment="319" OriginTerminal="1" DestinationTerminal="N"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAmWijdAAAAA==" Origin="ORD" Destination="IAD" DepartureTime="2023-04-07T08:51:00.000-05:00" ArrivalTime="2023-04-07T11:47:00.000-04:00" FlightTime="116" TravelTime="292" GroundTime="0" Equipment="320" OnTimePerformance="60" OriginTerminal="1"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAoWijdAAAAA==" Origin="IAD" Destination="ATL" DepartureTime="2023-04-07T12:48:00.000-04:00" ArrivalTime="2023-04-07T14:43:00.000-04:00" FlightTime="115" TravelTime="292" GroundTime="0" Equipment="320" DestinationTerminal="N"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAqWijdAAAAA==" Origin="ORD" Destination="IAD" DepartureTime="2023-04-07T13:11:00.000-05:00" ArrivalTime="2023-04-07T16:11:00.000-04:00" FlightTime="120" TravelTime="332" GroundTime="0" Equipment="739" OnTimePerformance="60" OriginTerminal="1"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAsWijdAAAAA==" Origin="IAD" Destination="ATL" DepartureTime="2023-04-07T17:45:00.000-04:00" ArrivalTime="2023-04-07T19:43:00.000-04:00" FlightTime="118" TravelTime="332" GroundTime="0" Equipment="739" OnTimePerformance="50" DestinationTerminal="N"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAuWijdAAAAA==" Origin="ORD" Destination="EWR" DepartureTime="2023-04-07T10:50:00.000-05:00" ArrivalTime="2023-04-07T14:07:00.000-04:00" FlightTime="137" TravelTime="337" GroundTime="0" Equipment="738" OnTimePerformance="80" OriginTerminal="1" DestinationTerminal="C"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAwWijdAAAAA==" Origin="EWR" Destination="ATL" DepartureTime="2023-04-07T15:04:00.000-04:00" ArrivalTime="2023-04-07T17:27:00.000-04:00" FlightTime="143" TravelTime="337" GroundTime="0" Equipment="7M8" OriginTerminal="C" DestinationTerminal="N"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAyWijdAAAAA==" Origin="ORD" Destination="IAH" DepartureTime="2023-04-07T10:29:00.000-05:00" ArrivalTime="2023-04-07T13:21:00.000-05:00" FlightTime="172" TravelTime="353" GroundTime="0" Equipment="738" OriginTerminal="1" DestinationTerminal="C"/>
+            <air:FlightDetails Key="rnHP8YTqWDKA0WijdAAAAA==" Origin="IAH" Destination="ATL" DepartureTime="2023-04-07T14:20:00.000-05:00" ArrivalTime="2023-04-07T17:22:00.000-04:00" FlightTime="122" TravelTime="353" GroundTime="0" Equipment="320" OnTimePerformance="60" OriginTerminal="C" DestinationTerminal="N"/>
+            <air:FlightDetails Key="rnHP8YTqWDKA2WijdAAAAA==" Origin="ORD" Destination="IAH" DepartureTime="2023-04-07T14:29:00.000-05:00" ArrivalTime="2023-04-07T17:20:00.000-05:00" FlightTime="171" TravelTime="356" GroundTime="0" Equipment="753" OnTimePerformance="60" OriginTerminal="1" DestinationTerminal="C"/>
+            <air:FlightDetails Key="rnHP8YTqWDKA4WijdAAAAA==" Origin="IAH" Destination="ATL" DepartureTime="2023-04-07T18:22:00.000-05:00" ArrivalTime="2023-04-07T21:25:00.000-04:00" FlightTime="123" TravelTime="356" GroundTime="0" Equipment="73G" OriginTerminal="C" DestinationTerminal="N"/>
+            <air:FlightDetails Key="rnHP8YTqWDKA6WijdAAAAA==" Origin="ORD" Destination="EWR" DepartureTime="2023-04-07T08:45:00.000-05:00" ArrivalTime="2023-04-07T11:59:00.000-04:00" FlightTime="134" TravelTime="367" GroundTime="0" Equipment="738" OnTimePerformance="70" OriginTerminal="1" DestinationTerminal="C"/>
+            <air:FlightDetails Key="rnHP8YTqWDKA8WijdAAAAA==" Origin="EWR" Destination="ATL" DepartureTime="2023-04-07T13:29:00.000-04:00" ArrivalTime="2023-04-07T15:52:00.000-04:00" FlightTime="143" TravelTime="367" GroundTime="0" Equipment="73G" OriginTerminal="C" DestinationTerminal="N"/>
+            <air:FlightDetails Key="rnHP8YTqWDKA+WijdAAAAA==" Origin="ATL" Destination="ORD" DepartureTime="2023-04-08T06:30:00.000-04:00" ArrivalTime="2023-04-08T07:39:00.000-05:00" FlightTime="129" TravelTime="129" GroundTime="0" Equipment="319" OnTimePerformance="80" OriginTerminal="N" DestinationTerminal="1"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAAXijdAAAAA==" Origin="ATL" Destination="ORD" DepartureTime="2023-04-08T10:58:00.000-04:00" ArrivalTime="2023-04-08T12:05:00.000-05:00" FlightTime="127" TravelTime="127" GroundTime="0" Equipment="7M9" OnTimePerformance="70" OriginTerminal="N" DestinationTerminal="1"/>
+            <air:FlightDetails Key="rnHP8YTqWDKACXijdAAAAA==" Origin="ATL" Destination="ORD" DepartureTime="2023-04-08T16:01:00.000-04:00" ArrivalTime="2023-04-08T17:06:00.000-05:00" FlightTime="125" TravelTime="125" GroundTime="0" Equipment="738" OriginTerminal="N" DestinationTerminal="1"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAEXijdAAAAA==" Origin="ATL" Destination="ORD" DepartureTime="2023-04-08T17:49:00.000-04:00" ArrivalTime="2023-04-08T18:55:00.000-05:00" FlightTime="126" TravelTime="126" GroundTime="0" Equipment="319" OnTimePerformance="60" OriginTerminal="N" DestinationTerminal="1"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAGXijdAAAAA==" Origin="ATL" Destination="IAD" DepartureTime="2023-04-08T19:29:00.000-04:00" ArrivalTime="2023-04-08T21:20:00.000-04:00" FlightTime="111" TravelTime="273" GroundTime="0" Equipment="319" OnTimePerformance="50" OriginTerminal="N"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAIXijdAAAAA==" Origin="IAD" Destination="ORD" DepartureTime="2023-04-08T22:01:00.000-04:00" ArrivalTime="2023-04-08T23:02:00.000-05:00" FlightTime="121" TravelTime="273" GroundTime="0" Equipment="319" DestinationTerminal="1"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAKXijdAAAAA==" Origin="ATL" Destination="IAD" DepartureTime="2023-04-08T14:35:00.000-04:00" ArrivalTime="2023-04-08T16:24:00.000-04:00" FlightTime="109" TravelTime="303" GroundTime="0" Equipment="320" OnTimePerformance="60" OriginTerminal="N"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAMXijdAAAAA==" Origin="IAD" Destination="ORD" DepartureTime="2023-04-08T17:22:00.000-04:00" ArrivalTime="2023-04-08T18:38:00.000-05:00" FlightTime="136" TravelTime="303" GroundTime="0" Equipment="319" OnTimePerformance="70" DestinationTerminal="1"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAOXijdAAAAA==" Origin="ATL" Destination="IAD" DepartureTime="2023-04-08T09:20:00.000-04:00" ArrivalTime="2023-04-08T11:05:00.000-04:00" FlightTime="105" TravelTime="331" GroundTime="0" Equipment="73G" OriginTerminal="N"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAQXijdAAAAA==" Origin="IAD" Destination="ORD" DepartureTime="2023-04-08T12:41:00.000-04:00" ArrivalTime="2023-04-08T13:51:00.000-05:00" FlightTime="130" TravelTime="331" GroundTime="0" Equipment="319" OnTimePerformance="80" DestinationTerminal="1"/>
+            <air:FlightDetails Key="rnHP8YTqWDKASXijdAAAAA==" Origin="ATL" Destination="IAH" DepartureTime="2023-04-08T17:03:00.000-04:00" ArrivalTime="2023-04-08T18:19:00.000-05:00" FlightTime="136" TravelTime="335" GroundTime="0" Equipment="73G" OriginTerminal="N" DestinationTerminal="C"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAUXijdAAAAA==" Origin="IAH" Destination="ORD" DepartureTime="2023-04-08T18:53:00.000-05:00" ArrivalTime="2023-04-08T21:38:00.000-05:00" FlightTime="165" TravelTime="335" GroundTime="0" Equipment="739" OriginTerminal="C" DestinationTerminal="1"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAWXijdAAAAA==" Origin="ATL" Destination="IAH" DepartureTime="2023-04-08T14:05:00.000-04:00" ArrivalTime="2023-04-08T15:28:00.000-05:00" FlightTime="143" TravelTime="361" GroundTime="0" Equipment="E7W" OriginTerminal="N" DestinationTerminal="B"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAYXijdAAAAA==" Origin="IAH" Destination="ORD" DepartureTime="2023-04-08T16:24:00.000-05:00" ArrivalTime="2023-04-08T19:06:00.000-05:00" FlightTime="162" TravelTime="361" GroundTime="0" Equipment="7M9" OnTimePerformance="70" OriginTerminal="C" DestinationTerminal="1"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAaXijdAAAAA==" Origin="ATL" Destination="EWR" DepartureTime="2023-04-08T18:24:00.000-04:00" ArrivalTime="2023-04-08T20:59:00.000-04:00" FlightTime="155" TravelTime="361" GroundTime="0" Equipment="E7W" OriginTerminal="N" DestinationTerminal="C"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAcXijdAAAAA==" Origin="EWR" Destination="ORD" DepartureTime="2023-04-08T21:48:00.000-04:00" ArrivalTime="2023-04-08T23:25:00.000-05:00" FlightTime="157" TravelTime="361" GroundTime="0" Equipment="738" OnTimePerformance="80" OriginTerminal="C" DestinationTerminal="1"/>
+         </air:FlightDetailsList>
+         <air:AirSegmentList>
+            <air:AirSegment Key="rnHP8YTqWDKAfWijdAAAAA==" Group="0" Carrier="UA" FlightNumber="2008" Origin="ORD" Destination="ATL" DepartureTime="2023-04-07T07:00:00.000-05:00" ArrivalTime="2023-04-07T09:59:00.000-04:00" FlightTime="119" TravelTime="119" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|Z8"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H9|Q9|V9|W9|S9|T9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAeWijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAhWijdAAAAA==" Group="0" Carrier="UA" FlightNumber="2450" Origin="ORD" Destination="ATL" DepartureTime="2023-04-07T10:40:00.000-05:00" ArrivalTime="2023-04-07T13:39:00.000-04:00" FlightTime="119" TravelTime="119" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D8|Z6"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H9|Q9|V9|W9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAgWijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAjWijdAAAAA==" Group="0" Carrier="UA" FlightNumber="2290" Origin="ORD" Destination="ATL" DepartureTime="2023-04-07T13:57:00.000-05:00" ArrivalTime="2023-04-07T16:56:00.000-04:00" FlightTime="119" TravelTime="119" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|Z7|P2"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H9|Q9|V9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAiWijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAlWijdAAAAA==" Group="0" Carrier="UA" FlightNumber="2464" Origin="ORD" Destination="ATL" DepartureTime="2023-04-07T18:30:00.000-05:00" ArrivalTime="2023-04-07T21:37:00.000-04:00" FlightTime="127" TravelTime="127" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D8|Z2"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H9|Q9|V6|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAkWijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAnWijdAAAAA==" Group="0" Carrier="UA" FlightNumber="2342" Origin="ORD" Destination="IAD" DepartureTime="2023-04-07T08:51:00.000-05:00" ArrivalTime="2023-04-07T11:47:00.000-04:00" FlightTime="116" TravelTime="292" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H9|Q7|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAmWijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKApWijdAAAAA==" Group="0" Carrier="UA" FlightNumber="1940" Origin="IAD" Destination="ATL" DepartureTime="2023-04-07T12:48:00.000-04:00" ArrivalTime="2023-04-07T14:43:00.000-04:00" FlightTime="115" TravelTime="292" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|Z8|P2"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H9|Q9|V9|W9|S9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAoWijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKArWijdAAAAA==" Group="0" Carrier="UA" FlightNumber="326" Origin="ORD" Destination="IAD" DepartureTime="2023-04-07T13:11:00.000-05:00" ArrivalTime="2023-04-07T16:11:00.000-04:00" FlightTime="120" TravelTime="332" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E7|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAqWijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAtWijdAAAAA==" Group="0" Carrier="UA" FlightNumber="2081" Origin="IAD" Destination="ATL" DepartureTime="2023-04-07T17:45:00.000-04:00" ArrivalTime="2023-04-07T19:43:00.000-04:00" FlightTime="118" TravelTime="332" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E7|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAsWijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAvWijdAAAAA==" Group="0" Carrier="UA" FlightNumber="2285" Origin="ORD" Destination="EWR" DepartureTime="2023-04-07T10:50:00.000-05:00" ArrivalTime="2023-04-07T14:07:00.000-04:00" FlightTime="137" TravelTime="337" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C8|D7"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H9|Q9|V9|W9|S3|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAuWijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAxWijdAAAAA==" Group="0" Carrier="UA" FlightNumber="2178" Origin="EWR" Destination="ATL" DepartureTime="2023-04-07T15:04:00.000-04:00" ArrivalTime="2023-04-07T17:27:00.000-04:00" FlightTime="143" TravelTime="337" ETicketability="Yes" Equipment="7M8" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAwWijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAzWijdAAAAA==" Group="0" Carrier="UA" FlightNumber="2435" Origin="ORD" Destination="IAH" DepartureTime="2023-04-07T10:29:00.000-05:00" ArrivalTime="2023-04-07T13:21:00.000-05:00" FlightTime="172" TravelTime="353" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C3"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAyWijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKA1WijdAAAAA==" Group="0" Carrier="UA" FlightNumber="2616" Origin="IAH" Destination="ATL" DepartureTime="2023-04-07T14:20:00.000-05:00" ArrivalTime="2023-04-07T17:22:00.000-04:00" FlightTime="122" TravelTime="353" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C3"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKA0WijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKA3WijdAAAAA==" Group="0" Carrier="UA" FlightNumber="2313" Origin="ORD" Destination="IAH" DepartureTime="2023-04-07T14:29:00.000-05:00" ArrivalTime="2023-04-07T17:20:00.000-05:00" FlightTime="171" TravelTime="356" ETicketability="Yes" Equipment="753" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C6"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKA2WijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKA5WijdAAAAA==" Group="0" Carrier="UA" FlightNumber="1640" Origin="IAH" Destination="ATL" DepartureTime="2023-04-07T18:22:00.000-05:00" ArrivalTime="2023-04-07T21:25:00.000-04:00" FlightTime="123" TravelTime="356" ETicketability="Yes" Equipment="73G" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C6"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKA4WijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKA7WijdAAAAA==" Group="0" Carrier="UA" FlightNumber="462" Origin="ORD" Destination="EWR" DepartureTime="2023-04-07T08:45:00.000-05:00" ArrivalTime="2023-04-07T11:59:00.000-04:00" FlightTime="134" TravelTime="367" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J6"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKA6WijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKA9WijdAAAAA==" Group="0" Carrier="UA" FlightNumber="1213" Origin="EWR" Destination="ATL" DepartureTime="2023-04-07T13:29:00.000-04:00" ArrivalTime="2023-04-07T15:52:00.000-04:00" FlightTime="143" TravelTime="367" ETicketability="Yes" Equipment="73G" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J6"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKA8WijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKA/WijdAAAAA==" Group="1" Carrier="UA" FlightNumber="216" Origin="ATL" Destination="ORD" DepartureTime="2023-04-08T06:30:00.000-04:00" ArrivalTime="2023-04-08T07:39:00.000-05:00" FlightTime="129" TravelTime="129" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|Z9|P4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H9|Q9|V9|W9|S9|T9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKA+WijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKABXijdAAAAA==" Group="1" Carrier="UA" FlightNumber="626" Origin="ATL" Destination="ORD" DepartureTime="2023-04-08T10:58:00.000-04:00" ArrivalTime="2023-04-08T12:05:00.000-05:00" FlightTime="127" TravelTime="127" ETicketability="Yes" Equipment="7M9" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|Z9|P4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H9|Q9|V9|W9|S9|T9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAAXijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKADXijdAAAAA==" Group="1" Carrier="UA" FlightNumber="516" Origin="ATL" Destination="ORD" DepartureTime="2023-04-08T16:01:00.000-04:00" ArrivalTime="2023-04-08T17:06:00.000-05:00" FlightTime="125" TravelTime="125" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|Z8|P3"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H9|Q9|V9|W9|S9|T8|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKACXijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAFXijdAAAAA==" Group="1" Carrier="UA" FlightNumber="1046" Origin="ATL" Destination="ORD" DepartureTime="2023-04-08T17:49:00.000-04:00" ArrivalTime="2023-04-08T18:55:00.000-05:00" FlightTime="126" TravelTime="126" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J7|C6|D5"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H9|Q9|V9|W9|S7|T6|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAEXijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAHXijdAAAAA==" Group="1" Carrier="UA" FlightNumber="2634" Origin="ATL" Destination="IAD" DepartureTime="2023-04-08T19:29:00.000-04:00" ArrivalTime="2023-04-08T21:20:00.000-04:00" FlightTime="111" TravelTime="273" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C7"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H3|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAGXijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAJXijdAAAAA==" Group="1" Carrier="UA" FlightNumber="2467" Origin="IAD" Destination="ORD" DepartureTime="2023-04-08T22:01:00.000-04:00" ArrivalTime="2023-04-08T23:02:00.000-05:00" FlightTime="121" TravelTime="273" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C7"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H3|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAIXijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKALXijdAAAAA==" Group="1" Carrier="UA" FlightNumber="730" Origin="ATL" Destination="IAD" DepartureTime="2023-04-08T14:35:00.000-04:00" ArrivalTime="2023-04-08T16:24:00.000-04:00" FlightTime="109" TravelTime="303" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J7"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAKXijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKANXijdAAAAA==" Group="1" Carrier="UA" FlightNumber="1358" Origin="IAD" Destination="ORD" DepartureTime="2023-04-08T17:22:00.000-04:00" ArrivalTime="2023-04-08T18:38:00.000-05:00" FlightTime="136" TravelTime="303" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J7"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAMXijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAPXijdAAAAA==" Group="1" Carrier="UA" FlightNumber="320" Origin="ATL" Destination="IAD" DepartureTime="2023-04-08T09:20:00.000-04:00" ArrivalTime="2023-04-08T11:05:00.000-04:00" FlightTime="105" TravelTime="331" ETicketability="Yes" Equipment="73G" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D8|Z7"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H9|Q9|V9|W9|S3|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAOXijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKARXijdAAAAA==" Group="1" Carrier="UA" FlightNumber="2169" Origin="IAD" Destination="ORD" DepartureTime="2023-04-08T12:41:00.000-04:00" ArrivalTime="2023-04-08T13:51:00.000-05:00" FlightTime="130" TravelTime="331" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C7|D5"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H9|Q9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAQXijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKATXijdAAAAA==" Group="1" Carrier="UA" FlightNumber="369" Origin="ATL" Destination="IAH" DepartureTime="2023-04-08T17:03:00.000-04:00" ArrivalTime="2023-04-08T18:19:00.000-05:00" FlightTime="136" TravelTime="335" ETicketability="Yes" Equipment="73G" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J8|C6"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E4|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKASXijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAVXijdAAAAA==" Group="1" Carrier="UA" FlightNumber="1658" Origin="IAH" Destination="ORD" DepartureTime="2023-04-08T18:53:00.000-05:00" ArrivalTime="2023-04-08T21:38:00.000-05:00" FlightTime="165" TravelTime="335" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J8|C6"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E4|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAUXijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAXXijdAAAAA==" Group="1" Carrier="UA" FlightNumber="6100" Origin="ATL" Destination="IAH" DepartureTime="2023-04-08T14:05:00.000-04:00" ArrivalTime="2023-04-08T15:28:00.000-05:00" FlightTime="143" TravelTime="361" ETicketability="Yes" Equipment="E7W" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo>MESA AIRLINES DBA UNITED EXPRESS</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J8|C4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M7|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAWXijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAZXijdAAAAA==" Group="1" Carrier="UA" FlightNumber="2075" Origin="IAH" Destination="ORD" DepartureTime="2023-04-08T16:24:00.000-05:00" ArrivalTime="2023-04-08T19:06:00.000-05:00" FlightTime="162" TravelTime="361" ETicketability="Yes" Equipment="7M9" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J8|C4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M7|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAYXijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAbXijdAAAAA==" Group="1" Carrier="UA" FlightNumber="3524" Origin="ATL" Destination="EWR" DepartureTime="2023-04-08T18:24:00.000-04:00" ArrivalTime="2023-04-08T20:59:00.000-04:00" FlightTime="155" TravelTime="361" ETicketability="Yes" Equipment="E7W" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo>REPUBLIC AIRWAYS DBA UNITED EXPRESS</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|Z9|P5"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H9|Q9|V9|W9|S8|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAaXijdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAdXijdAAAAA==" Group="1" Carrier="UA" FlightNumber="1393" Origin="EWR" Destination="ORD" DepartureTime="2023-04-08T21:48:00.000-04:00" ArrivalTime="2023-04-08T23:25:00.000-05:00" FlightTime="157" TravelTime="361" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|Z6|P2"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|M9|E9|U9|H9|Q9|V9|W9|S9|N9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="B9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAcXijdAAAAA=="/>
+            </air:AirSegment>
+         </air:AirSegmentList>
+         <air:AirItinerarySolution Key="rnHP8YTqWDKAeXijdAAAAA==">
+            <air:AirSegmentRef Key="rnHP8YTqWDKAfWijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAhWijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAjWijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAlWijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAnWijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKApWijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKArWijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAtWijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAvWijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAxWijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAzWijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKA1WijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKA3WijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKA5WijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKA7WijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKA9WijdAAAAA=="/>
+            <air:Connection SegmentIndex="4"/>
+            <air:Connection SegmentIndex="6"/>
+            <air:Connection SegmentIndex="8"/>
+            <air:Connection SegmentIndex="10"/>
+            <air:Connection SegmentIndex="12"/>
+            <air:Connection SegmentIndex="14"/>
+         </air:AirItinerarySolution>
+         <air:AirItinerarySolution Key="rnHP8YTqWDKAfXijdAAAAA==">
+            <air:AirSegmentRef Key="rnHP8YTqWDKA/WijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKABXijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKADXijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAFXijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAHXijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAJXijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKALXijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKANXijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAPXijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKARXijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKATXijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAVXijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAXXijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAZXijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAbXijdAAAAA=="/>
+            <air:AirSegmentRef Key="rnHP8YTqWDKAdXijdAAAAA=="/>
+            <air:Connection SegmentIndex="4"/>
+            <air:Connection SegmentIndex="6"/>
+            <air:Connection SegmentIndex="8"/>
+            <air:Connection SegmentIndex="10"/>
+            <air:Connection SegmentIndex="12"/>
+            <air:Connection SegmentIndex="14"/>
+         </air:AirItinerarySolution>
+      </air:AvailabilitySearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

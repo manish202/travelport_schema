@@ -1,0 +1,351 @@
+Vehicle Location-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleLocationReq AuthorizedBy="TEST" TargetBranch="TPKIKSBUT" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:Vendor Code="ZD"/>
+         <veh:PickupDateLocation Date="2023-03-18" Location="SFO"/>
+      </veh:VehicleLocationReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Location-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleLocationRsp TransactionId="5A517AF00A0D6A935CA32C9BBBA83F06" ResponseTime="108" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="0"/>
+            <vehicle:LocationInformation LocationType="Airport" AreaGroup="A" Location="SFO" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:Street>SAN FRANCISCO INTL AIRPORT</common_v50_0:Street>
+                  <common_v50_0:City>SFO</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="2"/>
+            <common_v50_0:Distance Units="MI" Value="3" Direction="NW"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="B" Location="SFO" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>230 HARBOR WAY</common_v50_0:Street>
+                  <common_v50_0:City>SFO</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="8"/>
+            <common_v50_0:Distance Units="MI" Value="12" Direction="N"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="B" Location="SFO" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>821 HOWARD ST</common_v50_0:Street>
+                  <common_v50_0:City>SFO</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="6"/>
+            <common_v50_0:Distance Units="MI" Value="12" Direction="N"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="B" Location="SFO" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>HILTON HOTEL OFARRELL ST</common_v50_0:Street>
+                  <common_v50_0:City>SFO</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="5"/>
+            <common_v50_0:Distance Units="MI" Value="13" Direction="N"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="B" Location="SFO" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>HYATT REGENCY EMBARCADERO</common_v50_0:Street>
+                  <common_v50_0:City>SFO</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="4"/>
+            <common_v50_0:Distance Units="MI" Value="13" Direction="N"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="B" Location="SFO" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>675 POST ST</common_v50_0:Street>
+                  <common_v50_0:City>SFO</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="10"/>
+            <common_v50_0:Distance Units="MI" Value="14" Direction="N"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="B" Location="SFO" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>ANCHORAGE SQUARE SHOP CTR</common_v50_0:Street>
+                  <common_v50_0:City>SFO</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="4"/>
+            <common_v50_0:Distance Units="MI" Value="8" Direction="SE"/>
+            <vehicle:LocationInformation LocationType="SouthOfCityCenter" AreaGroup="C" Location="SFO" AreaType="SouthOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>1133 CHESS DR</common_v50_0:Street>
+                  <common_v50_0:City>SFO</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="11" Direction="SE"/>
+            <vehicle:LocationInformation LocationType="SouthOfCityCenter" AreaGroup="C" Location="SFO" AreaType="SouthOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>1501 EL CAMINO REAL STE201</common_v50_0:Street>
+                  <common_v50_0:City>SFO</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="49" Direction="N"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="D" Location="APC" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>476 SOSCOL AVE</common_v50_0:Street>
+                  <common_v50_0:City>APC</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="38" Direction="N"/>
+            <vehicle:LocationInformation LocationType="SouthOfCityCenter" AreaGroup="E" Location="APC" AreaType="SouthOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>1861 SOLANO AVE</common_v50_0:Street>
+                  <common_v50_0:City>APC</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="48" Direction="NE"/>
+            <vehicle:LocationInformation LocationType="EastOfCityCenter" AreaGroup="F" Location="CCR" AreaType="EastOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>ALL STAR FORD</common_v50_0:Street>
+                  <common_v50_0:City>CCR</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="14" Direction="NE"/>
+            <vehicle:LocationInformation LocationType="Airport" AreaGroup="G" Location="OAK" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:Street>OAKLAND INTL AIRPORT</common_v50_0:Street>
+                  <common_v50_0:City>OAK</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="3"/>
+            <common_v50_0:Distance Units="MI" Value="17" Direction="NE"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="H" Location="OAK" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>2428 WEBSTER ST</common_v50_0:Street>
+                  <common_v50_0:City>OAK</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="20" Direction="N"/>
+            <vehicle:LocationInformation LocationType="NorthOfCityCenter" AreaGroup="I" Location="OAK" AreaType="NorthOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>600 GILMAN ST</common_v50_0:Street>
+                  <common_v50_0:City>OAK</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="12"/>
+            <common_v50_0:Distance Units="MI" Value="21" Direction="N"/>
+            <vehicle:LocationInformation LocationType="NorthOfCityCenter" AreaGroup="I" Location="OAK" AreaType="NorthOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>2000 KITTREDGE ST</common_v50_0:Street>
+                  <common_v50_0:City>OAK</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="5"/>
+            <common_v50_0:Distance Units="MI" Value="27" Direction="N"/>
+            <vehicle:LocationInformation LocationType="NorthOfCityCenter" AreaGroup="I" Location="OAK" AreaType="NorthOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>1305 FRANCISCO BLVD EAST</common_v50_0:Street>
+                  <common_v50_0:City>OAK</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="15"/>
+            <common_v50_0:Distance Units="MI" Value="37" Direction="NE"/>
+            <vehicle:LocationInformation LocationType="NorthOfCityCenter" AreaGroup="I" Location="OAK" AreaType="NorthOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>1790 CONCORD AVE</common_v50_0:Street>
+                  <common_v50_0:City>OAK</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="29" Direction="NE"/>
+            <vehicle:LocationInformation LocationType="EastOfCityCenter" AreaGroup="J" Location="OAK" AreaType="EastOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>2551 SAN RAMON VALLEY BLVD</common_v50_0:Street>
+                  <common_v50_0:City>OAK</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="4"/>
+            <common_v50_0:Distance Units="MI" Value="31" Direction="E"/>
+            <vehicle:LocationInformation LocationType="EastOfCityCenter" AreaGroup="J" Location="OAK" AreaType="EastOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>4003 PIMLICO DR</common_v50_0:Street>
+                  <common_v50_0:City>OAK</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="2"/>
+            <common_v50_0:Distance Units="MI" Value="33" Direction="NE"/>
+            <vehicle:LocationInformation LocationType="EastOfCityCenter" AreaGroup="J" Location="OAK" AreaType="EastOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>2654 N MAIN ST</common_v50_0:Street>
+                  <common_v50_0:City>OAK</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="19" Direction="E"/>
+            <vehicle:LocationInformation LocationType="SouthOfCityCenter" AreaGroup="K" Location="OAK" AreaType="SouthOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>27295 MISSION BLVD</common_v50_0:Street>
+                  <common_v50_0:City>OAK</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="37" Direction="SE"/>
+            <vehicle:LocationInformation LocationType="Airport" AreaGroup="L" Location="SJC" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:Street>SAN JOSE INTL AIRPORT</common_v50_0:Street>
+                  <common_v50_0:City>SJC</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="5"/>
+            <common_v50_0:Distance Units="MI" Value="37" Direction="SE"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="M" Location="SJC" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>3680 STEVENS CREEK BLVD</common_v50_0:Street>
+                  <common_v50_0:City>SJC</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="6"/>
+            <common_v50_0:Distance Units="MI" Value="38" Direction="SE"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="M" Location="SJC" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>SAN JOSE HOLIDAY INN</common_v50_0:Street>
+                  <common_v50_0:City>SJC</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="7"/>
+            <common_v50_0:Distance Units="MI" Value="44" Direction="SE"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="M" Location="SJC" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>EASTRIDGE MALL DOOR D</common_v50_0:Street>
+                  <common_v50_0:City>SJC</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="23" Direction="E"/>
+            <vehicle:LocationInformation LocationType="NorthOfCityCenter" AreaGroup="N" Location="SJC" AreaType="NorthOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>5307 CENTRAL AVE</common_v50_0:Street>
+                  <common_v50_0:City>SJC</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="4"/>
+            <common_v50_0:Distance Units="MI" Value="25" Direction="SE"/>
+            <vehicle:LocationInformation LocationType="NorthOfCityCenter" AreaGroup="N" Location="SJC" AreaType="NorthOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>4230 EL CAMINO REAL</common_v50_0:Street>
+                  <common_v50_0:City>SJC</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="3"/>
+            <common_v50_0:Distance Units="MI" Value="35" Direction="SE"/>
+            <vehicle:LocationInformation LocationType="SouthOfCityCenter" AreaGroup="O" Location="SJC" AreaType="SouthOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>SANTA CLARA</common_v50_0:Street>
+                  <common_v50_0:City>SJC</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="25" Direction="SE"/>
+            <vehicle:LocationInformation LocationType="WestOfCityCenter" AreaGroup="P" Location="SJC" AreaType="WestOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>2452 OLD MIDDLEFIELD WAY</common_v50_0:Street>
+                  <common_v50_0:City>SJC</common_v50_0:City>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+      </vehicle:VehicleLocationRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

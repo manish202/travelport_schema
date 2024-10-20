@@ -1,0 +1,89 @@
+Hotel Rules-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hotel:HotelRulesReq AuthorizedBy="TEST" TargetBranch="TPKIKSBUT" TraceId="PP_1G_001" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <hotel:HotelRulesLookup RatePlanType="C3DRA3" Base="EUR81.00">
+            <hotel:HotelProperty HotelChain="RT" HotelCode="32581" HotelLocation="PAR" Name="NOVOTEL ROISSY SAINT WITZ" ParticipationLevel="2">
+               <hotel:PropertyAddress>
+                  <hotel:Address>ROUTE DE SURVILLIERS</hotel:Address>
+                  <hotel:Address>SAINTWITZ FR 95470</hotel:Address>
+               </hotel:PropertyAddress>
+               <com:PhoneNumber Type="Business" Number="33 1 34686980"/>
+               <com:PhoneNumber Type="Fax" Number="33 1 34686494"/>
+               <com:Distance Units="KM" Value="8" Direction="N"/>
+            </hotel:HotelProperty>
+            <hotel:HotelStay>
+               <hotel:CheckinDate>2023-04-07</hotel:CheckinDate>
+               <hotel:CheckoutDate>2023-04-08</hotel:CheckoutDate>
+            </hotel:HotelStay>
+            <hotel:HotelRulesModifiers NumberOfAdults="1" NumberOfRooms="4"/>
+         </hotel:HotelRulesLookup>
+      </hotel:HotelRulesReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Hotel Rules-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelRulesRsp TraceId="PP_1G_001" TransactionId="5A51C3A80A0D6A940CE23A7C51D12A87" ResponseTime="787" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0">
+         <hotel:HotelRateDetail RatePlanType="C3DRA3" Base="EUR81.00" Total="EUR81.70">
+            <hotel:RoomRateDescription Name="Rate comment">
+               <hotel:Text>PER NIGHT STARTING 07 APRIL FOR 1 NIGHT EUR81.00</hotel:Text>
+               <hotel:Text>SUB TOTAL FOR STAY EUR81.00</hotel:Text>
+               <hotel:Text>APPROX TOTAL INCL ALL KNOWN TAXES/FEES EUR81.70</hotel:Text>
+            </hotel:RoomRateDescription>
+            <hotel:RoomRateDescription Name="Rate description">
+               <hotel:Text>C3dra3: Advance Saver</hotel:Text>
+               <hotel:Text>Standard Room With One Double Bed Andtwo Single</hotel:Text>
+               <hotel:Text>Beds</hotel:Text>
+            </hotel:RoomRateDescription>
+            <hotel:RoomRateDescription Name="Room detail">
+               <hotel:Text>COMPUTER                        HIGH SPEED TRANSMISSION LINE</hotel:Text>
+               <hotel:Text>RJ 45 OUTLET                    WI-FI IN THE COMMUNAL AREAS</hotel:Text>
+               <hotel:Text>WI-FI IN YOUR ROOM              220/240 V AC</hotel:Text>
+               <hotel:Text>AIRCONDITIONING                 BREAKFAST IN BED</hotel:Text>
+               <hotel:Text>CONNECTING ROOMS AVAILABLE      FREE IN-ROOM MINERAL WATER</hotel:Text>
+               <hotel:Text>FREE MORNING NEWSPAPER          PULSE AIR</hotel:Text>
+               <hotel:Text>SAFE DEPOSIT BOX IN ROOM        ACCESSIBLE BATHROOM</hotel:Text>
+               <hotel:Text>BLACKOUT FACILITIES             DOUBLE-GLAZING</hotel:Text>
+               <hotel:Text>MANUAL TEMPERATURE CONTROL      OPENING WINDOWS</hotel:Text>
+               <hotel:Text>SOUNDPROOF                      SOUNDPROOF DOORS</hotel:Text>
+            </hotel:RoomRateDescription>
+            <hotel:RoomRateDescription Name="Room rate">
+               <hotel:Text>TRAVEL AGENCY COMMISSION - NOT APPLICABLE</hotel:Text>
+               <hotel:Text>MEAL PLAN - ROOM ONLY</hotel:Text>
+               <hotel:Text>BREAKFAST PER PAX- PER NIGHT - 16.00  EUR</hotel:Text>
+               <hotel:Text>TAXES -</hotel:Text>
+               <hotel:Text>CITY TX - 0.70 EUR P/NIGHT P/PERSON</hotel:Text>
+               <hotel:Text>COUNTRY TX - 0.00 INCLUDED</hotel:Text>
+               <hotel:Text>MAXIMUM OCCUPANCY - 4 PEOPLE PER ROOM</hotel:Text>
+               <hotel:Text>2 CH 16 YRSFREE IN BB IN THE PARENTS/ GRANDPARENTS ROOM</hotel:Text>
+            </hotel:RoomRateDescription>
+            <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR81.00"/>
+            <hotel:Commission Indicator="unknown"/>
+            <hotel:CancelInfo NonRefundableStayIndicator="true"/>
+            <hotel:Inclusions SmokingRoomIndicator="unknown">
+               <hotel:BedTypes Code="248"/>
+               <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+            </hotel:Inclusions>
+         </hotel:HotelRateDetail>
+         <hotel:HotelRuleItem Name="Cancellation">
+            <hotel:Text>CXL: THE AMOUNT DUE IS NOT REFUNDABLE EVEN IF THE BOOKING IS</hotel:Text>
+            <hotel:Text>CANCELLED OR MODIFIED.</hotel:Text>
+         </hotel:HotelRuleItem>
+         <hotel:HotelRuleItem Name="Checkin Checkout">
+            <hotel:Text>THE ROOM MUST BE VACATED BY 12:00 AT THE LATEST.</hotel:Text>
+         </hotel:HotelRuleItem>
+         <hotel:HotelRuleItem Name="Deposit">
+            <hotel:Text>FULL AMOUNT OF STAY IS PAYABLE IN ADVANCE BY CREDIT CARD  AT</hotel:Text>
+            <hotel:Text>BOOKING TIME.</hotel:Text>
+            <hotel:Text>CC ACCEPTED AX CA DC EC IK JC VI</hotel:Text>
+         </hotel:HotelRuleItem>
+         <hotel:HotelType SourceLink="true"/>
+      </hotel:HotelRulesRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

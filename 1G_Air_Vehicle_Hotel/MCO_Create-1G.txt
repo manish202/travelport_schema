@@ -1,0 +1,46 @@
+MCOCreate-Request
+******************************************************************** 
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:util="http://www.travelport.com/schema/util_v53_0" xmlns:common_v53_0="http://www.travelport.com/schema/common_v53_0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <util:MCOCreateReq AuthorizedBy="AELA" TargetBranch="P#######" ProviderCode="1G" ProviderLocatorCode="6XXXXX" TktIssueInd="O" ReasonCode="J"  IssueInd="false">
+ 		<common_v53_0:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+ 		<common_v53_0:FormOfPayment Key="5LKE==" Type="Credit">
+            <common_v53_0:CreditCard Type="VI" Number="4111111111111111" ExpDate="2025-10" Name="KODLAK GREYMANE" Key="5AOSDvajRX23c8ApaFvihQ=="/>
+            </common_v53_0:FormOfPayment>
+            <common_v53_0:MCOMainData MCOAmount="150.00" MCOCurrency="USD" PlatingCarrier="AA" ValidFor="DEPOST FOR FUTURE TRANSPORTATION" TourOperator="AIR FLYRIM" Location="FLYRIM">
+               <common_v53_0:PassengerInfo>
+                  <common_v53_0:Name First="JARL" Last="ELISIF"/>
+               </common_v53_0:PassengerInfo>
+               <common_v53_0:Commission Percentage="0.0"/>
+            </common_v53_0:MCOMainData>
+             <common_v53_0:MCORemark>DEPOSIT FOR FUTURE TRANSPORTATION</common_v53_0:MCORemark>
+             <common_v53_0:MCORemark AdditionalRmk="true">T VIEW</common_v53_0:MCORemark>
+      </util:MCOCreateReq>
+   </soapenv:Body>
+</soapenv:Envelope
+
+MCO Create-Response
+******************************************************************** 
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <util:MCOCreateRsp TransactionId="6FXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" ResponseTime="848" xmlns:util="http://www.travelport.com/schema/util_v53_0" xmlns:common_v53_0="http://www.travelport.com/schema/common_v53_0">
+         <common_v53_0:ResponseMessage Code="0" Type="Info">MCO DATA STORED</common_v53_0:ResponseMessage>
+         <util:MCO MCONumber="1" TktIssueInd="O" ReasonCode="J">
+            <common_v53_0:FormOfPayment Type="Credit" Reusable="false" ProfileKey="ik==">
+               <common_v53_0:CreditCard Type="VI" Number="************1111" ExpDate="2025-10"/>
+            </common_v53_0:FormOfPayment>
+            <common_v53_0:MCOMainData MCOAmount="USD150.00" MCOCurrency="USD" PlatingCarrier="AA" ValidFor="DEPOSIT FOR FUTURE TRANSPORTATION" TourOperator="AIR FLYRIM" Location="FLYRIM">
+               <common_v53_0:PassengerInfo>
+                  <common_v53_0:Name First="JARL" Last="ELISIF"/>
+               </common_v53_0:PassengerInfo>
+               <common_v53_0:Commission Percentage="0.0"/>
+            </common_v53_0:MCOMainData>
+            <common_v53_0:MCORemark>DEPOSIT FOR FUTURE TRANSPORTATION</common_v53_0:MCORemark>
+            <common_v53_0:MCORemark AdditionalRmk="true">T VIEW</common_v53_0:MCORemark>
+         </util:MCO>
+      </util:MCOCreateRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

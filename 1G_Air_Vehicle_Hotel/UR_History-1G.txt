@@ -1,0 +1,169 @@
+UR History-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <univ:UniversalRecordHistorySearchReq AuthorizedBy="UAPI" UniversalRecordLocatorCode="234BCD" TargetBranch="TPKIKSBUT" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </univ:UniversalRecordHistorySearchReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+UR History-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordHistorySearchRsp TransactionId="5A50AF050A0D6A935CA32C9BD9BA0F38" ResponseTime="315" LastResult="true" xmlns:universal="http://www.travelport.com/schema/universal_v50_0">
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="UD_AGT_PP" ModifiedDate="2023-02-16T13:00:53.391+00:00" ElementType="URCreate" Action="URCreate">
+            <universal:New>UR RecLoc: 234BCD</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="UD_AGT_PP" ModifiedDate="2023-02-16T13:00:53.395+00:00" ElementType="AirReservation" Action="AirCreate">
+            <universal:New>UR RecLoc: 234BCD
+               
+               ActionStatus:-
+               Type:TAU
+               TicketDate:2023-02-21T23:59:00.000+10:00
+               BranchPCC:
+               AirportCode:
+               AccountCode:
+               AirVendor:
+               Remark:
+               Provider Code: 1G
+               Provider Locator Code: 345678
+               
+               
+               AirReservation:
+               
+               SupplierCode : UA
+               SupplierLocator: HIJKLM
+               
+               Provider Code: 1G
+               Provider Locator: 345678
+               CustomerID:
+               Postscript:
+               CustomCheckRule:
+               
+               Traveler Info 1:
+               First Name: CARSTENMR
+               Last Name: LINDELOEV
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               
+               Traveler Info 2:
+               First Name: JOHNMR
+               Last Name: DOE
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               
+               
+               FormOfPayment :-
+               ProviderReservationInfo:-
+               ProviderLocatorCode: 345678
+               Credit Card:-
+               Type: CA
+               Number: ************5557
+               ExpDate: *******
+               Name on Card: JAYA DOE
+               TravelerId:
+               CVV:
+               Extended Payment:
+               Customer Reference:
+               
+               
+               
+               
+               
+               AirSegment:
+               Origin: ORD
+               Destination: ATL
+               Carrier: UA
+               FltNum: 2290
+               DepTime: 2023-07-26T14:05:00.000-05:00
+               ArrTime: 2023-07-26T16:58:00.000-04:00
+               Class of Service: S
+               Availability Source: S
+               
+               AirSegment:
+               Origin: ATL
+               Destination: ORD
+               Carrier: UA
+               FltNum: 1888
+               DepTime: 2023-07-31T07:00:00.000-04:00
+               ArrTime: 2023-07-31T08:04:00.000-05:00
+               Class of Service: S
+               Availability Source: S
+               
+               AirPricing:
+               PricingType: StoredFare
+               PricingMethod: Guaranteed
+               
+               
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               
+               True Last Date to Purchase Ticket: 2023-02-17
+               
+               
+               
+               Total: AUD491.30
+               Base: USD290.24
+               ApproximateTotalPrice:
+               ApproximateBasePrice: AUD417.00
+               Taxes: AUD74.30
+               Air Pricing Info Group: 1
+               Ticketed: false
+               Fare Status Info:
+               Status Code:
+               Failure Code:
+               Failure Reason:
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:Guaranteed
+               FareGuaranteeDate:2023-02-16
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:Guaranteed
+               FareGuaranteeDate:2023-02-16
+               Fare Info 1:
+               FareBasis: SAA2AKDN
+               NotValidBefore:
+               NotValidAfter:
+               FareTicketDesignator:
+               Value:
+               TourCode :
+               SupplierCode:
+               
+               
+               Branded Fares:
+               BrandID : 1152465
+               Name :
+               Carrier :
+               BrandTier : 0002
+               Fare Info 2:
+               FareBasis: SAA2AKDN
+               NotValidBefore:
+               NotValidAfter:
+               FareTicketDesignator:
+               Value:
+               TourCode :
+               SupplierCode:
+               
+               
+               Branded Fares:
+               BrandID : 1152465
+               Name :
+               Carrier :
+               BrandTier : 0002</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+      </universal:UniversalRecordHistorySearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

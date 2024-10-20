@@ -1,0 +1,47 @@
+Vehicle Keywords - Specific-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleKeywordReq AuthorizedBy="TEST" TargetBranch="TPKIKSBUT" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:Vendor Code="ZD"/>
+         <veh:PickupDateLocation Date="2023-03-18" Location="SFO"/>
+         <com:Keyword Name="AGE" Number="01" Description="AGE REQUIREMENT"/>
+      </veh:VehicleKeywordReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Keywords - Specific-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleKeywordRsp TransactionId="5A517DA10A0D6A935CA32C9B7EE26A05" ResponseTime="82" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:Keyword Name="AGE" Number="01" Description="AGE REQUIREMENT">
+            <common_v50_0:Text>AGE POLICY -</common_v50_0:Text>
+            <common_v50_0:Text>A CUSTOMER RENTING A LUXURY CAR, MINIVAN, 12-PASSENGER</common_v50_0:Text>
+            <common_v50_0:Text>FULL-SIZE SUV, PREMIUM SUV, STANDARD ELITE SUV OR ANY</common_v50_0:Text>
+            <common_v50_0:Text>VEHICLE IN THE SPECIALTY/SIGNATURE SERIES/COOL CAR</common_v50_0:Text>
+            <common_v50_0:Text>CATEGORIES MUST BE AT LEAST 25 YEARS OLD.</common_v50_0:Text>
+            <common_v50_0:Text>*EXCEPTION- A CUSTOMER WITH AN ACCEPTABLE CORPORATE</common_v50_0:Text>
+            <common_v50_0:Text>DISCOUNT NUMBER CAN RENT THE ABOVE CAR CLASSES AT 21</common_v50_0:Text>
+            <common_v50_0:Text>YEARS OLD. AN UNDERAGE SURCHARGE OF 27.00 PER DAY</common_v50_0:Text>
+            <common_v50_0:Text>WILL APPLY FOR RENTERS 21-24 YEARS OLD.</common_v50_0:Text>
+            <common_v50_0:Text>FOR ALL OTHER CAR CLASSES, A CUSTOMER PRESENTING A</common_v50_0:Text>
+            <common_v50_0:Text>MAJOR CHARGE CARD OR BUDGET CHARGE CARD MUST BE AT</common_v50_0:Text>
+            <common_v50_0:Text>LEAST 21 YEARS OLD. AN UNDERAGE SURCHARGE OF 27.00</common_v50_0:Text>
+            <common_v50_0:Text>PER DAY WILL APPLY FOR RENTERS 21-24 YEARS OLD.</common_v50_0:Text>
+            <common_v50_0:Text>A CUSTOMER PRESENTING AN ACCEPTABLE BANK DEBIT CARD</common_v50_0:Text>
+            <common_v50_0:Text>MUST BE AT LEAST 25 YEARS OLD.  *SEE PAYMENT DEBIT CARD</common_v50_0:Text>
+            <common_v50_0:Text>POLICIES FOR ACCEPTABLE CAR GROUPS AND FULL DETAILS.*</common_v50_0:Text>
+            <common_v50_0:Text>*EXCEPTION- A CUSTOMER PRESENTING AN ACCEPTABLE BANK</common_v50_0:Text>
+            <common_v50_0:Text>DEBIT CARD WITH AN ACCEPTABLE CORPORATE DISCOUNT NUMBER</common_v50_0:Text>
+            <common_v50_0:Text>CAN RENT AT 21 YEARS OLD. AN UNDERAGE SURCHARGE OF</common_v50_0:Text>
+            <common_v50_0:Text>27.00 PER DAY WILL APPLY FOR RENTERS 21-24 YEARS OLD.</common_v50_0:Text>
+            <common_v50_0:Text>A CUSTOMER PRESENTING A GOVERNMENT-ISSUED VISA/</common_v50_0:Text>
+            <common_v50_0:Text>MASTERCARD OR GOVERNMENT TRAVEL/PURCHASE ORDERS CAN</common_v50_0:Text>
+            <common_v50_0:Text>RENT ANY CAR CLASS AT AGE 18 WITHOUT AN UNDERAGE FEE.</common_v50_0:Text>
+         </common_v50_0:Keyword>
+      </vehicle:VehicleKeywordRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

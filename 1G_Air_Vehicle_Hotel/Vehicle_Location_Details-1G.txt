@@ -1,0 +1,64 @@
+Vehicle Location Details-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <veh:VehicleLocationDetailReq TargetBranch="TPKIKSBUT" AuthorizedBy="TEST" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:Vendor Code="ZD"/>
+         <veh:VehicleDateLocation PickupDateTime="2023-04-07T10:00:00" PickupLocation="SFO" ReturnDateTime="2023-04-08T10:00:00"/>
+      </veh:VehicleLocationDetailReq>
+   </soap:Body>
+</soap:Envelope>
+
+Vehicle Location Details-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleLocationDetailRsp TransactionId="5A517FC50A0D6A940CE23A7C91EB8844" ResponseTime="537" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1G">The requested modifier - ReturnDateTime is ignored for this provider.</common_v50_0:ResponseMessage>
+         <vehicle:VendorInfo Code="ZD"/>
+         <vehicle:LocationInfo Name="SAN FRANCISCO INTL ARPT" CounterLocation="TERMINAL">
+            <common_v50_0:LocationAddress>
+               <common_v50_0:Street>SAN FRANCISCO INTL AIRPORT</common_v50_0:Street>
+               <common_v50_0:City>SAN FRANCISCO INTL ARPT</common_v50_0:City>
+            </common_v50_0:LocationAddress>
+            <common_v50_0:PhoneNumber Type="Business" Number="650-877-0998  FAX:650-873-2064"/>
+            <vehicle:OperationTime>SEE KEYWORD HOURS                        CORPORATE</vehicle:OperationTime>
+         </vehicle:LocationInfo>
+         <vehicle:VehiclePolicy>
+            <vehicle:VehicleDisclaimer Type="Vehicles" Description="CAR/VEHICLE TYPES" SubType=""/>
+            <vehicle:VehicleDetail Code="MVAR" PassengerCount="7" NumberOfDoors="4" BagCount="4" Class="Mini" Category="Van" AirConditioning="true" Transmission="Automatic" MakeModel="CHRYSLER VOYAGER    OR SIMILAR" AcrissVehicleCode="MVAR"/>
+            <vehicle:VehicleDetail Code="ECAR" PassengerCount="5" NumberOfDoors="4" BagCount="2" Class="Economy" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="KIA RIO             OR SIMILAR" AcrissVehicleCode="ECAR"/>
+            <vehicle:VehicleDetail Code="CCAR" PassengerCount="5" NumberOfDoors="4" BagCount="3" Class="Compact" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="KIA SOUL            OR SIMILAR" AcrissVehicleCode="CCAR"/>
+            <vehicle:VehicleDetail Code="ICAR" PassengerCount="5" NumberOfDoors="4" BagCount="3" Class="Intermediate" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="TOYOTA COROLLA      OR SIMILAR" AcrissVehicleCode="ICAR"/>
+            <vehicle:VehicleDetail Code="IFAR" PassengerCount="5" NumberOfDoors="4" BagCount="2" Class="Intermediate" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="MAZDA CX-5          OR SIMILAR" AcrissVehicleCode="IFAR"/>
+            <vehicle:VehicleDetail Code="IPAR" PassengerCount="5" NumberOfDoors="4" BagCount="5" Class="Intermediate" Category="RegularCabPickup" AirConditioning="true" Transmission="Automatic" MakeModel="TOYOTA TACOMA       OR SIMILAR" AcrissVehicleCode="IPAR"/>
+            <vehicle:VehicleDetail Code="SCAR" PassengerCount="5" NumberOfDoors="4" BagCount="3" Class="Standard" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="VOLKSWAGEN JETTA    OR SIMILAR" AcrissVehicleCode="SCAR"/>
+            <vehicle:VehicleDetail Code="SSAR" PassengerCount="4" NumberOfDoors="2" BagCount="2" Class="Standard" Category="Sport" AirConditioning="true" Transmission="Automatic" MakeModel="FORD MUSTANG COUPE  OR SIMILAR" AcrissVehicleCode="SSAR"/>
+            <vehicle:VehicleDetail Code="STAR" PassengerCount="4" NumberOfDoors="2" BagCount="2" Class="Standard" Category="Convertible" AirConditioning="true" Transmission="Automatic" MakeModel="FORD MUSTANG CONV   OR SIMILAR" AcrissVehicleCode="STAR"/>
+            <vehicle:VehicleDetail Code="SFAR" PassengerCount="5" NumberOfDoors="4" BagCount="3" Class="Standard" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="FORD EDGE           OR SIMILAR" AcrissVehicleCode="SFAR"/>
+            <vehicle:VehicleDetail Code="SRAR" PassengerCount="5" NumberOfDoors="4" BagCount="3" Class="Standard" Category="Recreational" AirConditioning="true" Transmission="Automatic" MakeModel="JEEP WRANGLER 4-DOOR OR SIMILA" AcrissVehicleCode="SRAR"/>
+            <vehicle:VehicleDetail Code="FCAR" PassengerCount="5" NumberOfDoors="4" BagCount="4" Class="Fullsize" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="TOYOTA CAMRY        OR SIMILAR" AcrissVehicleCode="FCAR"/>
+            <vehicle:VehicleDetail Code="FDAH" PassengerCount="5" NumberOfDoors="4" BagCount="3" Class="Fullsize" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="TOYOTA PRIUS HYBRID OR SIMILAR" FuelType="Hybrid" AcrissVehicleCode="FDAH"/>
+            <vehicle:VehicleDetail Code="FVAR" PassengerCount="12" NumberOfDoors="4" BagCount="4" Class="Fullsize" Category="Van" AirConditioning="true" Transmission="Automatic" MakeModel="FORD TRANSIT 12-PASSENGER VAN" AcrissVehicleCode="FVAR"/>
+            <vehicle:VehicleDetail Code="FFAR" PassengerCount="7" NumberOfDoors="4" BagCount="4" Class="Fullsize" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="CHEVROLET TAHOE     OR SIMILAR" AcrissVehicleCode="FFAR"/>
+            <vehicle:VehicleDetail Code="FPAR" PassengerCount="5" NumberOfDoors="4" BagCount="5" Class="Fullsize" Category="RegularCabPickup" AirConditioning="true" Transmission="Automatic" MakeModel="RAM REBEL           OR SIMILAR" AcrissVehicleCode="FPAR"/>
+            <vehicle:VehicleDetail Code="PCAR" PassengerCount="5" NumberOfDoors="4" BagCount="4" Class="Premium" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="VOLKSWAGEN PASSAT   OR SIMILAR" AcrissVehicleCode="PCAR"/>
+            <vehicle:VehicleDetail Code="PVAR" PassengerCount="15" NumberOfDoors="4" BagCount="2" Class="Premium" Category="Van" AirConditioning="true" Transmission="Automatic" MakeModel="CHEVROLET EXPRESS 15-PASSENGER" AcrissVehicleCode="PVAR"/>
+            <vehicle:VehicleDetail Code="PFAR" PassengerCount="7" NumberOfDoors="4" BagCount="7" Class="Premium" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="FORD EXPEDITION     OR SIMILAR" AcrissVehicleCode="PFAR"/>
+            <vehicle:VehicleDetail Code="PGAR" PassengerCount="5" NumberOfDoors="4" BagCount="4" Class="Premium" Category="Crossover" AirConditioning="true" Transmission="Automatic" MakeModel="JAGUAR F-PACE       OR SIMILAR" AcrissVehicleCode="PGAR"/>
+            <vehicle:VehicleDetail Code="PEAR" PassengerCount="2" NumberOfDoors="2" BagCount="2" Class="Premium" Category="Coupe" AirConditioning="true" Transmission="Automatic" MakeModel="CHEVROLET CORVETTE COUPE OR SI" AcrissVehicleCode="PEAR"/>
+            <vehicle:VehicleDetail Code="LCAR" PassengerCount="5" NumberOfDoors="4" BagCount="4" Class="Luxury" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="CHRYSLER 300        OR SIMILAR" AcrissVehicleCode="LCAR"/>
+            <vehicle:VehicleDetail Code="XXXX" PassengerCount="" NumberOfDoors="" Class="Special" Category="Special" AirConditioning="false" Transmission="Automatic" MakeModel="PLEASE SEE RULES" FuelType="Ethanol" AcrissVehicleCode="XXXX"/>
+            <vehicle:VehicleDetail Code="WDAE" PassengerCount="5" NumberOfDoors="4" BagCount="3" Class="LuxuryElite" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="TESLA MODEL 3       OR SIMILAR" FuelType="Electric" AcrissVehicleCode="WDAE"/>
+            <vehicle:VehicleDetail Code="RSAR" PassengerCount="5" NumberOfDoors="4" BagCount="4" Class="StandardElite" Category="Sport" AirConditioning="true" Transmission="Automatic" MakeModel="MERCEDES-BENZ C300  OR SIMILAR" AcrissVehicleCode="RSAR"/>
+            <vehicle:VehicleDetail Code="RFAR" PassengerCount="7" NumberOfDoors="4" BagCount="3" Class="StandardElite" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="NISSAN PATHFINDER   OR SIMILAR" AcrissVehicleCode="RFAR"/>
+            <vehicle:VehicleDetail Code="WFAR" PassengerCount="7" NumberOfDoors="4" BagCount="3" Class="LuxuryElite" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="CADILLAC ESCALADE   OR SIMILAR" AcrissVehicleCode="WFAR"/>
+            <vehicle:VehicleDetail Code="UFAR" PassengerCount="7" NumberOfDoors="4" BagCount="4" Class="PremiumElite" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="GMC YUKON DENALI    OR SIMILAR" AcrissVehicleCode="UFAR"/>
+            <vehicle:VehicleDetail Code="GFAE" PassengerCount="5" NumberOfDoors="4" BagCount="3" Class="FullsizeElite" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="KIA NIRO EV         OR SIMILAR" FuelType="Electric" AcrissVehicleCode="GFAE"/>
+            <vehicle:VehicleDetail Code="REAR" PassengerCount="4" NumberOfDoors="2" BagCount="2" Class="StandardElite" Category="Coupe" AirConditioning="true" Transmission="Automatic" MakeModel="DODGE CHALLENGER R/T OR SIMILA" AcrissVehicleCode="REAR"/>
+            <vehicle:VehicleDetail Code="UGAR" PassengerCount="5" NumberOfDoors="4" BagCount="4" Class="PremiumElite" Category="Crossover" AirConditioning="true" Transmission="Automatic" MakeModel="RANGE ROVER VELAR   OR SIMILAR" AcrissVehicleCode="UGAR"/>
+         </vehicle:VehiclePolicy>
+      </vehicle:VehicleLocationDetailRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

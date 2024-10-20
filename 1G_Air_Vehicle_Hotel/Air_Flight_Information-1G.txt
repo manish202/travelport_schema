@@ -1,0 +1,22 @@
+Air Flight Information-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:FlightInformationReq TargetBranch="TPKIKSBUT" AuthorizedBy="PRODSMOKETEST" xmlns:air="http://www.travelport.com/schema/air_v46_0" xmlns:com="http://www.travelport.com/schema/common_v46_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:FlightInfoCriteria Key="30T" Carrier="UA" FlightNumber="241" Origin="ORD" Destination="ATL" DepartureDate="2023-04-02"/>
+      </air:FlightInformationReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Flight Information-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:FlightInformationRsp TransactionId="5A50A5A70A0D6A935CA32C9BDE93B999" ResponseTime="298" xmlns:air="http://www.travelport.com/schema/air_v46_0">
+         <air:FlightInfo CriteriaKey="jtfPTmV4Qh6kMOatNtsRtQ==" Carrier="UA" FlightNumber="241" Origin="ORD" Destination="ATL" DepartureDate="2023-04-02">
+            <air:FlightInfoErrorMessage Code="4" Type="Error">Flight not found</air:FlightInfoErrorMessage>
+         </air:FlightInfo>
+      </air:FlightInformationRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,113 @@
+VehicleRules-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <Vehicle:VehicleRulesReq AuthorizedBy="TEST" TargetBranch="TPKIKSBUT" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:Vehicle="http://www.travelport.com/schema/vehicle_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <Vehicle:VehicleRulesLookup>
+            <Vehicle:VehicleDateLocation ReturnLocation="SFO" ReturnDateTime="2023-04-08T10:00:00" PickupLocation="SFO" PickupDateTime="2023-04-07T10:00:00">
+               <Vehicle:VendorLocation Key="n3Y7ONgbROaAyGU5duDUOw==" VendorLocationID="1" VendorCode="ZD" ProviderCode="1G"/>
+            </Vehicle:VehicleDateLocation>
+            <Vehicle:VehicleSearchModifiers RatePeriod="Daily" RateCategory="Standard">
+               <Vehicle:VehicleModifier DoorCount="TwoToFourDoors" Category="Car" VehicleClass="Compact" TransmissionType="Automatic" AirConditioning="true"/>
+               <Vehicle:RateModifiers VendorCode="ZD" RateCode="ES"/>
+               <Vehicle:RateHostIndicator RateToken="X0000X000000000000000000000000"/>
+            </Vehicle:VehicleSearchModifiers>
+         </Vehicle:VehicleRulesLookup>
+      </Vehicle:VehicleRulesReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+VehicleRules-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleRulesRsp TransactionId="5A51688A0A0D6A95679A88DFC3BD1A75" ResponseTime="203" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Daily" NumberOfPeriods="1" UnlimitedMileage="true" Units="MI" RateCode="ES" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="USD60.99" BaseRate="USD60.99" EstimatedTotalAmount="USD107.91" DropOffCharge="USD0.00"/>
+               <vehicle:VehicleRateDescription Name="WEEKEND PROMO">
+                  <vehicle:Text>Guarantee - RATE GUARANTEED</vehicle:Text>
+                  <vehicle:Text>General - MUST RETURN TO REQUESTED CITY</vehicle:Text>
+                  <vehicle:Text>General - TO USE A DEBIT CARD AT A LOCATION THAT ACCEPTS</vehicle:Text>
+                  <vehicle:Text>General - THEM YOU ARE SUBJECT TO ADDITIONAL CREDIT CHECKS</vehicle:Text>
+                  <vehicle:Text>General - OR MUST PRESENT ADDITIONAL IDENTIFICATION.</vehicle:Text>
+                  <vehicle:Text>General - THE MINIMUM RENTAL PERIOD IS 001 DAYS</vehicle:Text>
+                  <vehicle:Text>General - MIN AGE 21. 21-24 UA SURCHARGE   27.00DY</vehicle:Text>
+                  <vehicle:Text>General - RESTRICTIONS MAY APPLY. CONTACT LOCAL REP FOR DETAILS</vehicle:Text>
+                  <vehicle:Text>General - 10.00     EXTENSION FEE MAY APPLY</vehicle:Text>
+                  <vehicle:Text>General - 20.00     LATE FEE MAY APPLY</vehicle:Text>
+                  <vehicle:Text>General - FUEL POLICY FULL TO FULL</vehicle:Text>
+                  <vehicle:Text>General - 11.11PCT CONCESSION RECOVERY FEE</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:HourlyLateCharge RateForPeriod="USD45.75" UnlimitedMileage="true" ExtraMileageCharge="USD0.00"/>
+               <vehicle:DailyLateCharge RateForPeriod="USD90.99" UnlimitedMileage="true"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:OperationTime>Hours of Operation FRI 07APR OPEN 24 HOURS / SAT 08APR OPEN 24 HOURS</vehicle:OperationTime>
+         <vehicle:RentalPeriodRules>
+            <vehicle:MaxRental RentalUnit="Days" Length="1"/>
+            <vehicle:MinRental RentalUnit="Days" Length="1"/>
+            <vehicle:AbsoluteMax RentalUnit="Days" Length="1"/>
+         </vehicle:RentalPeriodRules>
+         <vehicle:PaymentRule Purpose="Guarantee">
+            <vehicle:CreditCard>AX</vehicle:CreditCard>
+            <vehicle:CreditCard>VI</vehicle:CreditCard>
+            <vehicle:CreditCard>CA</vehicle:CreditCard>
+            <vehicle:CreditCard>DS</vehicle:CreditCard>
+            <vehicle:CreditCard>DC</vehicle:CreditCard>
+            <vehicle:CreditCard>CT</vehicle:CreditCard>
+            <vehicle:CreditCard>JC</vehicle:CreditCard>
+            <vehicle:CreditCard>MG</vehicle:CreditCard>
+            <vehicle:CreditCard>ZD</vehicle:CreditCard>
+            <vehicle:CreditCard>MC</vehicle:CreditCard>
+            <vehicle:CreditCard>MD</vehicle:CreditCard>
+            <vehicle:CreditCard>SC</vehicle:CreditCard>
+         </vehicle:PaymentRule>
+         <vehicle:VehicleCharge Category="Tax" Name="SALES TAX" Type="Percent" IncludedInRate="IncludedInTotal">
+            <vehicle:Percentage>9.37</vehicle:Percentage>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Surcharge" Name="/RNTL CUSTOMER FACIL" Type="Rental" IncludedInRate="IncludedInTotal">
+            <vehicle:Amount>USD10.00</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Surcharge" Name="/RNT COUNTY TAX" Type="Percent" IncludedInRate="IncludedInTotal">
+            <vehicle:Percentage>2.50</vehicle:Percentage>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Surcharge" Name="CALIFORNIA TOURISM" Type="Percent" IncludedInRate="IncludedInTotal">
+            <vehicle:Percentage>3.50</vehicle:Percentage>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Surcharge" Name="TRANSP FEE PER RNTL" Type="Rental" IncludedInRate="IncludedInTotal">
+            <vehicle:Amount>USD16.00</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Surcharge" Name="VEHICLE LICENSEE FEE" Type="PerDay" IncludedInRate="IncludedInTotal">
+            <vehicle:Amount>USD1.30</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Surcharge" Name="CONCESSION RECOVERY" Type="Percent" IncludedInRate="IncludedInTotal">
+            <vehicle:Percentage>11.11</vehicle:Percentage>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Coverage" Name="LDW" Type="PerDay" IncludedInRate="NotIncluded">
+            <vehicle:Amount>USD11.00</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Coverage" Name="PAE" Type="PerDay" IncludedInRate="NotIncluded">
+            <vehicle:Amount>USD6.95</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Coverage" Name="ESP" Type="PerDay" IncludedInRate="NotIncluded">
+            <vehicle:Amount>USD5.00</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Coverage" Name="SLI" Type="PerDay" IncludedInRate="NotIncluded">
+            <vehicle:Amount>USD15.85</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Special" Name="InfantSeat" Description="INFANT SEAT" Type="PerDay" IncludedInRate="NotIncluded">
+            <vehicle:Amount>USD14.00</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Special" Name="NavigationalSystem" Description="NAVIGATIONL EQUIP" Type="PerDay" IncludedInRate="NotIncluded">
+            <vehicle:Amount>USD16.99</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <common_v50_0:MarketingInformation>
+            <common_v50_0:Text>BUDGET...COOL CARS- EXCELLENT VALUE-OUTSTANDING SERVICE.</common_v50_0:Text>
+            <common_v50_0:Text>DOWN THE BLOCK AND AROUND THE GLOBE.</common_v50_0:Text>
+         </common_v50_0:MarketingInformation>
+      </vehicle:VehicleRulesRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,350 @@
+Air Flight TimeTable-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <air:FlightTimeTableReq AuthorizedBy="TEST" TargetBranch="TPKIKSBUT" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:FlightTimeTableCriteria>
+            <air:GeneralTimeTable StartDate="2023-03-03" EndDate="2023-03-08">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+               <air:FlightOrigin>
+                  <com:CityOrAirport Code="ORD" PreferCity="false"/>
+               </air:FlightOrigin>
+               <air:FlightDestination>
+                  <com:CityOrAirport Code="ATL" PreferCity="false"/>
+               </air:FlightDestination>
+            </air:GeneralTimeTable>
+         </air:FlightTimeTableCriteria>
+      </air:FlightTimeTableReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Air Flight TimeTable-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:FlightTimeTableRsp TransactionId="5A50A8D20A0D6A95679A88DFE53A44E9" ResponseTime="167" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <air:FlightTimeTableList>
+            <air:FlightTimeDetail Key="U3WQhP3XRMKg7OIoBmfbjQ==" VendorCode="KE" FlightNumber="6988" Origin="ORD" Destination="ATL" DepartureTime="05:30:00-06:00" ArrivalTime="08:39:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="129" FlightTime="129" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="hjTvZae+QWm5WWehNfRuVw==" VendorCode="DL" FlightNumber="1263" Origin="ORD" Destination="ATL" DepartureTime="05:30:00-06:00" ArrivalTime="08:39:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="129" FlightTime="129" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="lUCCZLlpSOCdkwLOuSuhxQ==" VendorCode="NK" FlightNumber="635" Origin="ORD" Destination="ATL" DepartureTime="06:50:00-06:00" ArrivalTime="09:52:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-08" ScheduleEndDate="2023-03-08" OnTimePerformance="50" DisplayOption="false" DayChange="0" JourneyTime="122" FlightTime="122" StartTerminal="3" EndTerminal="N" InsideAvailability="N" SecureSell="SA">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="8H5V6tJ6TNaL6+Z2iipdew==" VendorCode="UA" FlightNumber="2008" Origin="ORD" Destination="ATL" DepartureTime="06:50:00-06:00" ArrivalTime="09:48:00-05:00" StopCount="0" Equipment="738" ScheduleStartDate="2023-03-05" ScheduleEndDate="2023-03-08" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="118" FlightTime="118" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="tqYigxwFR6e7puEQwyCUiA==" VendorCode="UA" FlightNumber="2008" Origin="ORD" Destination="ATL" DepartureTime="06:50:00-06:00" ArrivalTime="09:48:00-05:00" StopCount="0" Equipment="738" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-04" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="118" FlightTime="118" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="OUzHBJvDTsGg3bDgEPJ3Vg==" VendorCode="UA" FlightNumber="2008" Origin="ORD" Destination="ATL" DepartureTime="06:50:00-06:00" ArrivalTime="09:48:00-05:00" StopCount="0" Equipment="738" ScheduleStartDate="2023-03-05" ScheduleEndDate="2023-03-08" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="118" FlightTime="118" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="B1YxEtl5SSqEsTbVn9/i0g==" VendorCode="NZ" FlightNumber="2023" Origin="ORD" Destination="ATL" DepartureTime="06:50:00-06:00" ArrivalTime="09:48:00-05:00" StopCount="0" Equipment="738" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="118" FlightTime="118" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="NGmf+S7rTaeZJdZ68L7hog==" VendorCode="NK" FlightNumber="635" Origin="ORD" Destination="ATL" DepartureTime="07:00:00-06:00" ArrivalTime="10:02:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-07" OnTimePerformance="50" DisplayOption="false" DayChange="0" JourneyTime="122" FlightTime="122" StartTerminal="3" EndTerminal="N" InsideAvailability="N" SecureSell="SA">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="veBhfYBrQYCy9sA5Dj/wmg==" VendorCode="NZ" FlightNumber="2023" Origin="ORD" Destination="ATL" DepartureTime="07:00:00-06:00" ArrivalTime="09:58:00-05:00" StopCount="0" Equipment="320" ScheduleStartDate="2023-03-06" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="118" FlightTime="118" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="1J9qhc8mSlS66fepr8GBnA==" VendorCode="UA" FlightNumber="2008" Origin="ORD" Destination="ATL" DepartureTime="07:00:00-06:00" ArrivalTime="09:58:00-05:00" StopCount="0" Equipment="320" ScheduleStartDate="2023-03-05" ScheduleEndDate="2023-03-08" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="118" FlightTime="118" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="SNBNSYF6TFWZuKgCr8tU0A==" VendorCode="DL" FlightNumber="1367" Origin="ORD" Destination="ATL" DepartureTime="07:20:00-06:00" ArrivalTime="10:25:00-05:00" StopCount="0" Equipment="321" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="125" FlightTime="125" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="IZpT33pMSFaOufPstMKAGQ==" VendorCode="KE" FlightNumber="3776" Origin="ORD" Destination="ATL" DepartureTime="07:20:00-06:00" ArrivalTime="10:25:00-05:00" StopCount="0" Equipment="321" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="125" FlightTime="125" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="jxTrzPEVRqu2aTRUTr1fgA==" VendorCode="DL" FlightNumber="1367" Origin="ORD" Destination="ATL" DepartureTime="07:20:00-06:00" ArrivalTime="10:25:00-05:00" StopCount="0" Equipment="321" ScheduleStartDate="2023-03-04" ScheduleEndDate="2023-03-04" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="125" FlightTime="125" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="vwcJzZzMRSqnVDBKnl94PQ==" VendorCode="QF" FlightNumber="4788" Origin="ORD" Destination="ATL" DepartureTime="08:00:00-06:00" ArrivalTime="10:57:00-05:00" StopCount="0" Equipment="E75" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="false" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="NS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="TTzYjrIpRaGrVb46lTdxRw==" VendorCode="AA" FlightNumber="4194" Origin="ORD" Destination="ATL" DepartureTime="08:00:00-06:00" ArrivalTime="10:57:00-05:00" StopCount="0" Equipment="E75" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="50" DisplayOption="false" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="ZOrVucWFRMu5eT4/EiD/4w==" VendorCode="NK" FlightNumber="1307" Origin="ORD" Destination="ATL" DepartureTime="09:10:00-06:00" ArrivalTime="12:06:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-07" DisplayOption="false" DayChange="0" JourneyTime="116" FlightTime="116" StartTerminal="3" EndTerminal="N" InsideAvailability="N" SecureSell="SA">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="TuX2UiKYT+uC1viMeckWsw==" VendorCode="NK" FlightNumber="1307" Origin="ORD" Destination="ATL" DepartureTime="09:15:00-06:00" ArrivalTime="12:13:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-08" ScheduleEndDate="2023-03-08" DisplayOption="false" DayChange="0" JourneyTime="118" FlightTime="118" StartTerminal="3" EndTerminal="N" InsideAvailability="N" SecureSell="SA">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="0aRrCN7vR1ScFZsT9eAMbg==" VendorCode="DL" FlightNumber="1178" Origin="ORD" Destination="ATL" DepartureTime="09:30:00-06:00" ArrivalTime="12:27:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Wed="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="yXibX7PdTQKhraTtcnRVyQ==" VendorCode="DL" FlightNumber="1178" Origin="ORD" Destination="ATL" DepartureTime="09:30:00-06:00" ArrivalTime="12:27:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-07" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="DHQro0DDQ2a58ZNcNWlmZA==" VendorCode="UA" FlightNumber="2435" Origin="ORD" Destination="ATL" DepartureTime="10:43:00-06:00" ArrivalTime="13:44:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="121" FlightTime="121" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="tHksi/u8RoiG+GUfDSa6xA==" VendorCode="UA" FlightNumber="2435" Origin="ORD" Destination="ATL" DepartureTime="10:43:00-06:00" ArrivalTime="13:44:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="121" FlightTime="121" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="OvUzFpbMRNu1/S4KT+DvPA==" VendorCode="UA" FlightNumber="2435" Origin="ORD" Destination="ATL" DepartureTime="10:43:00-06:00" ArrivalTime="13:44:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="121" FlightTime="121" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="zwPCdK67QluzMQLuBXWkvQ==" VendorCode="UA" FlightNumber="2435" Origin="ORD" Destination="ATL" DepartureTime="10:43:00-06:00" ArrivalTime="13:44:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="121" FlightTime="121" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="jucwmU38SOeltf9KfJfakw==" VendorCode="NZ" FlightNumber="2023" Origin="ORD" Destination="ATL" DepartureTime="10:43:00-06:00" ArrivalTime="13:44:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="121" FlightTime="121" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="F+L44YcgQFu8lsVGDf8N0A==" VendorCode="NH" FlightNumber="7420" Origin="ORD" Destination="ATL" DepartureTime="10:43:00-06:00" ArrivalTime="13:44:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="121" FlightTime="121" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="sPiyvrFpSIaV+8p73MU/tw==" VendorCode="DL" FlightNumber="1147" Origin="ORD" Destination="ATL" DepartureTime="12:00:00-06:00" ArrivalTime="14:57:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-04" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Zel9dn6MT7iS9jOOZ/s3EA==" VendorCode="AR" FlightNumber="7021" Origin="ORD" Destination="ATL" DepartureTime="12:00:00-06:00" ArrivalTime="14:57:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-04" ScheduleEndDate="2023-03-04" DisplayOption="true" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Ljt1i70ESZ+iMmbM0Iw7Qw==" VendorCode="KE" FlightNumber="7132" Origin="ORD" Destination="ATL" DepartureTime="12:00:00-06:00" ArrivalTime="14:57:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-04" ScheduleEndDate="2023-03-04" DisplayOption="true" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="WcdWLl6YR5Wb7gMhohGrUw==" VendorCode="DL" FlightNumber="1147" Origin="ORD" Destination="ATL" DepartureTime="12:30:00-06:00" ArrivalTime="15:29:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-06" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="119" FlightTime="119" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Wed="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="7Z0gHAS8Rlq4X8ozimj+9Q==" VendorCode="KE" FlightNumber="7132" Origin="ORD" Destination="ATL" DepartureTime="12:30:00-06:00" ArrivalTime="15:29:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="119" FlightTime="119" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Wed="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="MzOuJsn0SJe0JCTZX21ihQ==" VendorCode="DL" FlightNumber="1147" Origin="ORD" Destination="ATL" DepartureTime="12:30:00-06:00" ArrivalTime="15:29:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-08" ScheduleEndDate="2023-03-08" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="119" FlightTime="119" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="sY30c50tSW2ZKY5RSRYjyQ==" VendorCode="AR" FlightNumber="7021" Origin="ORD" Destination="ATL" DepartureTime="12:30:00-06:00" ArrivalTime="15:29:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="119" FlightTime="119" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="l3hpyc7+Raih1O/eQh11pg==" VendorCode="DL" FlightNumber="1147" Origin="ORD" Destination="ATL" DepartureTime="12:30:00-06:00" ArrivalTime="15:29:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-07" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="119" FlightTime="119" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Thu="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="owPeIFoARkikcR3yblGPYg==" VendorCode="QR" FlightNumber="2747" Origin="ORD" Destination="ATL" DepartureTime="13:21:00-06:00" ArrivalTime="16:29:00-05:00" StopCount="0" Equipment="738" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-03" DisplayOption="true" DayChange="0" JourneyTime="128" FlightTime="128" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="bxTt4AdaSgeBexD2wTF1qA==" VendorCode="AA" FlightNumber="1650" Origin="ORD" Destination="ATL" DepartureTime="13:21:00-06:00" ArrivalTime="16:29:00-05:00" StopCount="0" Equipment="738" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-03" OnTimePerformance="70" DisplayOption="false" DayChange="0" JourneyTime="128" FlightTime="128" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="gip62+awSE2g33168jHLUQ==" VendorCode="AA" FlightNumber="1650" Origin="ORD" Destination="ATL" DepartureTime="13:21:00-06:00" ArrivalTime="16:29:00-05:00" StopCount="0" Equipment="738" ScheduleStartDate="2023-03-04" ScheduleEndDate="2023-03-04" OnTimePerformance="70" DisplayOption="false" DayChange="0" JourneyTime="128" FlightTime="128" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="LONNESesSHinr2WXbSvVEw==" VendorCode="QR" FlightNumber="2747" Origin="ORD" Destination="ATL" DepartureTime="13:21:00-06:00" ArrivalTime="16:29:00-05:00" StopCount="0" Equipment="738" ScheduleStartDate="2023-03-05" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="128" FlightTime="128" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="MjJs2VJTQSmpbMRMuB9y3g==" VendorCode="QF" FlightNumber="4116" Origin="ORD" Destination="ATL" DepartureTime="13:21:00-06:00" ArrivalTime="16:29:00-05:00" StopCount="0" Equipment="738" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="false" DayChange="0" JourneyTime="128" FlightTime="128" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="NS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="1egtsEwcS7K23SvhvCQzXg==" VendorCode="JL" FlightNumber="7480" Origin="ORD" Destination="ATL" DepartureTime="13:21:00-06:00" ArrivalTime="16:29:00-05:00" StopCount="0" Equipment="738" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="128" FlightTime="128" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="renXyWbfS5udAmtNuDnsAg==" VendorCode="AA" FlightNumber="1650" Origin="ORD" Destination="ATL" DepartureTime="13:21:00-06:00" ArrivalTime="16:29:00-05:00" StopCount="0" Equipment="738" ScheduleStartDate="2023-03-05" ScheduleEndDate="2023-03-08" OnTimePerformance="70" DisplayOption="false" DayChange="0" JourneyTime="128" FlightTime="128" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="GdxMdOjuTym0LDYcDlY9OQ==" VendorCode="QR" FlightNumber="2747" Origin="ORD" Destination="ATL" DepartureTime="13:21:00-06:00" ArrivalTime="16:29:00-05:00" StopCount="0" Equipment="738" ScheduleStartDate="2023-03-04" ScheduleEndDate="2023-03-04" DisplayOption="true" DayChange="0" JourneyTime="128" FlightTime="128" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="dsbSEkXSSyK0v9MHHW39Fw==" VendorCode="NK" FlightNumber="1784" Origin="ORD" Destination="ATL" DepartureTime="13:45:00-06:00" ArrivalTime="16:49:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-07" DisplayOption="false" DayChange="0" JourneyTime="124" FlightTime="124" StartTerminal="3" EndTerminal="N" InsideAvailability="N" SecureSell="SA">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Db+PEV3ATZKSLYNMbnNkgA==" VendorCode="UA" FlightNumber="2290" Origin="ORD" Destination="ATL" DepartureTime="13:57:00-06:00" ArrivalTime="16:54:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-06" ScheduleEndDate="2023-03-08" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="f5Nb7Z34R9acs5OO8b4l6Q==" VendorCode="UA" FlightNumber="2290" Origin="ORD" Destination="ATL" DepartureTime="13:57:00-06:00" ArrivalTime="16:54:00-05:00" StopCount="0" Equipment="320" ScheduleStartDate="2023-03-06" ScheduleEndDate="2023-03-08" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true" Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="0+63rVCrRnagAJe2TDBgGg==" VendorCode="UA" FlightNumber="2290" Origin="ORD" Destination="ATL" DepartureTime="13:57:00-06:00" ArrivalTime="16:54:00-05:00" StopCount="0" Equipment="320" ScheduleStartDate="2023-03-06" ScheduleEndDate="2023-03-08" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="IBjPiuYRT5KpB1FIbC4FFg==" VendorCode="UA" FlightNumber="2290" Origin="ORD" Destination="ATL" DepartureTime="13:57:00-06:00" ArrivalTime="16:54:00-05:00" StopCount="0" Equipment="320" ScheduleStartDate="2023-03-06" ScheduleEndDate="2023-03-08" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="gPJHOPccSXShQAO3cSDubg==" VendorCode="UA" FlightNumber="2290" Origin="ORD" Destination="ATL" DepartureTime="13:57:00-06:00" ArrivalTime="16:54:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-03" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="45abEvJpQFGOrgzuzV+3cA==" VendorCode="UA" FlightNumber="2290" Origin="ORD" Destination="ATL" DepartureTime="13:57:00-06:00" ArrivalTime="16:54:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-04" ScheduleEndDate="2023-03-05" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="uYCgeSszS8+jYeCRCRDNHg==" VendorCode="NZ" FlightNumber="2025" Origin="ORD" Destination="ATL" DepartureTime="13:57:00-06:00" ArrivalTime="16:54:00-05:00" StopCount="0" Equipment="320" ScheduleStartDate="2023-03-05" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="7vu348UzQ2eSEs8T8xk2jg==" VendorCode="UA" FlightNumber="2290" Origin="ORD" Destination="ATL" DepartureTime="13:57:00-06:00" ArrivalTime="16:54:00-05:00" StopCount="0" Equipment="320" ScheduleStartDate="2023-03-04" ScheduleEndDate="2023-03-05" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="RZgJt7MQRSmTrTvupqMzPA==" VendorCode="NZ" FlightNumber="2025" Origin="ORD" Destination="ATL" DepartureTime="13:57:00-06:00" ArrivalTime="16:54:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="117" FlightTime="117" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Fri="true" Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="lBUNwTS/SiKi7wCUAxRrrg==" VendorCode="NK" FlightNumber="1784" Origin="ORD" Destination="ATL" DepartureTime="14:12:00-06:00" ArrivalTime="17:15:00-05:00" StopCount="0" Equipment="32N" ScheduleStartDate="2023-03-08" ScheduleEndDate="2023-03-08" DisplayOption="false" DayChange="0" JourneyTime="123" FlightTime="123" StartTerminal="3" EndTerminal="N" InsideAvailability="N" SecureSell="SA">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="MlhLMZoQTj672Q4Mzva7vw==" VendorCode="AR" FlightNumber="7057" Origin="ORD" Destination="ATL" DepartureTime="15:30:00-06:00" ArrivalTime="18:31:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="121" FlightTime="121" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="pkzn8Zp4SRGew/FClkwOTg==" VendorCode="KE" FlightNumber="3777" Origin="ORD" Destination="ATL" DepartureTime="15:30:00-06:00" ArrivalTime="18:31:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="121" FlightTime="121" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="6zeLfRrkSrG2QC8nMvX0Ww==" VendorCode="DL" FlightNumber="1477" Origin="ORD" Destination="ATL" DepartureTime="15:30:00-06:00" ArrivalTime="18:31:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-06" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="121" FlightTime="121" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="6NBtqVb3Rl+QRl0aK/KG/A==" VendorCode="KE" FlightNumber="6986" Origin="ORD" Destination="ATL" DepartureTime="15:30:00-06:00" ArrivalTime="18:31:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-06" DisplayOption="true" DayChange="0" JourneyTime="121" FlightTime="121" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="rLGESb96TVu3IqHy8JiuvQ==" VendorCode="DL" FlightNumber="1477" Origin="ORD" Destination="ATL" DepartureTime="15:30:00-06:00" ArrivalTime="18:31:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-05" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="121" FlightTime="121" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="cXbrIZc3REGnHJq6GjZDLw==" VendorCode="DL" FlightNumber="1477" Origin="ORD" Destination="ATL" DepartureTime="15:30:00-06:00" ArrivalTime="18:31:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="121" FlightTime="121" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="t8y3h2pvS6WMqfgdK9pQaQ==" VendorCode="DL" FlightNumber="1477" Origin="ORD" Destination="ATL" DepartureTime="15:30:00-06:00" ArrivalTime="18:31:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-04" ScheduleEndDate="2023-03-04" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="121" FlightTime="121" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="vrL28G0CTL+DNQV+Rk/eug==" VendorCode="QR" FlightNumber="2748" Origin="ORD" Destination="ATL" DepartureTime="17:00:00-06:00" ArrivalTime="19:51:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="111" FlightTime="111" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="zatjk/mWSCOvmXwLVrhN9g==" VendorCode="BA" FlightNumber="5116" Origin="ORD" Destination="ATL" DepartureTime="17:00:00-06:00" ArrivalTime="19:51:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="111" FlightTime="111" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="LvGx2bi7RfOvjcHVq/StWw==" VendorCode="MH" FlightNumber="9445" Origin="ORD" Destination="ATL" DepartureTime="17:00:00-06:00" ArrivalTime="19:51:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="111" FlightTime="111" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="XXNl5Y1yROyvRZc0Xeifpg==" VendorCode="QF" FlightNumber="3202" Origin="ORD" Destination="ATL" DepartureTime="17:00:00-06:00" ArrivalTime="19:51:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="false" DayChange="0" JourneyTime="111" FlightTime="111" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="NS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="QAUvFlRMQ0GYq9bKBR9d1A==" VendorCode="JL" FlightNumber="7300" Origin="ORD" Destination="ATL" DepartureTime="17:00:00-06:00" ArrivalTime="19:51:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="111" FlightTime="111" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="SKLmcML2QEaXq4l39GkHRg==" VendorCode="AA" FlightNumber="2366" Origin="ORD" Destination="ATL" DepartureTime="17:00:00-06:00" ArrivalTime="19:51:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="70" DisplayOption="false" DayChange="0" JourneyTime="111" FlightTime="111" StartTerminal="3" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="pnyrw5UPQlWyC8JHj2ahHA==" VendorCode="UA" FlightNumber="1494" Origin="ORD" Destination="ATL" DepartureTime="18:05:00-06:00" ArrivalTime="21:05:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="120" FlightTime="120" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="IPj6kZRyT6qGYJ4KjWFLxQ==" VendorCode="UA" FlightNumber="1494" Origin="ORD" Destination="ATL" DepartureTime="18:05:00-06:00" ArrivalTime="21:05:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="120" FlightTime="120" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="984u6cMAT4GW/ZrkYxvxQQ==" VendorCode="UA" FlightNumber="1494" Origin="ORD" Destination="ATL" DepartureTime="18:05:00-06:00" ArrivalTime="21:05:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="120" FlightTime="120" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="jiIBRzlOSQS+nMx/Zu5T+Q==" VendorCode="UA" FlightNumber="1494" Origin="ORD" Destination="ATL" DepartureTime="18:05:00-06:00" ArrivalTime="21:05:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="120" FlightTime="120" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="PoKtx9ZDRBSvn2CZTLy8sQ==" VendorCode="NZ" FlightNumber="2029" Origin="ORD" Destination="ATL" DepartureTime="18:05:00-06:00" ArrivalTime="21:05:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="120" FlightTime="120" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="WLFfT9KcSrmkLsK36T44Bg==" VendorCode="NH" FlightNumber="7402" Origin="ORD" Destination="ATL" DepartureTime="18:05:00-06:00" ArrivalTime="21:05:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="120" FlightTime="120" StartTerminal="1" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="VFbp7deLR1Sqb3Yt7Ug+nw==" VendorCode="EI" FlightNumber="6247" Origin="ORD" Destination="ATL" DepartureTime="18:05:00-06:00" ArrivalTime="21:05:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="120" FlightTime="120" StartTerminal="1" EndTerminal="N" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Feu2yHL/T0KS3l26pOew9Q==" VendorCode="DL" FlightNumber="2738" Origin="ORD" Destination="ATL" DepartureTime="18:10:00-06:00" ArrivalTime="21:08:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="118" FlightTime="118" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true" Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Nbux6GTkSCq0YqdzxzSjrQ==" VendorCode="DL" FlightNumber="2738" Origin="ORD" Destination="ATL" DepartureTime="18:10:00-06:00" ArrivalTime="21:08:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-06" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="118" FlightTime="118" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="gRyunMYERSOUl0HSWMgaZg==" VendorCode="DL" FlightNumber="2738" Origin="ORD" Destination="ATL" DepartureTime="18:10:00-06:00" ArrivalTime="21:08:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-04" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="118" FlightTime="118" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="i+r1oSq5ROSBxwsXmire7Q==" VendorCode="DL" FlightNumber="2738" Origin="ORD" Destination="ATL" DepartureTime="18:10:00-06:00" ArrivalTime="21:08:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-05" ScheduleEndDate="2023-03-07" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="118" FlightTime="118" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="D8sexfm3QS2sqn3Mb9Vi4Q==" VendorCode="KE" FlightNumber="7092" Origin="ORD" Destination="ATL" DepartureTime="18:10:00-06:00" ArrivalTime="21:08:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="118" FlightTime="118" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="ohxnRpSKSLamDtAuOqMrUA==" VendorCode="DL" FlightNumber="2493" Origin="ORD" Destination="ATL" DepartureTime="19:59:00-06:00" ArrivalTime="22:59:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-06" OnTimePerformance="50" DisplayOption="true" DayChange="0" JourneyTime="120" FlightTime="120" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="DFya1vs7S8isuQ2t41Gpyg==" VendorCode="KE" FlightNumber="3777" Origin="ORD" Destination="ATL" DepartureTime="19:59:00-06:00" ArrivalTime="22:59:00-05:00" StopCount="0" Equipment="757" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-06" DisplayOption="true" DayChange="0" JourneyTime="120" FlightTime="120" StartTerminal="5" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="mozUHKU/QrecTl9ztRviGw==" VendorCode="F9" FlightNumber="1575" Origin="ORD" Destination="ATL" DepartureTime="20:52:00-06:00" ArrivalTime="23:57:00-05:00" StopCount="0" Equipment="32N" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-07" DisplayOption="false" DayChange="0" JourneyTime="125" FlightTime="125" StartTerminal="5" EndTerminal="N" InsideAvailability="N" SecureSell="ST">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="RZ4LObZ+Q1uiLyeNXdSafg==" VendorCode="F9" FlightNumber="1575" Origin="ORD" Destination="ATL" DepartureTime="20:54:00-06:00" ArrivalTime="23:59:00-05:00" StopCount="0" Equipment="32N" ScheduleStartDate="2023-03-08" ScheduleEndDate="2023-03-08" DisplayOption="false" DayChange="0" JourneyTime="125" FlightTime="125" StartTerminal="5" EndTerminal="N" InsideAvailability="N" SecureSell="ST">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="73l+gK0mQhipIQRRHkgt2A==" VendorCode="DL" FlightNumber="2548" Origin="MDW" Destination="ATL" DepartureTime="06:00:00-06:00" ArrivalTime="08:55:00-05:00" StopCount="0" Equipment="319" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="115" FlightTime="115" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="73EVk8EBSqiyb3XkwhExlA==" VendorCode="WN" FlightNumber="1577" Origin="MDW" Destination="ATL" DepartureTime="06:00:00-06:00" ArrivalTime="09:00:00-05:00" StopCount="0" Equipment="7M8" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="120" FlightTime="120" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="HtyX46geSFqzcJ2I6I0GJw==" VendorCode="WN" FlightNumber="1577" Origin="MDW" Destination="ATL" DepartureTime="06:30:00-06:00" ArrivalTime="09:30:00-05:00" StopCount="0" Equipment="73H" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-04" DisplayOption="true" DayChange="0" JourneyTime="120" FlightTime="120" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="F90RBLrrSCqFgUxFoiEjHw==" VendorCode="WN" FlightNumber="1577" Origin="MDW" Destination="ATL" DepartureTime="07:35:00-06:00" ArrivalTime="10:30:00-05:00" StopCount="0" Equipment="738" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-05" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="115" FlightTime="115" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="hVhIksFeSGObA4GYfRBWYQ==" VendorCode="F9" FlightNumber="1463" Origin="MDW" Destination="ATL" DepartureTime="08:34:00-06:00" ArrivalTime="11:29:00-05:00" StopCount="0" Equipment="32N" ScheduleStartDate="2023-03-08" ScheduleEndDate="2023-03-08" DisplayOption="false" DayChange="0" JourneyTime="115" FlightTime="115" EndTerminal="N" InsideAvailability="N" SecureSell="ST">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="tZ4wjHx7TqqPdgaEjJ3fEQ==" VendorCode="WN" FlightNumber="3019" Origin="MDW" Destination="ATL" DepartureTime="08:40:00-06:00" ArrivalTime="11:30:00-05:00" StopCount="0" Equipment="73H" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="110" FlightTime="110" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="ZEcWzdTuQjCuvbxhH2zMWw==" VendorCode="F9" FlightNumber="1463" Origin="MDW" Destination="ATL" DepartureTime="08:42:00-06:00" ArrivalTime="11:40:00-05:00" StopCount="0" Equipment="32N" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-07" DisplayOption="false" DayChange="0" JourneyTime="118" FlightTime="118" EndTerminal="N" InsideAvailability="N" SecureSell="ST">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="0J5LWWTuQjWKK9G3fvy4tA==" VendorCode="WN" FlightNumber="1164" Origin="MDW" Destination="ATL" DepartureTime="09:05:00-06:00" ArrivalTime="13:45:00-05:00" StopCount="1" Equipment="73H" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-05" DisplayOption="true" DayChange="0" JourneyTime="220" FlightTime="220" EndTerminal="N" FirstIntermediateStop="BNA" LastIntermediateStop="BNA" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="VQJHh5zoRwagKZmXiqq9sg==" VendorCode="WN" FlightNumber="2073" Origin="MDW" Destination="ATL" DepartureTime="09:30:00-06:00" ArrivalTime="12:25:00-05:00" StopCount="0" Equipment="738" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-05" DisplayOption="true" DayChange="0" JourneyTime="115" FlightTime="115" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="MrHbYC8jQx+rDpLWkZ1kLg==" VendorCode="WN" FlightNumber="2931" Origin="MDW" Destination="ATL" DepartureTime="09:35:00-06:00" ArrivalTime="12:30:00-05:00" StopCount="0" Equipment="73H" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-04" DisplayOption="true" DayChange="0" JourneyTime="115" FlightTime="115" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="mE4Xr+tTS/eQU0bnTTjRYA==" VendorCode="DL" FlightNumber="2239" Origin="MDW" Destination="ATL" DepartureTime="11:00:00-06:00" ArrivalTime="13:50:00-05:00" StopCount="0" Equipment="320" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="110" FlightTime="110" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="ej7zC2L7RzqsvX8YhhNPFw==" VendorCode="DL" FlightNumber="2239" Origin="MDW" Destination="ATL" DepartureTime="12:00:00-06:00" ArrivalTime="14:54:00-05:00" StopCount="0" Equipment="320" ScheduleStartDate="2023-03-04" ScheduleEndDate="2023-03-04" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="114" FlightTime="114" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="aXcrzabUQ7ORHljgyp1BEg==" VendorCode="WN" FlightNumber="2782" Origin="MDW" Destination="ATL" DepartureTime="12:40:00-06:00" ArrivalTime="18:05:00-05:00" StopCount="1" Equipment="73H" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="265" FlightTime="265" EndTerminal="N" FirstIntermediateStop="IAD" LastIntermediateStop="IAD" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="+BMcl+EpRTC8640duxyiVA==" VendorCode="WN" FlightNumber="2073" Origin="MDW" Destination="ATL" DepartureTime="13:00:00-06:00" ArrivalTime="15:50:00-05:00" StopCount="0" Equipment="73H" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="40" DisplayOption="true" DayChange="0" JourneyTime="110" FlightTime="110" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="K+5ZGZ6OT6qKGom2FRZ/BQ==" VendorCode="WN" FlightNumber="636" Origin="MDW" Destination="ATL" DepartureTime="13:10:00-06:00" ArrivalTime="18:35:00-05:00" StopCount="1" Equipment="73H" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="265" FlightTime="265" EndTerminal="N" FirstIntermediateStop="RIC" LastIntermediateStop="RIC" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="eyB6PARSQe2Kpm0JBc2Y0g==" VendorCode="WN" FlightNumber="617" Origin="MDW" Destination="ATL" DepartureTime="13:25:00-06:00" ArrivalTime="19:00:00-05:00" StopCount="1" Equipment="73H" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-05" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="275" FlightTime="275" EndTerminal="N" FirstIntermediateStop="RIC" LastIntermediateStop="RIC" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="DUFRE270Sji4bkc7axPm1w==" VendorCode="WN" FlightNumber="2378" Origin="MDW" Destination="ATL" DepartureTime="14:10:00-06:00" ArrivalTime="17:05:00-05:00" StopCount="0" Equipment="73H" ScheduleStartDate="2023-03-05" ScheduleEndDate="2023-03-05" DisplayOption="true" DayChange="0" JourneyTime="115" FlightTime="115" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="szj/r4ZWR5ShdaLA0876XQ==" VendorCode="WN" FlightNumber="2378" Origin="MDW" Destination="ATL" DepartureTime="14:10:00-06:00" ArrivalTime="17:05:00-05:00" StopCount="0" Equipment="73H" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-04" DisplayOption="true" DayChange="0" JourneyTime="115" FlightTime="115" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="mt4PxgeFS96vB6vechjvZQ==" VendorCode="WN" FlightNumber="2285" Origin="MDW" Destination="ATL" DepartureTime="15:40:00-06:00" ArrivalTime="18:30:00-05:00" StopCount="0" Equipment="7M8" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" DisplayOption="true" DayChange="0" JourneyTime="110" FlightTime="110" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="2R1e5YifR9yWYRQoiV90sg==" VendorCode="WN" FlightNumber="2378" Origin="MDW" Destination="ATL" DepartureTime="16:00:00-06:00" ArrivalTime="18:50:00-05:00" StopCount="0" Equipment="73H" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-04" DisplayOption="true" DayChange="0" JourneyTime="110" FlightTime="110" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="8mBIxil1QoWGsCy/eMQyyw==" VendorCode="DL" FlightNumber="2243" Origin="MDW" Destination="ATL" DepartureTime="17:10:00-06:00" ArrivalTime="20:15:00-05:00" StopCount="0" Equipment="320" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="125" FlightTime="125" EndTerminal="S" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="oDdvD11hSgO0noIyRIvTew==" VendorCode="WN" FlightNumber="2044" Origin="MDW" Destination="ATL" DepartureTime="18:00:00-06:00" ArrivalTime="20:50:00-05:00" StopCount="0" Equipment="7M8" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-04" DisplayOption="true" DayChange="0" JourneyTime="110" FlightTime="110" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="9fsl6lglQ3qckG8TC/Y69A==" VendorCode="WN" FlightNumber="2044" Origin="MDW" Destination="ATL" DepartureTime="18:30:00-06:00" ArrivalTime="21:20:00-05:00" StopCount="0" Equipment="7M8" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-05" OnTimePerformance="40" DisplayOption="true" DayChange="0" JourneyTime="110" FlightTime="110" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="mSZQ8qLVR5+CxFDw2dYVLg==" VendorCode="WN" FlightNumber="2044" Origin="MDW" Destination="ATL" DepartureTime="18:30:00-06:00" ArrivalTime="21:20:00-05:00" StopCount="0" Equipment="73W" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-08" OnTimePerformance="40" DisplayOption="true" DayChange="0" JourneyTime="110" FlightTime="110" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Un7xqAmKSraFNMw+rlJnQg==" VendorCode="WN" FlightNumber="1150" Origin="MDW" Destination="ATL" DepartureTime="20:25:00-06:00" ArrivalTime="23:15:00-05:00" StopCount="0" Equipment="738" ScheduleStartDate="2023-03-03" ScheduleEndDate="2023-03-05" DisplayOption="true" DayChange="0" JourneyTime="110" FlightTime="110" EndTerminal="N" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+         </air:FlightTimeTableList>
+      </air:FlightTimeTableRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

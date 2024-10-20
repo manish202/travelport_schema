@@ -1,0 +1,24 @@
+Keywords search -specific-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hot:HotelKeywordReq AuthorizedBy="TEST" TargetBranch="TPKIKSBUT" TraceId="PP_1G_001" HotelChain="RT" HotelCode="32581" CheckinDate="2023-03-18" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <com:Keyword Name="COMM" Number="3" Description="COMMISSION"/>
+      </hot:HotelKeywordReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Keywords search -specific-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelKeywordRsp TraceId="PP_1G_001" TransactionId="5A51C8B10A0D6A921E18D0D7B98ABB35" ResponseTime="150" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:Keyword Name="COMM" Number="1" Description="COMMISSION">
+            <common_v50_0:Text>Not all rates commissionable. Check rate plan details for rate  
+commission information.</common_v50_0:Text>
+         </common_v50_0:Keyword>
+      </hotel:HotelKeywordRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

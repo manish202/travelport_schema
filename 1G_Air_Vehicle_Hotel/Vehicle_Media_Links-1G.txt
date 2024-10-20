@@ -1,0 +1,375 @@
+Vehicle Media Links-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleMediaLinksReq AuthorizedBy="TEST" TargetBranch="TPKIKSBUT" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:VehiclePickupLocation PickUpLocation="SFO">
+            <veh:Vendor Code="ZD"/>
+            <!--<veh:VehicleModifier AirConditioning="true" TransmissionType="Automatic" VehicleClass="?" Category="?" DoorCount="?" FuelType="?"/>-->
+         </veh:VehiclePickupLocation>
+      </veh:VehicleMediaLinksReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Media Links-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleMediaLinksRsp TransactionId="5A517E430A0D6A95679A88DFDFAD4DB6" ResponseTime="110" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="PCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_289422.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="StandardElite" Category="Convertible" AcrissVehicleCode="RTAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmbudget/ZD_general_large_10955.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="PremiumElite" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="UCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmbudget/ZD_general_large_10960.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Convertible" AcrissVehicleCode="STAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_286905.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="LuxuryElite" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="WCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmbudget/ZD_general_large_155243.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Mini" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="MCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmbudget/ZD_general_large_10946.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Roadster" AcrissVehicleCode="LNAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmbudget/ZD_general_large_10944.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Truck" AcrissVehicleCode="SKAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_290665.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Recreational" AcrissVehicleCode="SRAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_286936.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="SUV" AcrissVehicleCode="PFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_287992.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="SUV" AcrissVehicleCode="IFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_288349.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="IntermediateElite" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="JCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmbudget/ZD_general_large_151470.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="IntermediateElite" Category="Car" DoorCount="TwoToFourDoors" FuelType="Electric" AcrissVehicleCode="JCAE">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_286065.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="FCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_287500.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="StandardElite" Category="Coupe" AcrissVehicleCode="REAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_288000.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="ICAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_290036.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Mini" Category="Van" AcrissVehicleCode="MVAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_290541.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Special" Category="Special" AcrissVehicleCode="XXAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_290736.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Sport" AcrissVehicleCode="SSAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_291079.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="PremiumElite" Category="Crossover" AcrissVehicleCode="UGAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_292557.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="RegularCabPickup" AcrissVehicleCode="IPAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_292755.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Crossover" AcrissVehicleCode="PGAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_292756.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="RegularCabPickup" AcrissVehicleCode="FPAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_292915.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="FourToFiveDoors" FuelType="Hybrid" AcrissVehicleCode="FDAH">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_293044.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Recreational" AcrissVehicleCode="CRAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_293369.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Van" AcrissVehicleCode="PVAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_292088.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="AllTerrain" AcrissVehicleCode="SJAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmbudget/ZD_general_large_155418.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="FullsizeElite" Category="Sport" AcrissVehicleCode="GSAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmbudget/ZD_general_large_42513.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Manual" VehicleClass="Special" Category="Special" AcrissVehicleCode="XXMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmbudget/ZD_general_large_152401.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Van" AcrissVehicleCode="FVAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_289343.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="StandardElite" Category="Sport" AcrissVehicleCode="RSAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_291810.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="SUV" AcrissVehicleCode="FFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_288939.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="LuxuryElite" Category="SUV" AcrissVehicleCode="WFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_289121.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Coupe" AcrissVehicleCode="PEAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_286902.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="false" TransmissionType="Automatic" VehicleClass="StandardElite" Category="SUV" FuelType="Electric" AcrissVehicleCode="RFAC">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_288232.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="CCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_293200.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Crossover" FuelType="Electric" AcrissVehicleCode="CGAE">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_288840.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="PremiumElite" Category="SUV" AcrissVehicleCode="UFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_288280.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="SCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_289378.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="SUV" AcrissVehicleCode="SFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_285381.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Special" AcrissVehicleCode="LXAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_217489.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="LCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_286241.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="ECAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_287743.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="StandardElite" Category="SUV" AcrissVehicleCode="RFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="http://cdn.travelport.com/cmbudget/ZD_general_large_288855.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+      </vehicle:VehicleMediaLinksRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

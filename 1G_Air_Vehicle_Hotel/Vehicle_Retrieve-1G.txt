@@ -1,0 +1,38 @@
+Vehicle Retrieve-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleRetrieveReq TargetBranch="TPKIKSBUT" ProviderCode="1G" ProviderLocatorCode="321XYZ" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </veh:VehicleRetrieveReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Retrieve-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleRetrieveRsp TransactionId="5A5182A20A0D6A921E18D0D7DA2F1D4E" ResponseTime="51" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:VehicleReservation SupplierCode="ZD" BookingConfirmation="11187658US6" LocatorCode="012Y8YTQ" Status="HK" CreateDate="2023-02-16T13:02:14.505+00:00" ModifiedDate="2023-02-16T13:02:14.517+00:00" ProviderReservationInfoRef="NQzP8YVqWDKARvy+cAAAAA==" ProviderSegmentOrder="1">
+            <common_v50_0:BookingTravelerRef Key="2A5ezQhlRHeH8y/fwYDPhA=="/>
+            <common_v50_0:ReservationName>
+               <common_v50_0:BookingTravelerRef Key="2A5ezQhlRHeH8y/fwYDPhA=="/>
+            </common_v50_0:ReservationName>
+            <vehicle:VehicleDateLocation PickupDateTime="2023-04-07T10:00:00.000-07:00" PickupLocation="SFO" ReturnDateTime="2023-04-08T10:00:00.000-07:00"/>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="ECAR">
+               <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RequiredCharges="USD46.92" RateCode="ES" RateCategory="Standard" RateGuaranteed="true" RateGuaranteeType="Rate Guaranteed">
+                  <vehicle:SupplierRate RateForPeriod="USD60.99" EstimatedTotalAmount="USD107.91"/>
+                  <vehicle:HourlyLateCharge RateForPeriod="USD45.75" UnlimitedMileage="true" ExtraMileageCharge="USD0.00" Units="MI"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:BookingSource Type="IataNumber" Code="00000000"/>
+            <common_v50_0:SellMessage>MINIMUM AGE 21. 21-24 UA SURCHARGE $ 27.00DY</common_v50_0:SellMessage>
+            <common_v50_0:SellMessage>000-074 MILES, A $18.99 REFUELING SERVICE CHARGE WILL APPLY</common_v50_0:SellMessage>
+            <common_v50_0:SellMessage>$10.00 EXTENSION FEE MAY APPLY</common_v50_0:SellMessage>
+            <common_v50_0:SellMessage>$20.00 LATE FEE MAY APPLY</common_v50_0:SellMessage>
+            <common_v50_0:SellMessage>CONFIRMED ECAR HYUNDAI ACCENT/SIMILAR              *</common_v50_0:SellMessage>
+         </vehicle:VehicleReservation>
+      </vehicle:VehicleRetrieveRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,47 @@
+MCOCExchange-Request
+******************************************************************** 
+
+"http://www.travelport.com/schema/util_v53_0" xmlns:common_v53_0="http://www.travelport.com/schema/common_v53_0">
+		<soapenv:Header/>
+		<soapenv:Body>
+			<util:MCOExchangeReq AuthorizedBy="SERANA" TargetBranch="P#######" ProviderCode="1G" ProviderLocatorCode="6GGG6G">
+				<common_v53_0:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+				<common_v53_0:FormOfPayment Key="5LK==" Type="Credit">
+					<common_v53_0:CreditCard Type="**" Number="************1111" ExpDate="*******" Name="DOVAH KIIN" Key="5AO=="/>
+				</common_v53_0:FormOfPayment>
+				<util:ExchangeData MCOAmount="140.00" BookingTravelerRef="H55/yQA==" AirPricingInfoRef="H55/yQA==" PlaceOfIssue="MSP" OriginalFOP="CC" MCOCurrency="USD" Origin="MSP" Destination="ORD" MCOIssueDate="2024-03-11T00:00:00.000+00:00" MCODocNum="###############" NumCoupons="1" IATACode="34567890">
+				</util:ExchangeData>
+			</util:MCOExchangeReq>
+		</soapenv:Body>
+	</soapenv:Envelope>
+
+MCO Exchange-Response
+******************************************************************** 
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+			<SOAP:Body>
+				<util:MCOExchangeRsp xmlns:util="http://www.travelport.com/schema/util_v53_0" xmlns:common_v53_0="http://www.travelport.com/schema/common_v53_0" xmlns:air="http://www.travelport.com/schema/air_v53_0" TransactionId="2DFC1" ResponseTime="1087" TransType="OK" ProviderLocatorCode="6GGG6G">
+					<common_v53_0:ResponseMessage Code="0" Type="Info">
+						<![CDATA[OK-VI-S91077]]>
+					</common_v53_0:ResponseMessage>
+					<common_v53_0:ResponseMessage Code="0" Type="Info">
+						<![CDATA[ELECTRONIC TKT GENERATED TTL FARE  USD   1139.10]]>
+					</common_v53_0:ResponseMessage>
+					<common_v53_0:ResponseMessage Code="0" Type="Info">
+						<![CDATA[SUPPORTING DOCUMENTS GENERATED]]>
+					</common_v53_0:ResponseMessage>
+					<common_v53_0:ResponseMessage Code="0" Type="Info">
+						<![CDATA[ITIN/INVOICE GENERATED]]>
+					</common_v53_0:ResponseMessage>
+					<common_v53_0:ResponseMessage Code="0" Type="Info">
+						<![CDATA[MIR GENERATED - TTL FARE  USD   1139.10]]>
+					</common_v53_0:ResponseMessage>
+					<common_v53_0:ResponseMessage Code="0" Type="Info">
+						<![CDATA[-------------------------------------]]>
+					</common_v53_0:ResponseMessage>
+					<common_v53_0:ResponseMessage Code="0" Type="Info">
+						<![CDATA[AddCollection : USD 999.10]]>
+					</common_v53_0:ResponseMessage>
+				</util:MCOExchangeRsp>
+			</SOAP:Body>
+		</SOAP:Envelope>

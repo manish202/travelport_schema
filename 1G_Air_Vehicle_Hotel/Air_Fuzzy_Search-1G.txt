@@ -1,0 +1,448 @@
+Air Fuzzy Search-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <LowFareSearchReq TargetBranch="TPKIKSBUT" TraceId="PP_1G_001" PreferCompleteItinerary="false" SolutionResult="true" xmlns="http://www.travelport.com/schema/air_v50_0">
+         <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <SearchAirLeg>
+            <SearchOrigin>
+               <CityOrAirport Code="MOW" PreferCity="true" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+            </SearchOrigin>
+            <SearchDestination>
+               <CityOrAirport Code="LAX" PreferCity="true" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+            </SearchDestination>
+             <SearchDepTime PreferredTime="2023-05-17">
+               <SearchExtraDays DaysBefore="2" DaysAfter="2" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+            </SearchDepTime>
+         </SearchAirLeg>
+         <AirSearchModifiers>
+            <PreferredProviders>
+               <Provider Code="1G" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+            </PreferredProviders>
+         </AirSearchModifiers>
+         <SearchPassenger Code="ADT" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <!--<FlexExploreModifiers Type="Destination">
+            <Destination>SEA</Destination>
+            <Destination>PDX</Destination>
+            <Destination>LAX</Destination>
+            <Destination>SDG</Destination>
+         </FlexExploreModifiers>-->
+      </LowFareSearchReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Fuzzy Search-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:LowFareSearchRsp TraceId="PP_1G_001" TransactionId="5A50874D0A0D6A935CA32C9B128280AF" ResponseTime="2740" DistanceUnits="MI" CurrencyType="AUD" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <air:FlightDetailsList>
+            <air:FlightDetails Key="rnHP8YTqWDKA5vxjdAAAAA==" Origin="VKO" Destination="IST" DepartureTime="2023-05-15T06:30:00.000+03:00" ArrivalTime="2023-05-15T10:35:00.000+03:00" FlightTime="245" TravelTime="1225" Equipment="332" OriginTerminal="A"/>
+            <air:FlightDetails Key="rnHP8YTqWDKA7vxjdAAAAA==" Origin="IST" Destination="LAX" DepartureTime="2023-05-15T13:15:00.000+03:00" ArrivalTime="2023-05-15T16:55:00.000-07:00" FlightTime="820" TravelTime="1225" Equipment="77W" DestinationTerminal="B"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAcwxjdAAAAA==" Origin="VKO" Destination="IST" DepartureTime="2023-05-15T01:15:00.000+03:00" ArrivalTime="2023-05-15T05:15:00.000+03:00" FlightTime="240" TravelTime="1260" Equipment="332" OriginTerminal="A"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAewxjdAAAAA==" Origin="IST" Destination="LAX" DepartureTime="2023-05-15T08:15:00.000+03:00" ArrivalTime="2023-05-15T12:15:00.000-07:00" FlightTime="840" TravelTime="1260" Equipment="789" DestinationTerminal="B"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAUwxjdAAAAA==" Origin="VKO" Destination="IST" DepartureTime="2023-05-15T19:35:00.000+03:00" ArrivalTime="2023-05-15T23:35:00.000+03:00" FlightTime="240" TravelTime="1600" Equipment="333" OriginTerminal="A"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAXwxjdAAAAA==" Origin="IST" Destination="LAX" DepartureTime="2023-05-16T08:15:00.000+03:00" ArrivalTime="2023-05-16T12:15:00.000-07:00" FlightTime="840" TravelTime="1600" Equipment="789" DestinationTerminal="B"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAuwxjdAAAAA==" Origin="VKO" Destination="IST" DepartureTime="2023-05-16T01:15:00.000+03:00" ArrivalTime="2023-05-16T05:15:00.000+03:00" FlightTime="240" TravelTime="1260" Equipment="332" OriginTerminal="A"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAGxxjdAAAAA==" Origin="VKO" Destination="IST" DepartureTime="2023-05-16T19:35:00.000+03:00" ArrivalTime="2023-05-16T23:35:00.000+03:00" FlightTime="240" TravelTime="1600" Equipment="333" OriginTerminal="A"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAJxxjdAAAAA==" Origin="IST" Destination="LAX" DepartureTime="2023-05-17T08:15:00.000+03:00" ArrivalTime="2023-05-17T12:15:00.000-07:00" FlightTime="840" TravelTime="1600" Equipment="789" DestinationTerminal="B"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAPxxjdAAAAA==" Origin="VKO" Destination="IST" DepartureTime="2023-05-17T01:15:00.000+03:00" ArrivalTime="2023-05-17T05:15:00.000+03:00" FlightTime="240" TravelTime="1260" Equipment="332" OriginTerminal="A"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAnxxjdAAAAA==" Origin="VKO" Destination="IST" DepartureTime="2023-05-17T19:35:00.000+03:00" ArrivalTime="2023-05-17T23:35:00.000+03:00" FlightTime="240" TravelTime="1600" Equipment="333" OriginTerminal="A"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAqxxjdAAAAA==" Origin="IST" Destination="LAX" DepartureTime="2023-05-18T08:15:00.000+03:00" ArrivalTime="2023-05-18T12:15:00.000-07:00" FlightTime="840" TravelTime="1600" Equipment="789" DestinationTerminal="B"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAwxxjdAAAAA==" Origin="SVO" Destination="AMS" DepartureTime="2023-05-18T17:00:00.000+03:00" ArrivalTime="2023-05-18T19:30:00.000+02:00" FlightTime="210" TravelTime="1730" Equipment="73H" OriginTerminal="D"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAyxxjdAAAAA==" Origin="AMS" Destination="LAX" DepartureTime="2023-05-19T09:50:00.000+02:00" ArrivalTime="2023-05-19T11:50:00.000-07:00" FlightTime="660" TravelTime="1730" Equipment="781" DestinationTerminal="B"/>
+            <air:FlightDetails Key="rnHP8YTqWDKACyxjdAAAAA==" Origin="SVO" Destination="CDG" DepartureTime="2023-05-19T15:50:00.000+03:00" ArrivalTime="2023-05-19T18:50:00.000+02:00" FlightTime="240" TravelTime="2073" Equipment="320" OriginTerminal="E" DestinationTerminal="2E"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAEyxjdAAAAA==" Origin="CDG" Destination="SLC" DepartureTime="2023-05-20T10:10:00.000+02:00" ArrivalTime="2023-05-20T12:35:00.000-06:00" FlightTime="625" TravelTime="2073" Equipment="339" OriginTerminal="2E"/>
+            <air:FlightDetails Key="rnHP8YTqWDKAGyxjdAAAAA==" Origin="SLC" Destination="LAX" DepartureTime="2023-05-20T15:23:00.000-06:00" ArrivalTime="2023-05-20T16:23:00.000-07:00" FlightTime="120" TravelTime="2073" Equipment="739" DestinationTerminal="3"/>
+         </air:FlightDetailsList>
+         <air:AirSegmentList>
+            <air:AirSegment Key="rnHP8YTqWDKA4vxjdAAAAA==" Group="0" Carrier="TK" FlightNumber="420" Origin="VKO" Destination="IST" DepartureTime="2023-05-15T06:30:00.000+03:00" ArrivalTime="2023-05-15T10:35:00.000+03:00" FlightTime="245" Distance="1084" ETicketability="Yes" Equipment="332" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKA5vxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKA6vxjdAAAAA==" Group="0" Carrier="TK" FlightNumber="9" Origin="IST" Destination="LAX" DepartureTime="2023-05-15T13:15:00.000+03:00" ArrivalTime="2023-05-15T16:55:00.000-07:00" FlightTime="820" Distance="6855" ETicketability="Yes" Equipment="77W" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKA7vxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAbwxjdAAAAA==" Group="0" Carrier="TK" FlightNumber="412" Origin="VKO" Destination="IST" DepartureTime="2023-05-15T01:15:00.000+03:00" ArrivalTime="2023-05-15T05:15:00.000+03:00" FlightTime="240" Distance="1084" ETicketability="Yes" Equipment="332" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAcwxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAdwxjdAAAAA==" Group="0" Carrier="TK" FlightNumber="179" Origin="IST" Destination="LAX" DepartureTime="2023-05-15T08:15:00.000+03:00" ArrivalTime="2023-05-15T12:15:00.000-07:00" FlightTime="840" Distance="6855" ETicketability="Yes" Equipment="789" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAewxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKATwxjdAAAAA==" Group="0" Carrier="TK" FlightNumber="416" Origin="VKO" Destination="IST" DepartureTime="2023-05-15T19:35:00.000+03:00" ArrivalTime="2023-05-15T23:35:00.000+03:00" FlightTime="240" Distance="1084" ETicketability="Yes" Equipment="333" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAUwxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAWwxjdAAAAA==" Group="0" Carrier="TK" FlightNumber="179" Origin="IST" Destination="LAX" DepartureTime="2023-05-16T08:15:00.000+03:00" ArrivalTime="2023-05-16T12:15:00.000-07:00" FlightTime="840" Distance="6855" ETicketability="Yes" Equipment="789" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAXwxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAtwxjdAAAAA==" Group="0" Carrier="TK" FlightNumber="412" Origin="VKO" Destination="IST" DepartureTime="2023-05-16T01:15:00.000+03:00" ArrivalTime="2023-05-16T05:15:00.000+03:00" FlightTime="240" Distance="1084" ETicketability="Yes" Equipment="332" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAuwxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAFxxjdAAAAA==" Group="0" Carrier="TK" FlightNumber="416" Origin="VKO" Destination="IST" DepartureTime="2023-05-16T19:35:00.000+03:00" ArrivalTime="2023-05-16T23:35:00.000+03:00" FlightTime="240" Distance="1084" ETicketability="Yes" Equipment="333" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAGxxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAIxxjdAAAAA==" Group="0" Carrier="TK" FlightNumber="179" Origin="IST" Destination="LAX" DepartureTime="2023-05-17T08:15:00.000+03:00" ArrivalTime="2023-05-17T12:15:00.000-07:00" FlightTime="840" Distance="6855" ETicketability="Yes" Equipment="789" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAJxxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAOxxjdAAAAA==" Group="0" Carrier="TK" FlightNumber="412" Origin="VKO" Destination="IST" DepartureTime="2023-05-17T01:15:00.000+03:00" ArrivalTime="2023-05-17T05:15:00.000+03:00" FlightTime="240" Distance="1084" ETicketability="Yes" Equipment="332" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAPxxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAmxxjdAAAAA==" Group="0" Carrier="TK" FlightNumber="416" Origin="VKO" Destination="IST" DepartureTime="2023-05-17T19:35:00.000+03:00" ArrivalTime="2023-05-17T23:35:00.000+03:00" FlightTime="240" Distance="1084" ETicketability="Yes" Equipment="333" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAnxxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKApxxjdAAAAA==" Group="0" Carrier="TK" FlightNumber="179" Origin="IST" Destination="LAX" DepartureTime="2023-05-18T08:15:00.000+03:00" ArrivalTime="2023-05-18T12:15:00.000-07:00" FlightTime="840" Distance="6855" ETicketability="Yes" Equipment="789" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAqxxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAvxxjdAAAAA==" Group="0" Carrier="KL" FlightNumber="904" Origin="SVO" Destination="AMS" DepartureTime="2023-05-18T17:00:00.000+03:00" ArrivalTime="2023-05-18T19:30:00.000+02:00" FlightTime="210" Distance="1343" ETicketability="Yes" Equipment="73H" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAwxxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAxxxjdAAAAA==" Group="0" Carrier="KL" FlightNumber="601" Origin="AMS" Destination="LAX" DepartureTime="2023-05-19T09:50:00.000+02:00" ArrivalTime="2023-05-19T11:50:00.000-07:00" FlightTime="660" Distance="5567" ETicketability="Yes" Equipment="781" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAyxxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAByxjdAAAAA==" Group="0" Carrier="AF" FlightNumber="1045" Origin="SVO" Destination="CDG" DepartureTime="2023-05-19T15:50:00.000+03:00" ArrivalTime="2023-05-19T18:50:00.000+02:00" FlightTime="240" Distance="1543" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKACyxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKADyxjdAAAAA==" Group="0" Carrier="AF" FlightNumber="3565" Origin="CDG" Destination="SLC" DepartureTime="2023-05-20T10:10:00.000+02:00" ArrivalTime="2023-05-20T12:35:00.000-06:00" FlightTime="625" Distance="5071" ETicketability="Yes" Equipment="339" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="221">DELTA AIR LINES</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAEyxjdAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="rnHP8YTqWDKAFyxjdAAAAA==" Group="0" Carrier="AF" FlightNumber="3081" Origin="SLC" Destination="LAX" DepartureTime="2023-05-20T15:23:00.000-06:00" ArrivalTime="2023-05-20T16:23:00.000-07:00" FlightTime="120" Distance="590" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="2317">DELTA AIR LINES</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="rnHP8YTqWDKAGyxjdAAAAA=="/>
+            </air:AirSegment>
+         </air:AirSegmentList>
+         <air:FareInfoList>
+            <air:FareInfo Key="rnHP8YTqWDKAHwxjdAAAAA==" FareBasis="ELN2PXOW" PassengerTypeCode="ADT" Origin="VKO" Destination="LAX" EffectiveDate="2023-02-16T23:01:00.000+10:00" DepartureDate="2023-05-15" Amount="NUC562.64" NegotiatedFare="false" NotValidBefore="2023-05-15" NotValidAfter="2023-05-15">
+               <air:BaggageAllowance>
+                  <air:NumberOfPieces>2</air:NumberOfPieces>
+                  <air:MaxWeight/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="rnHP8YTqWDKAHwxjdAAAAA==" ProviderCode="1G">gws-eJxNjtEOwiAMRT9mue9tFXiFbJiYLd0eUNmL//8ZFtDEJqWXnPa2MUYhuZCwj/8x4T2VFfqYAYVYbqnCefFXsP1OEBEjbypH3V/oJo6dIe14VO6NS5idFeRw44Fa4Ozvc92NDefu2VajSZvAT6RiUtNSjlzZuoTs5PsXUoDd+gEOOixp</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="rnHP8YTqWDKA5wxjdAAAAA==" FareBasis="ELN2PXOW" PassengerTypeCode="ADT" Origin="VKO" Destination="LAX" EffectiveDate="2023-02-16T23:01:00.000+10:00" DepartureDate="2023-05-16" Amount="NUC562.64" NegotiatedFare="false" NotValidBefore="2023-05-16" NotValidAfter="2023-05-16">
+               <air:BaggageAllowance>
+                  <air:NumberOfPieces>2</air:NumberOfPieces>
+                  <air:MaxWeight/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="rnHP8YTqWDKA5wxjdAAAAA==" ProviderCode="1G">gws-eJxNjtEOwiAMRT9mue9tFXiFbJiYLd0eUNmL//8ZFtDEJqWXnPa2MUYhuZCwj/8x4T2VFfqYAYVYbqnCefFXsP1OEBEjbypH3V/oJo69Ie14VO6NS5idFeRw44Fa4Ozvc92NDefu2VajSZvAT6RiUtNSjlzZuoTs5PsXUoDd+gEOtixq</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="rnHP8YTqWDKAaxxjdAAAAA==" FareBasis="ELN2PXOW" PassengerTypeCode="ADT" Origin="VKO" Destination="LAX" EffectiveDate="2023-02-16T23:01:00.000+10:00" DepartureDate="2023-05-17" Amount="NUC562.64" NegotiatedFare="false" NotValidBefore="2023-05-17" NotValidAfter="2023-05-17">
+               <air:BaggageAllowance>
+                  <air:NumberOfPieces>2</air:NumberOfPieces>
+                  <air:MaxWeight/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="rnHP8YTqWDKAaxxjdAAAAA==" ProviderCode="1G">gws-eJxNjtEOwiAMRT9mue9tFXiFbJiYLWwPqOzF//8MS9HEJqWXnPa2MUYhuZCwj/8x4T3VFeUxAwWiuaUG58Vfwfo7QUSMvBU52v6CmTgOiorhUdkalzA7LcjhxgP1wGnvc92VDWfz7KvRpU7gJ1JVWdJSj9xYu4T05PsXUoDe+gEPMixr</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="rnHP8YTqWDKA9xxjdAAAAA==" FareBasis="LL06BALB" PassengerTypeCode="ADT" Origin="SVO" Destination="LAX" EffectiveDate="2023-02-16T23:01:00.000+10:00" DepartureDate="2023-05-18" Amount="NUC364.93" NegotiatedFare="false" NotValidBefore="2023-05-19" NotValidAfter="2023-05-19">
+               <air:BaggageAllowance>
+                  <air:NumberOfPieces>0</air:NumberOfPieces>
+                  <air:MaxWeight/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="rnHP8YTqWDKA9xxjdAAAAA==" ProviderCode="1G">gws-eJxNjjsSwyAMRA/j2V4SNrE78CdNNKSIk7Gb3P8YWXCTnQEJ3mohpWRiQUxj+leHb/dwlPcCFBiX5wMh9lOA8nRCRBTuEufsM1rIoCNRafiq2ozLcDcWrGEbeUFYhbPtr8+T7EpumfVp1JYTlMRJBXlnW/K6b+YnXZUekFtPE2f41R+9YCwO</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="rnHP8YTqWDKASyxjdAAAAA==" FareBasis="LL06BALB" PassengerTypeCode="ADT" Origin="SVO" Destination="LAX" EffectiveDate="2023-02-16T23:01:00.000+10:00" DepartureDate="2023-05-19" Amount="NUC364.93" NegotiatedFare="false" NotValidBefore="2023-05-20" NotValidAfter="2023-05-20">
+               <air:BaggageAllowance>
+                  <air:NumberOfPieces>0</air:NumberOfPieces>
+                  <air:MaxWeight/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="rnHP8YTqWDKASyxjdAAAAA==" ProviderCode="1G">gws-eJxNjjsSwyAMRA/j2V4ITOIO+VcxpIiTMU3uf4wsuPHOgARvtZBSUlEv6mK6a8BvsB3lswAFypXthI9h8nA8VYiIQ84SZ8szesjoJqLS8VVdNy7jrixY/fbkBWETat/f3xfZldwz29NoLScoeagE2MG22HpsmitdjZ5kgSbO8Kt/sl8r7A==</air:FareRuleKey>
+            </air:FareInfo>
+         </air:FareInfoList>
+         <air:RouteList>
+            <air:Route Key="rnHP8YTqWDKAWyxjdAAAAA==">
+               <air:Leg Key="rnHP8YTqWDKA8vxjdAAAAA==" Group="0" Origin="MOW" Destination="LAX"/>
+            </air:Route>
+         </air:RouteList>
+         <air:AirPricingSolution Key="rnHP8YTqWDKA3vxjdAAAAA==" TotalPrice="AUD1314.10" BasePrice="EUR535.00" ApproximateTotalPrice="AUD1314.10" ApproximateBasePrice="AUD831.00" EquivalentBasePrice="AUD831.00" Taxes="AUD483.10" ApproximateTaxes="AUD483.10">
+            <air:Journey TravelTime="P0DT20H25M0S">
+               <air:AirSegmentRef Key="rnHP8YTqWDKA4vxjdAAAAA=="/>
+               <air:AirSegmentRef Key="rnHP8YTqWDKA6vxjdAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="rnHP8YTqWDKA8vxjdAAAAA=="/>
+            <air:AirPricingInfo Key="rnHP8YTqWDKA9vxjdAAAAA==" TotalPrice="AUD1314.10" BasePrice="EUR535.00" ApproximateTotalPrice="AUD1314.10" ApproximateBasePrice="AUD831.00" EquivalentBasePrice="AUD831.00" Taxes="AUD483.10" ApproximateTaxes="AUD483.10" LatestTicketingTime="2023-02-19T23:59:00.000+10:00" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="TK" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="rnHP8YTqWDKAHwxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="E" BookingCount="8" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKAHwxjdAAAAA==" SegmentRef="rnHP8YTqWDKA4vxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="E" BookingCount="9" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKAHwxjdAAAAA==" SegmentRef="rnHP8YTqWDKA6vxjdAAAAA=="/>
+               <air:TaxInfo Category="RI" Amount="AUD13.10" Key="rnHP8YTqWDKA+vxjdAAAAA=="/>
+               <air:TaxInfo Category="UH" Amount="AUD9.90" Key="rnHP8YTqWDKA/vxjdAAAAA=="/>
+               <air:TaxInfo Category="M6" Amount="AUD2.40" Key="rnHP8YTqWDKAAwxjdAAAAA=="/>
+               <air:TaxInfo Category="TR" Amount="AUD7.80" Key="rnHP8YTqWDKABwxjdAAAAA=="/>
+               <air:TaxInfo Category="US" Amount="AUD30.30" Key="rnHP8YTqWDKACwxjdAAAAA=="/>
+               <air:TaxInfo Category="XA" Amount="AUD5.50" Key="rnHP8YTqWDKADwxjdAAAAA=="/>
+               <air:TaxInfo Category="XY" Amount="AUD10.10" Key="rnHP8YTqWDKAEwxjdAAAAA=="/>
+               <air:TaxInfo Category="YC" Amount="AUD9.40" Key="rnHP8YTqWDKAFwxjdAAAAA=="/>
+               <air:TaxInfo Category="YR" Amount="AUD394.60" Key="rnHP8YTqWDKAGwxjdAAAAA=="/>
+               <air:FareCalc>MOW TK X/IST TK LAX 562.64ELN2PXOW NUC562.64END ROE0.950867</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>AUD77.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Before Departure">
+                  <air:Amount>AUD155.00</air:Amount>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="rnHP8YTqWDKAawxjdAAAAA==" TotalPrice="AUD1314.10" BasePrice="EUR535.00" ApproximateTotalPrice="AUD1314.10" ApproximateBasePrice="AUD831.00" EquivalentBasePrice="AUD831.00" Taxes="AUD483.10" ApproximateTaxes="AUD483.10">
+            <air:Journey TravelTime="P0DT21H0M0S">
+               <air:AirSegmentRef Key="rnHP8YTqWDKAbwxjdAAAAA=="/>
+               <air:AirSegmentRef Key="rnHP8YTqWDKAdwxjdAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="rnHP8YTqWDKA8vxjdAAAAA=="/>
+            <air:AirPricingInfo Key="rnHP8YTqWDKAfwxjdAAAAA==" TotalPrice="AUD1314.10" BasePrice="EUR535.00" ApproximateTotalPrice="AUD1314.10" ApproximateBasePrice="AUD831.00" EquivalentBasePrice="AUD831.00" Taxes="AUD483.10" ApproximateTaxes="AUD483.10" LatestTicketingTime="2023-02-19T23:59:00.000+10:00" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="TK" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="rnHP8YTqWDKAHwxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="E" BookingCount="9" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKAHwxjdAAAAA==" SegmentRef="rnHP8YTqWDKAbwxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="E" BookingCount="9" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKAHwxjdAAAAA==" SegmentRef="rnHP8YTqWDKAdwxjdAAAAA=="/>
+               <air:TaxInfo Category="RI" Amount="AUD13.10" Key="rnHP8YTqWDKAgwxjdAAAAA=="/>
+               <air:TaxInfo Category="UH" Amount="AUD9.90" Key="rnHP8YTqWDKAhwxjdAAAAA=="/>
+               <air:TaxInfo Category="M6" Amount="AUD2.40" Key="rnHP8YTqWDKAiwxjdAAAAA=="/>
+               <air:TaxInfo Category="TR" Amount="AUD7.80" Key="rnHP8YTqWDKAjwxjdAAAAA=="/>
+               <air:TaxInfo Category="US" Amount="AUD30.30" Key="rnHP8YTqWDKAkwxjdAAAAA=="/>
+               <air:TaxInfo Category="XA" Amount="AUD5.50" Key="rnHP8YTqWDKAlwxjdAAAAA=="/>
+               <air:TaxInfo Category="XY" Amount="AUD10.10" Key="rnHP8YTqWDKAmwxjdAAAAA=="/>
+               <air:TaxInfo Category="YC" Amount="AUD9.40" Key="rnHP8YTqWDKAnwxjdAAAAA=="/>
+               <air:TaxInfo Category="YR" Amount="AUD394.60" Key="rnHP8YTqWDKAowxjdAAAAA=="/>
+               <air:FareCalc>MOW TK X/IST TK LAX 562.64ELN2PXOW NUC562.64END ROE0.950867</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>AUD77.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Before Departure">
+                  <air:Amount>AUD155.00</air:Amount>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="rnHP8YTqWDKArwxjdAAAAA==" TotalPrice="AUD1314.10" BasePrice="EUR535.00" ApproximateTotalPrice="AUD1314.10" ApproximateBasePrice="AUD831.00" EquivalentBasePrice="AUD831.00" Taxes="AUD483.10" ApproximateTaxes="AUD483.10">
+            <air:Journey TravelTime="P1DT2H40M0S">
+               <air:AirSegmentRef Key="rnHP8YTqWDKATwxjdAAAAA=="/>
+               <air:AirSegmentRef Key="rnHP8YTqWDKAWwxjdAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="rnHP8YTqWDKA8vxjdAAAAA=="/>
+            <air:AirPricingInfo Key="rnHP8YTqWDKAIwxjdAAAAA==" TotalPrice="AUD1314.10" BasePrice="EUR535.00" ApproximateTotalPrice="AUD1314.10" ApproximateBasePrice="AUD831.00" EquivalentBasePrice="AUD831.00" Taxes="AUD483.10" ApproximateTaxes="AUD483.10" LatestTicketingTime="2023-02-19T23:59:00.000+10:00" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="TK" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="rnHP8YTqWDKAHwxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="E" BookingCount="8" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKAHwxjdAAAAA==" SegmentRef="rnHP8YTqWDKATwxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="E" BookingCount="9" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKAHwxjdAAAAA==" SegmentRef="rnHP8YTqWDKAWwxjdAAAAA=="/>
+               <air:TaxInfo Category="RI" Amount="AUD13.10" Key="rnHP8YTqWDKAJwxjdAAAAA=="/>
+               <air:TaxInfo Category="UH" Amount="AUD9.90" Key="rnHP8YTqWDKAKwxjdAAAAA=="/>
+               <air:TaxInfo Category="M6" Amount="AUD2.40" Key="rnHP8YTqWDKALwxjdAAAAA=="/>
+               <air:TaxInfo Category="TR" Amount="AUD7.80" Key="rnHP8YTqWDKAMwxjdAAAAA=="/>
+               <air:TaxInfo Category="US" Amount="AUD30.30" Key="rnHP8YTqWDKANwxjdAAAAA=="/>
+               <air:TaxInfo Category="XA" Amount="AUD5.50" Key="rnHP8YTqWDKAOwxjdAAAAA=="/>
+               <air:TaxInfo Category="XY" Amount="AUD10.10" Key="rnHP8YTqWDKAPwxjdAAAAA=="/>
+               <air:TaxInfo Category="YC" Amount="AUD9.40" Key="rnHP8YTqWDKAQwxjdAAAAA=="/>
+               <air:TaxInfo Category="YR" Amount="AUD394.60" Key="rnHP8YTqWDKARwxjdAAAAA=="/>
+               <air:FareCalc>MOW TK X/IST TK LAX 562.64ELN2PXOW NUC562.64END ROE0.950867</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>AUD77.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Before Departure">
+                  <air:Amount>AUD155.00</air:Amount>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="rnHP8YTqWDKAswxjdAAAAA==" TotalPrice="AUD1314.10" BasePrice="EUR535.00" ApproximateTotalPrice="AUD1314.10" ApproximateBasePrice="AUD831.00" EquivalentBasePrice="AUD831.00" Taxes="AUD483.10" ApproximateTaxes="AUD483.10">
+            <air:Journey TravelTime="P0DT21H0M0S">
+               <air:AirSegmentRef Key="rnHP8YTqWDKAtwxjdAAAAA=="/>
+               <air:AirSegmentRef Key="rnHP8YTqWDKAWwxjdAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="rnHP8YTqWDKA8vxjdAAAAA=="/>
+            <air:AirPricingInfo Key="rnHP8YTqWDKAvwxjdAAAAA==" TotalPrice="AUD1314.10" BasePrice="EUR535.00" ApproximateTotalPrice="AUD1314.10" ApproximateBasePrice="AUD831.00" EquivalentBasePrice="AUD831.00" Taxes="AUD483.10" ApproximateTaxes="AUD483.10" LatestTicketingTime="2023-02-19T23:59:00.000+10:00" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="TK" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="rnHP8YTqWDKA5wxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="E" BookingCount="5" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKA5wxjdAAAAA==" SegmentRef="rnHP8YTqWDKAtwxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="E" BookingCount="9" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKA5wxjdAAAAA==" SegmentRef="rnHP8YTqWDKAWwxjdAAAAA=="/>
+               <air:TaxInfo Category="RI" Amount="AUD13.10" Key="rnHP8YTqWDKAwwxjdAAAAA=="/>
+               <air:TaxInfo Category="UH" Amount="AUD9.90" Key="rnHP8YTqWDKAxwxjdAAAAA=="/>
+               <air:TaxInfo Category="M6" Amount="AUD2.40" Key="rnHP8YTqWDKAywxjdAAAAA=="/>
+               <air:TaxInfo Category="TR" Amount="AUD7.80" Key="rnHP8YTqWDKAzwxjdAAAAA=="/>
+               <air:TaxInfo Category="US" Amount="AUD30.30" Key="rnHP8YTqWDKA0wxjdAAAAA=="/>
+               <air:TaxInfo Category="XA" Amount="AUD5.50" Key="rnHP8YTqWDKA1wxjdAAAAA=="/>
+               <air:TaxInfo Category="XY" Amount="AUD10.10" Key="rnHP8YTqWDKA2wxjdAAAAA=="/>
+               <air:TaxInfo Category="YC" Amount="AUD9.40" Key="rnHP8YTqWDKA3wxjdAAAAA=="/>
+               <air:TaxInfo Category="YR" Amount="AUD394.60" Key="rnHP8YTqWDKA4wxjdAAAAA=="/>
+               <air:FareCalc>MOW TK X/IST TK LAX 562.64ELN2PXOW NUC562.64END ROE0.950867</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>AUD77.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Before Departure">
+                  <air:Amount>AUD155.00</air:Amount>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="rnHP8YTqWDKAMxxjdAAAAA==" TotalPrice="AUD1314.10" BasePrice="EUR535.00" ApproximateTotalPrice="AUD1314.10" ApproximateBasePrice="AUD831.00" EquivalentBasePrice="AUD831.00" Taxes="AUD483.10" ApproximateTaxes="AUD483.10">
+            <air:Journey TravelTime="P1DT2H40M0S">
+               <air:AirSegmentRef Key="rnHP8YTqWDKAFxxjdAAAAA=="/>
+               <air:AirSegmentRef Key="rnHP8YTqWDKAIxxjdAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="rnHP8YTqWDKA8vxjdAAAAA=="/>
+            <air:AirPricingInfo Key="rnHP8YTqWDKA6wxjdAAAAA==" TotalPrice="AUD1314.10" BasePrice="EUR535.00" ApproximateTotalPrice="AUD1314.10" ApproximateBasePrice="AUD831.00" EquivalentBasePrice="AUD831.00" Taxes="AUD483.10" ApproximateTaxes="AUD483.10" LatestTicketingTime="2023-02-19T23:59:00.000+10:00" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="TK" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="rnHP8YTqWDKA5wxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="E" BookingCount="9" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKA5wxjdAAAAA==" SegmentRef="rnHP8YTqWDKAFxxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="E" BookingCount="9" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKA5wxjdAAAAA==" SegmentRef="rnHP8YTqWDKAIxxjdAAAAA=="/>
+               <air:TaxInfo Category="RI" Amount="AUD13.10" Key="rnHP8YTqWDKA7wxjdAAAAA=="/>
+               <air:TaxInfo Category="UH" Amount="AUD9.90" Key="rnHP8YTqWDKA8wxjdAAAAA=="/>
+               <air:TaxInfo Category="M6" Amount="AUD2.40" Key="rnHP8YTqWDKA9wxjdAAAAA=="/>
+               <air:TaxInfo Category="TR" Amount="AUD7.80" Key="rnHP8YTqWDKA+wxjdAAAAA=="/>
+               <air:TaxInfo Category="US" Amount="AUD30.30" Key="rnHP8YTqWDKA/wxjdAAAAA=="/>
+               <air:TaxInfo Category="XA" Amount="AUD5.50" Key="rnHP8YTqWDKAAxxjdAAAAA=="/>
+               <air:TaxInfo Category="XY" Amount="AUD10.10" Key="rnHP8YTqWDKABxxjdAAAAA=="/>
+               <air:TaxInfo Category="YC" Amount="AUD9.40" Key="rnHP8YTqWDKACxxjdAAAAA=="/>
+               <air:TaxInfo Category="YR" Amount="AUD394.60" Key="rnHP8YTqWDKADxxjdAAAAA=="/>
+               <air:FareCalc>MOW TK X/IST TK LAX 562.64ELN2PXOW NUC562.64END ROE0.950867</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>AUD77.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Before Departure">
+                  <air:Amount>AUD155.00</air:Amount>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="rnHP8YTqWDKANxxjdAAAAA==" TotalPrice="AUD1314.10" BasePrice="EUR535.00" ApproximateTotalPrice="AUD1314.10" ApproximateBasePrice="AUD831.00" EquivalentBasePrice="AUD831.00" Taxes="AUD483.10" ApproximateTaxes="AUD483.10">
+            <air:Journey TravelTime="P0DT21H0M0S">
+               <air:AirSegmentRef Key="rnHP8YTqWDKAOxxjdAAAAA=="/>
+               <air:AirSegmentRef Key="rnHP8YTqWDKAIxxjdAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="rnHP8YTqWDKA8vxjdAAAAA=="/>
+            <air:AirPricingInfo Key="rnHP8YTqWDKAQxxjdAAAAA==" TotalPrice="AUD1314.10" BasePrice="EUR535.00" ApproximateTotalPrice="AUD1314.10" ApproximateBasePrice="AUD831.00" EquivalentBasePrice="AUD831.00" Taxes="AUD483.10" ApproximateTaxes="AUD483.10" LatestTicketingTime="2023-02-19T23:59:00.000+10:00" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="TK" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="rnHP8YTqWDKAaxxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="E" BookingCount="5" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKAaxxjdAAAAA==" SegmentRef="rnHP8YTqWDKAOxxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="E" BookingCount="9" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKAaxxjdAAAAA==" SegmentRef="rnHP8YTqWDKAIxxjdAAAAA=="/>
+               <air:TaxInfo Category="RI" Amount="AUD13.10" Key="rnHP8YTqWDKARxxjdAAAAA=="/>
+               <air:TaxInfo Category="UH" Amount="AUD9.90" Key="rnHP8YTqWDKASxxjdAAAAA=="/>
+               <air:TaxInfo Category="M6" Amount="AUD2.40" Key="rnHP8YTqWDKATxxjdAAAAA=="/>
+               <air:TaxInfo Category="TR" Amount="AUD7.80" Key="rnHP8YTqWDKAUxxjdAAAAA=="/>
+               <air:TaxInfo Category="US" Amount="AUD30.30" Key="rnHP8YTqWDKAVxxjdAAAAA=="/>
+               <air:TaxInfo Category="XA" Amount="AUD5.50" Key="rnHP8YTqWDKAWxxjdAAAAA=="/>
+               <air:TaxInfo Category="XY" Amount="AUD10.10" Key="rnHP8YTqWDKAXxxjdAAAAA=="/>
+               <air:TaxInfo Category="YC" Amount="AUD9.40" Key="rnHP8YTqWDKAYxxjdAAAAA=="/>
+               <air:TaxInfo Category="YR" Amount="AUD394.60" Key="rnHP8YTqWDKAZxxjdAAAAA=="/>
+               <air:FareCalc>MOW TK X/IST TK LAX 562.64ELN2PXOW NUC562.64END ROE0.950867</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>AUD77.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Before Departure">
+                  <air:Amount>AUD155.00</air:Amount>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="rnHP8YTqWDKAtxxjdAAAAA==" TotalPrice="AUD1314.10" BasePrice="EUR535.00" ApproximateTotalPrice="AUD1314.10" ApproximateBasePrice="AUD831.00" EquivalentBasePrice="AUD831.00" Taxes="AUD483.10" ApproximateTaxes="AUD483.10">
+            <air:Journey TravelTime="P1DT2H40M0S">
+               <air:AirSegmentRef Key="rnHP8YTqWDKAmxxjdAAAAA=="/>
+               <air:AirSegmentRef Key="rnHP8YTqWDKApxxjdAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="rnHP8YTqWDKA8vxjdAAAAA=="/>
+            <air:AirPricingInfo Key="rnHP8YTqWDKAbxxjdAAAAA==" TotalPrice="AUD1314.10" BasePrice="EUR535.00" ApproximateTotalPrice="AUD1314.10" ApproximateBasePrice="AUD831.00" EquivalentBasePrice="AUD831.00" Taxes="AUD483.10" ApproximateTaxes="AUD483.10" LatestTicketingTime="2023-02-19T23:59:00.000+10:00" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="TK" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="rnHP8YTqWDKAaxxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="E" BookingCount="1" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKAaxxjdAAAAA==" SegmentRef="rnHP8YTqWDKAmxxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="E" BookingCount="9" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKAaxxjdAAAAA==" SegmentRef="rnHP8YTqWDKApxxjdAAAAA=="/>
+               <air:TaxInfo Category="RI" Amount="AUD13.10" Key="rnHP8YTqWDKAcxxjdAAAAA=="/>
+               <air:TaxInfo Category="UH" Amount="AUD9.90" Key="rnHP8YTqWDKAdxxjdAAAAA=="/>
+               <air:TaxInfo Category="M6" Amount="AUD2.40" Key="rnHP8YTqWDKAexxjdAAAAA=="/>
+               <air:TaxInfo Category="TR" Amount="AUD7.80" Key="rnHP8YTqWDKAfxxjdAAAAA=="/>
+               <air:TaxInfo Category="US" Amount="AUD30.30" Key="rnHP8YTqWDKAgxxjdAAAAA=="/>
+               <air:TaxInfo Category="XA" Amount="AUD5.50" Key="rnHP8YTqWDKAhxxjdAAAAA=="/>
+               <air:TaxInfo Category="XY" Amount="AUD10.10" Key="rnHP8YTqWDKAixxjdAAAAA=="/>
+               <air:TaxInfo Category="YC" Amount="AUD9.40" Key="rnHP8YTqWDKAjxxjdAAAAA=="/>
+               <air:TaxInfo Category="YR" Amount="AUD394.60" Key="rnHP8YTqWDKAkxxjdAAAAA=="/>
+               <air:FareCalc>MOW TK X/IST TK LAX 562.64ELN2PXOW NUC562.64END ROE0.950867</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>AUD77.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Before Departure">
+                  <air:Amount>AUD155.00</air:Amount>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="rnHP8YTqWDKAuxxjdAAAAA==" TotalPrice="AUD854.30" BasePrice="EUR347.00" ApproximateTotalPrice="AUD854.30" ApproximateBasePrice="AUD539.00" EquivalentBasePrice="AUD539.00" Taxes="AUD315.30" ApproximateTaxes="AUD315.30">
+            <air:Journey TravelTime="P1DT4H50M0S">
+               <air:AirSegmentRef Key="rnHP8YTqWDKAvxxjdAAAAA=="/>
+               <air:AirSegmentRef Key="rnHP8YTqWDKAxxxjdAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="rnHP8YTqWDKA8vxjdAAAAA=="/>
+            <air:AirPricingInfo Key="rnHP8YTqWDKAzxxjdAAAAA==" TotalPrice="AUD854.30" BasePrice="EUR347.00" ApproximateTotalPrice="AUD854.30" ApproximateBasePrice="AUD539.00" EquivalentBasePrice="AUD539.00" Taxes="AUD315.30" ApproximateTaxes="AUD315.30" LatestTicketingTime="2023-04-27T23:59:00.000+10:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="KL" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="rnHP8YTqWDKA9xxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="L" BookingCount="9" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKA9xxjdAAAAA==" SegmentRef="rnHP8YTqWDKAvxxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="L" BookingCount="9" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKA9xxjdAAAAA==" SegmentRef="rnHP8YTqWDKAxxxjdAAAAA=="/>
+               <air:TaxInfo Category="RI" Amount="AUD26.40" Key="rnHP8YTqWDKA0xxjdAAAAA=="/>
+               <air:TaxInfo Category="CJ" Amount="AUD12.90" Key="rnHP8YTqWDKA1xxjdAAAAA=="/>
+               <air:TaxInfo Category="RN" Amount="AUD14.80" Key="rnHP8YTqWDKA2xxjdAAAAA=="/>
+               <air:TaxInfo Category="US" Amount="AUD30.30" Key="rnHP8YTqWDKA3xxjdAAAAA=="/>
+               <air:TaxInfo Category="XA" Amount="AUD5.50" Key="rnHP8YTqWDKA4xxjdAAAAA=="/>
+               <air:TaxInfo Category="XY" Amount="AUD10.10" Key="rnHP8YTqWDKA5xxjdAAAAA=="/>
+               <air:TaxInfo Category="YC" Amount="AUD9.40" Key="rnHP8YTqWDKA6xxjdAAAAA=="/>
+               <air:TaxInfo Category="YQ" Amount="AUD26.40" Key="rnHP8YTqWDKA7xxjdAAAAA=="/>
+               <air:TaxInfo Category="YR" Amount="AUD179.50" Key="rnHP8YTqWDKA8xxjdAAAAA=="/>
+               <air:FareCalc>MOW KL X/AMS KL LAX M364.93LL06BALB NUC364.93END ROE0.950867</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>AUD232.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="rnHP8YTqWDKAAyxjdAAAAA==" TotalPrice="AUD867.90" BasePrice="EUR347.00" ApproximateTotalPrice="AUD867.90" ApproximateBasePrice="AUD539.00" EquivalentBasePrice="AUD539.00" Taxes="AUD328.90" ApproximateTaxes="AUD328.90">
+            <air:Journey TravelTime="P1DT10H33M0S">
+               <air:AirSegmentRef Key="rnHP8YTqWDKAByxjdAAAAA=="/>
+               <air:AirSegmentRef Key="rnHP8YTqWDKADyxjdAAAAA=="/>
+               <air:AirSegmentRef Key="rnHP8YTqWDKAFyxjdAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="rnHP8YTqWDKA8vxjdAAAAA=="/>
+            <air:AirPricingInfo Key="rnHP8YTqWDKAHyxjdAAAAA==" TotalPrice="AUD867.90" BasePrice="EUR347.00" ApproximateTotalPrice="AUD867.90" ApproximateBasePrice="AUD539.00" EquivalentBasePrice="AUD539.00" Taxes="AUD328.90" ApproximateTaxes="AUD328.90" LatestTicketingTime="2023-04-28T23:59:00.000+10:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="AF" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="rnHP8YTqWDKASyxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="L" BookingCount="9" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKASyxjdAAAAA==" SegmentRef="rnHP8YTqWDKAByxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="L" BookingCount="9" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKASyxjdAAAAA==" SegmentRef="rnHP8YTqWDKADyxjdAAAAA=="/>
+               <air:BookingInfo BookingCode="L" BookingCount="9" CabinClass="Economy" FareInfoRef="rnHP8YTqWDKASyxjdAAAAA==" SegmentRef="rnHP8YTqWDKAFyxjdAAAAA=="/>
+               <air:TaxInfo Category="RI" Amount="AUD26.40" Key="rnHP8YTqWDKAIyxjdAAAAA=="/>
+               <air:TaxInfo Category="FR" Amount="AUD7.30" Key="rnHP8YTqWDKAJyxjdAAAAA=="/>
+               <air:TaxInfo Category="QX" Amount="AUD46.90" Key="rnHP8YTqWDKAKyxjdAAAAA=="/>
+               <air:TaxInfo Category="AY" Amount="AUD8.10" Key="rnHP8YTqWDKALyxjdAAAAA=="/>
+               <air:TaxInfo Category="US" Amount="AUD30.30" Key="rnHP8YTqWDKAMyxjdAAAAA=="/>
+               <air:TaxInfo Category="XA" Amount="AUD5.50" Key="rnHP8YTqWDKANyxjdAAAAA=="/>
+               <air:TaxInfo Category="XY" Amount="AUD10.10" Key="rnHP8YTqWDKAOyxjdAAAAA=="/>
+               <air:TaxInfo Category="YC" Amount="AUD9.40" Key="rnHP8YTqWDKAPyxjdAAAAA=="/>
+               <air:TaxInfo Category="YQ" Amount="AUD26.40" Key="rnHP8YTqWDKAQyxjdAAAAA=="/>
+               <air:TaxInfo Category="YR" Amount="AUD158.50" Key="rnHP8YTqWDKARyxjdAAAAA=="/>
+               <air:FareCalc>MOW AF X/PAR AF X/SLC AF LAX M364.93LL06BALB NUC364.93END ROE0.950867</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>AUD232.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+            <air:Connection SegmentIndex="1"/>
+         </air:AirPricingSolution>
+      </air:LowFareSearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,392 @@
+HotelDetails-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+   <soapenv:Body>
+      <hotel:HotelDetailsReq AuthorizedBy="TEST" TargetBranch="TPKIKSBUT" TraceId="PP_1G_001" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <hotel:HotelProperty HotelChain="RT" HotelCode="32581" HotelLocation="PAR" Name="NOVOTEL ROISSY SAINT-WITZ" VendorLocationKey="zeglP0/pWDKAOasZEAAAAA==" HotelTransportation="26" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>AUTOROUTE A1 D16</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="MI" Value="5" Direction="N"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>0</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+         <hotel:HotelDetailsModifiers RateRuleDetail="Complete" NumberOfAdults="1" NumberOfRooms="1">
+            <com:PermittedProviders>
+               <com:Provider Code="1G"/>
+            </com:PermittedProviders>
+            <hotel:HotelStay>
+               <hotel:CheckinDate>2023-04-07</hotel:CheckinDate>
+               <hotel:CheckoutDate>2023-04-08</hotel:CheckoutDate>
+            </hotel:HotelStay>
+         </hotel:HotelDetailsModifiers>
+      </hotel:HotelDetailsReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+HotelDetails-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelDetailsRsp TraceId="PP_1G_001" TransactionId="5A51B85C0A0D6A95679A88DF5BD72D9F" ResponseTime="825" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <hotel:RequestedHotelDetails>
+            <hotel:HotelProperty HotelChain="RT" HotelCode="32581" HotelLocation="PAR" Name="NOVOTEL ROISSY SAINT WITZ" ParticipationLevel="2">
+               <hotel:PropertyAddress>
+                  <hotel:Address>ROUTE DE SURVILLIERS</hotel:Address>
+                  <hotel:Address>SAINTWITZ FR 95470</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Business" Number="33 1 34686980"/>
+               <common_v50_0:PhoneNumber Type="Fax" Number="33 1 34686494"/>
+               <common_v50_0:Distance Units="KM" Value="8" Direction="N"/>
+            </hotel:HotelProperty>
+            <hotel:HotelDetailItem Name="CheckInTime">
+               <hotel:Text>2PM</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="CheckOutTime">
+               <hotel:Text>12N</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelRateDetail RatePlanType="C3D3KD" Base="EUR81.00" Total="EUR81.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Standard Room With One Double Bed Andtwo Single</hotel:Text>
+                  <hotel:Text>Beds</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Saver - 1-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR81.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Prepayment"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="33" Quantity="3"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="C3DRA3" Base="EUR81.00" Total="EUR81.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Standard Room With One Double Bed Andtwo Single</hotel:Text>
+                  <hotel:Text>Beds</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Advance Saver-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR81.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Prepayment"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="33" Quantity="3"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="A1D3KD" Base="EUR89.00" Total="EUR89.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Standard Room With One Double Bed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Saver - 1-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR89.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Prepayment"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="33" Quantity="1"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="C3DERY" Base="EUR89.00" Total="EUR89.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>T - Standard Room With One Double Bed Andtwo Si</hotel:Text>
+                  <hotel:Text>Ngle -  Beds</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Early Breaks - See Conditions-bb/bedbrkfas</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR89.00"/>
+               <hotel:Commission Indicator="true" Percent="8"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Prepayment"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="33" Quantity="3"/>
+                  <hotel:MealPlans Breakfast="true" Lunch="false" Dinner="false">
+                     <hotel:MealPlan Code="3"/>
+                  </hotel:MealPlans>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="A1DRA3" Base="EUR89.00" Total="EUR89.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Standard Room With One Double Bed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Advance Saver-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR89.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Prepayment"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="33" Quantity="1"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="A1DERY" Base="EUR97.00" Total="EUR97.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>T - Standard Room With One Double Bed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Early Breaks - See Conditions-bb/bedbrkfas</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR97.00"/>
+               <hotel:Commission Indicator="true" Percent="8"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Prepayment"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="33" Quantity="1"/>
+                  <hotel:MealPlans Breakfast="true" Lunch="false" Dinner="false">
+                     <hotel:MealPlan Code="3"/>
+                  </hotel:MealPlans>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="E1D3KD" Base="EUR102.00" Total="EUR102.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Executive Room With 1 Double Bed And 1 Sofa</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Saver - 1-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR102.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Prepayment"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="33" Quantity="1"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="E1DRA3" Base="EUR102.00" Total="EUR102.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Executive Room With 1 Double Bed And 1 Sofa</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Advance Saver-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR102.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Prepayment"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="33" Quantity="1"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="S1D3KD" Base="EUR107.00" Total="EUR107.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Standard Suite With One Double Bed And Two Sofa</hotel:Text>
+                  <hotel:Text>S</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Saver - 1-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR107.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Prepayment"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="S1DRA3" Base="EUR107.00" Total="EUR107.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Standard Suite With One Double Bed And Two Sofa</hotel:Text>
+                  <hotel:Text>S</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Advance Saver-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR107.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Prepayment"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="C3D1KD" Base="EUR108.00" Total="EUR108.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Standard Room With One Double Bed Andtwo Single</hotel:Text>
+                  <hotel:Text>Beds</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Flex - Ro B2c-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR108.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2023-04-07T18:00:00.000+02:00"/>
+               <hotel:GuaranteeInfo HoldTime="1800"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="33" Quantity="3"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="A1D1KD" Base="EUR108.00" Total="EUR108.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Standard Room With One Double Bed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Flex - Ro B2c-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR108.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2023-04-07T18:00:00.000+02:00"/>
+               <hotel:GuaranteeInfo HoldTime="1800"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="33" Quantity="1"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="E1DERY" Base="EUR110.00" Total="EUR110.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>T - Executive Room With 1 Double Bed And 1 Sofa</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Early Breaks - See Conditions-bb/bedbrkfas</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR110.00"/>
+               <hotel:Commission Indicator="true" Percent="8"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Prepayment"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="33" Quantity="1"/>
+                  <hotel:MealPlans Breakfast="true" Lunch="false" Dinner="false">
+                     <hotel:MealPlan Code="3"/>
+                  </hotel:MealPlans>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="S1DERY" Base="EUR115.00" Total="EUR115.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>T - Standard Suite With One Double Bed And Two</hotel:Text>
+                  <hotel:Text>Sofa - S</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Early Breaks - See Conditions-bb/bedbrkfas</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR115.00"/>
+               <hotel:Commission Indicator="true" Percent="8"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Prepayment"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="true" Lunch="false" Dinner="false">
+                     <hotel:MealPlan Code="3"/>
+                  </hotel:MealPlans>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="E1D1KD" Base="EUR120.00" Total="EUR120.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Executive Room With 1 Double Bed And 1 Sofa</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Flex - Ro B2c-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR120.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2023-04-07T18:00:00.000+02:00"/>
+               <hotel:GuaranteeInfo HoldTime="1800"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="33" Quantity="1"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="S1D1KD" Base="EUR180.00" Total="EUR180.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Standard Suite With One Double Bed And Two Sofa</hotel:Text>
+                  <hotel:Text>S</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Flex - Ro B2c-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR180.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2023-04-07T18:00:00.000+02:00"/>
+               <hotel:GuaranteeInfo HoldTime="1800"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="C3DRDI" Base="EUR205.00" Total="EUR205.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Standard Room With One Double Bed Andtwo Single</hotel:Text>
+                  <hotel:Text>Beds</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Rack Rate-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR205.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2023-04-07T18:00:00.000+02:00"/>
+               <hotel:GuaranteeInfo HoldTime="1800"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="33" Quantity="3"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="A1DRDI" Base="EUR205.00" Total="EUR205.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Standard Room With One Double Bed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Rack Rate-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR205.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2023-04-07T18:00:00.000+02:00"/>
+               <hotel:GuaranteeInfo HoldTime="1800"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="33" Quantity="1"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="E1DRDI" Base="EUR220.00" Total="EUR220.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Executive Room With 1 Double Bed And 1 Sofa</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Rack Rate-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR220.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2023-04-07T18:00:00.000+02:00"/>
+               <hotel:GuaranteeInfo HoldTime="1800"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="33" Quantity="1"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="S1DRDI" Base="EUR280.00" Total="EUR280.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Standard Suite With One Double Bed And Two Sofa</hotel:Text>
+                  <hotel:Text>S</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Rack Rate-room Only</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2023-04-07" ExpireDate="2023-04-08" Base="EUR280.00"/>
+               <hotel:Commission Indicator="false"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2023-04-07T18:00:00.000+02:00"/>
+               <hotel:GuaranteeInfo HoldTime="1800"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelType SourceLink="true"/>
+         </hotel:RequestedHotelDetails>
+      </hotel:HotelDetailsRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

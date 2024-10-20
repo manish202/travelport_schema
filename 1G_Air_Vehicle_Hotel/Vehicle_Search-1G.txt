@@ -1,0 +1,104 @@
+Vehicle Search-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleSearchAvailabilityReq ReturnMediaLinks="true" ReturnAllRates="true" AuthorizedBy="TEST" TargetBranch="TPKIKSBUT" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:VehicleDateLocation Key="OngF/R9nSmGZOmAaefRUdg==" PickupLocationType="Terminal" PickupLocation="SFO" ReturnDateTime="2023-04-08T10:00:00" PickupDateTime="2023-04-07T10:00:00">
+           <veh:VendorLocation VendorCode="ZD" ProviderCode="1G"/>
+         </veh:VehicleDateLocation>
+         <!--<com:PointOfSale Key="pqlNZBdtSnG/ZnM6m5tZ7Q==" ProviderCode="1G" PseudoCityCode="PCCP"/>-->
+      </veh:VehicleSearchAvailabilityReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Search-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleSearchAvailabilityRsp TransactionId="5A5165590A0D6A935CA32C9B4E088DBF" ResponseTime="569" MediaLinksSearchId="5A5165590A0D6A935CA32C9B4E088DBF_1G" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0">
+         <vehicle:VehicleDateLocation PickupDateTime="2023-04-07T10:00:00.000-07:00" PickupLocation="SFO" ReturnDateTime="2023-04-08T10:00:00.000-07:00">
+            <vehicle:VendorLocation ProviderCode="1G" VendorCode="ZD" VendorLocationID="1" Key="rnHP8YTqWDKAJa/jdAAAAA==" LocationType="Terminal" LocationCode="SFO" Type="Pickup"/>
+         </vehicle:VehicleDateLocation>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="rnHP8YTqWDKAJa/jdAAAAA==" AcrissVehicleCode="ECAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RateSource="M" RateAvailability="Available" RateCode="ES" RateCategory="Standard" RateGuaranteed="true" DropOffChargesIncluded="false">
+               <vehicle:SupplierRate RateForPeriod="USD60.99" BaseRate="USD60.99" ExtraMileageCharge="USD0.00"/>
+               <vehicle:RateHostIndicator RateToken="X0000X000000000000000000000000"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="rnHP8YTqWDKAJa/jdAAAAA==" AcrissVehicleCode="EDAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RateSource="M" RateAvailability="Available" RateCode="ES" RateCategory="Standard" RateGuaranteed="true" DropOffChargesIncluded="false">
+               <vehicle:SupplierRate RateForPeriod="USD60.99" BaseRate="USD60.99" ExtraMileageCharge="USD0.00"/>
+               <vehicle:RateHostIndicator RateToken="X0000X000000000000000000000000"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="rnHP8YTqWDKAJa/jdAAAAA==" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RateSource="M" RateAvailability="Available" RateCode="ES" RateCategory="Standard" RateGuaranteed="true" DropOffChargesIncluded="false">
+               <vehicle:SupplierRate RateForPeriod="USD60.99" BaseRate="USD60.99" ExtraMileageCharge="USD0.00"/>
+               <vehicle:RateHostIndicator RateToken="X0000X000000000000000000000000"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="rnHP8YTqWDKAJa/jdAAAAA==" AcrissVehicleCode="ICAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RateSource="M" RateAvailability="Available" RateCode="ES" RateCategory="Standard" RateGuaranteed="true" DropOffChargesIncluded="false">
+               <vehicle:SupplierRate RateForPeriod="USD66.99" BaseRate="USD66.99" ExtraMileageCharge="USD0.00"/>
+               <vehicle:RateHostIndicator RateToken="X0000X000000000000000000000000"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="rnHP8YTqWDKAJa/jdAAAAA==" AcrissVehicleCode="SCAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RateSource="M" RateAvailability="Available" RateCode="ES" RateCategory="Standard" RateGuaranteed="true" DropOffChargesIncluded="false">
+               <vehicle:SupplierRate RateForPeriod="USD66.99" BaseRate="USD66.99" ExtraMileageCharge="USD0.00"/>
+               <vehicle:RateHostIndicator RateToken="X0000X000000000000000000000000"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="rnHP8YTqWDKAJa/jdAAAAA==" AcrissVehicleCode="FCAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RateSource="M" RateAvailability="Available" RateCode="ES" RateCategory="Standard" RateGuaranteed="true" DropOffChargesIncluded="false">
+               <vehicle:SupplierRate RateForPeriod="USD66.99" BaseRate="USD66.99" ExtraMileageCharge="USD0.00"/>
+               <vehicle:RateHostIndicator RateToken="X0000X000000000000000000000000"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="rnHP8YTqWDKAJa/jdAAAAA==" AcrissVehicleCode="PCAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RateSource="M" RateAvailability="Available" RateCode="F0" RateCategory="Standard" RateGuaranteed="true" DropOffChargesIncluded="false">
+               <vehicle:SupplierRate RateForPeriod="USD87.99" BaseRate="USD87.99" ExtraMileageCharge="USD0.00"/>
+               <vehicle:RateHostIndicator RateToken="X0000X000000000000000000000000"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="rnHP8YTqWDKAJa/jdAAAAA==" AcrissVehicleCode="LCAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RateSource="M" RateAvailability="Available" RateCode="AS" RateCategory="Standard" RateGuaranteed="true" DropOffChargesIncluded="false">
+               <vehicle:SupplierRate RateForPeriod="USD124.99" BaseRate="USD124.99" ExtraMileageCharge="USD0.00"/>
+               <vehicle:RateHostIndicator RateToken="X0000X000000000000000000000000"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Convertible" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="rnHP8YTqWDKAJa/jdAAAAA==" AcrissVehicleCode="STAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RateSource="M" RateAvailability="Available" RateCode="ES" RateCategory="Standard" RateGuaranteed="true" DropOffChargesIncluded="false">
+               <vehicle:SupplierRate RateForPeriod="USD111.99" BaseRate="USD111.99" ExtraMileageCharge="USD0.00"/>
+               <vehicle:RateHostIndicator RateToken="X0000X000000000000000000000000"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Mini" Category="Van" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="rnHP8YTqWDKAJa/jdAAAAA==" AcrissVehicleCode="MVAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RateSource="M" RateAvailability="Available" RateCode="BO" RateCategory="Standard" RateGuaranteed="true" DropOffChargesIncluded="false">
+               <vehicle:SupplierRate RateForPeriod="USD135.99" BaseRate="USD135.99" ExtraMileageCharge="USD0.00"/>
+               <vehicle:RateHostIndicator RateToken="X0000X000000000000000000000000"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="rnHP8YTqWDKAJa/jdAAAAA==" AcrissVehicleCode="IFAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RateSource="M" RateAvailability="Available" RateCode="F0" RateCategory="Standard" RateGuaranteed="true" DropOffChargesIncluded="false">
+               <vehicle:SupplierRate RateForPeriod="USD87.99" BaseRate="USD87.99" ExtraMileageCharge="USD0.00"/>
+               <vehicle:RateHostIndicator RateToken="X0000X000000000000000000000000"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="rnHP8YTqWDKAJa/jdAAAAA==" AcrissVehicleCode="SFAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RateSource="M" RateAvailability="Available" RateCode="F0" RateCategory="Standard" RateGuaranteed="true" DropOffChargesIncluded="false">
+               <vehicle:SupplierRate RateForPeriod="USD92.99" BaseRate="USD92.99" ExtraMileageCharge="USD0.00"/>
+               <vehicle:RateHostIndicator RateToken="X0000X000000000000000000000000"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Van" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="rnHP8YTqWDKAJa/jdAAAAA==" AcrissVehicleCode="FVAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RateSource="M" RateAvailability="Available" RateCode="EK" RateCategory="Standard" RateGuaranteed="true" DropOffChargesIncluded="false">
+               <vehicle:SupplierRate RateForPeriod="USD148.99" BaseRate="USD148.99" ExtraMileageCharge="USD0.00"/>
+               <vehicle:RateHostIndicator RateToken="X0000X000000000000000000000000"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+      </vehicle:VehicleSearchAvailabilityRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

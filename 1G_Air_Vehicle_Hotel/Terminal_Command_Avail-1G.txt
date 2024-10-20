@@ -1,0 +1,24 @@
+Terminal Command Avail-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ter:TerminalReq AuthorizedBy="PRODSMOKETEST" TargetBranch="TPKIKSBUT" xmlns:ter="http://www.travelport.com/schema/terminal_v33_0" xmlns:com="http://www.travelport.com/schema/common_v33_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <com:HostToken Host="1G" Key="1T">7DE47C7C-49E8-4360-5063-5180D91780B3</com:HostToken>
+         <ter:TerminalCommand>ADENATL</ter:TerminalCommand>
+      </ter:TerminalReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Terminal Command Avail-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <terminal:TerminalRsp TransactionId="5A51CD330A0D6A935CA32C9B7129AB41" ResponseTime="43" xmlns:terminal="http://www.travelport.com/schema/terminal_v33_0">
+         <terminal:TerminalCommandResponse>
+            <terminal:Text>SYSTEM BUSY RETRY LATER (COBC)>&lt;</terminal:Text>
+         </terminal:TerminalCommandResponse>
+      </terminal:TerminalRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

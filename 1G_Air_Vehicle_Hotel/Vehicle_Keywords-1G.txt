@@ -1,0 +1,72 @@
+Vehicle Keywords-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleKeywordReq AuthorizedBy="TEST" TargetBranch="TPKIKSBUT" KeywordList="true" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:Vendor Code="ZD"/>
+         <veh:PickupDateLocation Date="2023-03-18" Location="SFO"/>
+         <!--<com:Keyword Name="?" Number="?" Description="?"></com:Keyword>-->
+      </veh:VehicleKeywordReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Keywords-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleKeywordRsp TransactionId="5A517BEB0A0D6A940CE23A7C20FCED9B" ResponseTime="209" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:Keyword Name="AGE" Number="01" Description="AGE REQUIREMENT"/>
+         <common_v50_0:Keyword Name="CARS" Number="02" Description="CAR/VEHICLE TYPES"/>
+         <common_v50_0:Keyword Name="CDW" Number="03" Description="COLL DAMAGE WAIVER"/>
+         <common_v50_0:Keyword Name="DROP" Number="04" Description="DROPOFF/ONEWAYS"/>
+         <common_v50_0:Keyword Name="EXPR" Number="05" Description="EXPRESS SERVICE"/>
+         <common_v50_0:Keyword Name="GAS" Number="06" Description="REFUELING POLICY"/>
+         <common_v50_0:Keyword Name="HOURS" Number="07" Description="HOURS-OPER/BUSNS"/>
+         <common_v50_0:Keyword Name="INS" Number="08" Description="INSURANCE/COVERAGE"/>
+         <common_v50_0:Keyword Name="PAI" Number="09" Description="PERSONAL ACC INSUR"/>
+         <common_v50_0:Keyword Name="SHTTL" Number="10" Description="SHUTTLE SERVICE"/>
+         <common_v50_0:Keyword Name="SPEQ" Number="11" Description="SPECIAL EQUIPMENT"/>
+         <common_v50_0:Keyword Name="TAX" Number="12" Description="TAX-STATE/LOCAL"/>
+         <common_v50_0:Keyword Name="COMM" Number="15" Description="COMMISSION AGENTS"/>
+         <common_v50_0:Keyword Name="CRED" Number="16" Description="CREDIT CARD INFO"/>
+         <common_v50_0:Keyword Name="EQUIP" Number="17" Description="SPCL EQUIP RQSTS"/>
+         <common_v50_0:Keyword Name="GUAR" Number="18" Description="GUARANTEED RATES"/>
+         <common_v50_0:Keyword Name="MISC" Number="19" Description="MISCELLANEOUS INFO"/>
+         <common_v50_0:Keyword Name="NEWS" Number="20" Description="HOT NEWS ITEMS"/>
+         <common_v50_0:Keyword Name="PYMNT" Number="21" Description="PAYMENT ACCEPTED"/>
+         <common_v50_0:Keyword Name="PROM" Number="22" Description="PROMO/MARKET INFO"/>
+         <common_v50_0:Keyword Name="PHON" Number="24" Description="LOCAL PHONE INFO"/>
+         <common_v50_0:Keyword Name="POLY" Number="25" Description="POLICIES/RQIRMENTS"/>
+         <common_v50_0:Keyword Name="RATE" Number="26" Description="RATE INFORMATION"/>
+         <common_v50_0:Keyword Name="SPCL" Number="27" Description="SPECIAL SERVICES"/>
+         <common_v50_0:Keyword Name="VALID" Number="30" Description="DRIVER LICS RQMENT"/>
+         <common_v50_0:Keyword Name="ADDR" Number="32" Description="LOCATION ADDRESS"/>
+         <common_v50_0:Keyword Name="CLUB" Number="33" Description="CLUB/MEMBERSHIP"/>
+         <common_v50_0:Keyword Name="CONT" Number="34" Description="CONTACTS"/>
+         <common_v50_0:Keyword Name="CORP" Number="36" Description="CORPORATE RATES"/>
+         <common_v50_0:Keyword Name="FORM" Number="38" Description="FORMATS"/>
+         <common_v50_0:Keyword Name="FQTV" Number="40" Description="FREQUENT TRAVELER"/>
+         <common_v50_0:Keyword Name="GEN" Number="43" Description="GENERAL INFO"/>
+         <common_v50_0:Keyword Name="GOVT" Number="45" Description="GOVERNMENT RATES"/>
+         <common_v50_0:Keyword Name="HELP" Number="46" Description="HOW TO BOOK-HELP"/>
+         <common_v50_0:Keyword Name="INTL" Number="47" Description="INTL INFORMATION"/>
+         <common_v50_0:Keyword Name="SAFE" Number="50" Description="SAFETY"/>
+         <common_v50_0:Keyword Name="SPLY" Number="51" Description="SUPPLY FORMS"/>
+         <common_v50_0:Keyword Name="XBORD" Number="57" Description="CROSS BORDER INFO"/>
+         <common_v50_0:Keyword Name="FAST" Number="60" Description="PRIORITY SERVICE"/>
+         <common_v50_0:Keyword Name="BDGET" Number="64" Description="BUDGET"/>
+         <common_v50_0:Keyword Name="FEES" Number="77" Description="FEES/SURCHARGES"/>
+         <common_v50_0:Keyword Name="ASSOC" Number="80" Description="ASSOCIATION INFO"/>
+         <common_v50_0:Keyword Name="GOZD" Number="83" Description="SPECIAL RATES"/>
+         <common_v50_0:Keyword Name="CANDA" Number="84" Description="ADDL CANADA NEWS"/>
+         <common_v50_0:Keyword Name="EUROP" Number="85" Description="EUROPE"/>
+         <common_v50_0:Keyword Name="ASIA" Number="86" Description="ASIA BRIEFING"/>
+         <common_v50_0:Keyword Name="AUSTR" Number="88" Description="AUSTRALIAN POLICY"/>
+         <common_v50_0:Keyword Name="LATIN" Number="89" Description="LATIN AMERICA NEWS"/>
+         <common_v50_0:Keyword Name="CANAD" Number="91" Description="CANADA"/>
+         <common_v50_0:Keyword Name="CARIB" Number="93" Description="CARIBBEAN"/>
+      </vehicle:VehicleKeywordRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

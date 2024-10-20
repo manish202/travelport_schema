@@ -1,0 +1,182 @@
+<example>
+<!--AirTicketing request-->
+<AirTicketingReq xmlns="http://www.travelport.com/schema/air_v42_0" AuthorizedBy="test" TargetBranch="P7150358">
+  <BillingPointOfSaleInfo xmlns="http://www.travelport.com/schema/common_v42_0" OriginApplication="UAPI" />
+  <AirReservationLocatorCode>12345</AirReservationLocatorCode>
+  <AirPricingInfoRef Key="yuNLbZVqWDKACIyCCAAAAA==" />
+</AirTicketingReq>
+
+<!--AirTicketing response-->
+<air:AirTicketingRsp xmlns:air="http://www.travelport.com/schema/air_v42_0" xmlns:common_v42_0="http://www.travelport.com/schema/common_v42_0" TransactionId="5D40D3B90A0D6A94491BE3A6152AE7F0" ResponseTime="1358">
+  <common_v42_0:ResponseMessage Code="0" Type="Info" ProviderCode="1G">PNR ABC123 Fare 1 - ELECTRONIC TKT GENERATED TTL FARE  GBP    853.61 SUPPORTING DOCUMENTS GENERATED -------------------------------------</common_v42_0:ResponseMessage>
+  <common_v42_0:ResponseMessage Code="0" Type="Info" ProviderCode="1G">OK:Ticket issued</common_v42_0:ResponseMessage>
+  <air:ETR Key="Q4NLbZUqWDKAXr0ACAAAAA==" TotalPrice="GBP853.61" BasePrice="AED2490" Taxes="GBP298.61" EquivalentBasePrice="GBP555.00" Refundable="true" Exchangeable="true" IssuedDate="2023-02-17T00:00:00.000+00:00" ProviderCode="1G" ProviderLocatorCode="ABC123" IATANumber="22222222" PseudoCityCode="XS4" PlatingCarrier="EY" ElStat="A">
+    <air:AirReservationLocatorCode>12345</air:AirReservationLocatorCode>
+    <common_v42_0:AgencyInfo>
+      <common_v42_0:AgentAction ActionType="Created" AgentCode="uAPI4236115480-9c043b0c" BranchCode="P7150358" AgencyCode="UAPITESTAGENCY" EventTime="2023-02-17T00:00:00.000+00:00" />
+    </common_v42_0:AgencyInfo>
+    <common_v42_0:BookingTraveler Key="RTgzQWE2RXJiRXZlbVlzOQ==" TravelerType="ADT" Age="40" DOB="1983-02-17" Gender="M">
+      <common_v42_0:BookingTravelerName Prefix="Mr" First="John" Last="Smith" />
+      <common_v42_0:DeliveryInfo>
+        <common_v42_0:ShippingAddress Key="RTgzQWE2RXJiRXZlbVlzOQ==">
+          <common_v42_0:AddressName>JOHNMR SMITH</common_v42_0:AddressName>
+          <common_v42_0:Street>Via Augusta 59 5</common_v42_0:Street>
+          <common_v42_0:City>Madrid</common_v42_0:City>
+          <common_v42_0:State>IA</common_v42_0:State>
+          <common_v42_0:PostalCode>50156</common_v42_0:PostalCode>
+          <common_v42_0:Country>US</common_v42_0:Country>
+          <common_v42_0:ProviderReservationInfoRef Key="Q4NLbZUqWDKAW1zACAAAAA==" />
+        </common_v42_0:ShippingAddress>
+      </common_v42_0:DeliveryInfo>
+      <common_v42_0:PhoneNumber Key="Q4NLbZUqWDKA0sxACAAAAA==" Type="None" Location="DEN" CountryCode="1" Number="123456789" AreaCode="303">
+        <common_v42_0:ProviderReservationInfoRef Key="Q4NLbZUqWDKAW1zACAAAAA==" />
+      </common_v42_0:PhoneNumber>
+      <common_v42_0:Email Key="Q4NLbZUqWDKA2sxACAAAAA==" EmailID="johnsmith@travelportuniversalapidemo.com">
+        <common_v42_0:ProviderReservationInfoRef Key="Q4NLbZUqWDKAW1zACAAAAA==" />
+      </common_v42_0:Email>
+      <common_v42_0:SSR Key="Q4NLbZUqWDKA1sxACAAAAA==" Status="HK" Type="DOCS" FreeText="P/GB/000005678/GB/0000000/M/01JAN16/SMITH/JOHN -1SMITH/JOHNMR" Carrier="EY" ProviderReservationInfoRef="Q4NLbZUqWDKAW1zACAAAAA==" />
+      <common_v42_0:SSR Key="Q4NLbZUqWDKAer0ACAAAAA==" SegmentRef="yuNLbZVqWDKA7HyCCAAAAA==" Status="HK" Type="TKNE" FreeText="6071605040282C1" Carrier="EY" ProviderReservationInfoRef="Q4NLbZUqWDKAW1zACAAAAA==" ElStat="A" />
+      <common_v42_0:SSR Key="Q4NLbZUqWDKAfr0ACAAAAA==" SegmentRef="yuNLbZVqWDKA9HyCCAAAAA==" Status="HK" Type="TKNE" FreeText="6071605040282C2" Carrier="EY" ProviderReservationInfoRef="Q4NLbZUqWDKAW1zACAAAAA==" ElStat="A" />
+      <common_v42_0:Address Key="Q4NLbZUqWDKA3sxACAAAAA==">
+        <common_v42_0:AddressName>DemoSiteAddress</common_v42_0:AddressName>
+        <common_v42_0:Street>Via Augusta 59 5</common_v42_0:Street>
+        <common_v42_0:City>Madrid</common_v42_0:City>
+        <common_v42_0:State>IA</common_v42_0:State>
+        <common_v42_0:PostalCode>50156</common_v42_0:PostalCode>
+        <common_v42_0:Country>US</common_v42_0:Country>
+        <common_v42_0:ProviderReservationInfoRef Key="Q4NLbZUqWDKAW1zACAAAAA==" />
+      </common_v42_0:Address>
+    </common_v42_0:BookingTraveler>
+    <common_v42_0:FormOfPayment Key="Q4NLbZUqWDKA4sxACAAAAA==" Type="Check" Reusable="false" ProfileKey="QEkFWX8yQOSFPGlWe+osCg==">
+      <common_v42_0:Check RoutingNumber="456" AccountNumber="7890" CheckNumber="1234567" />
+    </common_v42_0:FormOfPayment>
+    <common_v42_0:Payment Key="Q4NLbZUqWDKAgr0ACAAAAA==" Type="Itinerary" Amount="GBP853.61" FormOfPaymentRef="Q4NLbZUqWDKA4sxACAAAAA==" />
+    <common_v42_0:SupplierLocator SupplierCode="EY" SupplierLocatorCode="PVCXVP" />
+    <air:FareCalc>AUH EY LON 338.98 EY AUH 338.98 NUC677.96END ROE3.67275 XT 16.70AE7.80F61.10TP2.20ZR131.00YQ</air:FareCalc>
+    <air:Ticket Key="Q4NLbZUqWDKAbr0ACAAAAA==" TicketNumber="1234567890123" TicketStatus="N" ElStat="A">
+      <air:Coupon Key="Q4NLbZUqWDKAcr0ACAAAAA==" CouponNumber="1" MarketingCarrier="EY" MarketingFlightNumber="19" Origin="AUH" Destination="LHR" DepartureTime="2023-03-07T08:20:00.000+04:00" StopoverCode="true" BookingClass="Q" FareBasis="QLC2AE" NotValidBefore="2023-03-07" NotValidAfter="2023-03-07" Status="O" SegmentGroup="0" MarriageGroup="0" ElStat="A" />
+      <air:Coupon Key="Q4NLbZUqWDKAdr0ACAAAAA==" CouponNumber="2" MarketingCarrier="EY" MarketingFlightNumber="26" Origin="LHR" Destination="AUH" DepartureTime="2023-03-09T19:20:00.000+00:00" StopoverCode="true" BookingClass="Q" FareBasis="QLC2AE" NotValidBefore="2023-03-09" NotValidAfter="2023-03-09" Status="O" SegmentGroup="1" MarriageGroup="0" ElStat="A" />
+    </air:Ticket>
+    <air:AirPricingInfo Key="yuNLbZVqWDKACIyCCAAAAA==" TotalPrice="GBP853.61" BasePrice="AED2490" ApproximateTotalPrice="GBP853.61" ApproximateBasePrice="GBP555.00" EquivalentBasePrice="GBP555.00" Taxes="GBP298.61" LatestTicketingTime="2023-03-07T23:59:00.000+00:00" TrueLastDateToTicket="2023-03-07T23:59:00.000+00:00" PricingMethod="Guaranteed" Refundable="true" Exchangeable="true" ETicketability="Yes" ProviderReservationInfoRef="Q4NLbZUqWDKAW1zACAAAAA==" AirPricingInfoGroup="1" Ticketed="true" PricingType="StoredFare" FareCalculationInd="G">
+      <air:FareInfo Key="Q4NLbZUqWDKAdnzACAAAAA==" FareBasis="QLC2AE" PassengerTypeCode="ADT" Origin="AUH" Destination="LHR" EffectiveDate="2023-02-17T00:00:00.000+00:00" Amount="NUC338.98" NegotiatedFare="false" NotValidBefore="2023-03-07" NotValidAfter="2023-03-07">
+        <common_v42_0:Endorsement Value="NON ENDO/ REF" />
+        <air:BaggageAllowance>
+          <air:MaxWeight Value="30" Unit="Kilograms" />
+        </air:BaggageAllowance>
+      </air:FareInfo>
+      <air:FareInfo Key="Q4NLbZUqWDKAenzACAAAAA==" FareBasis="QLC2AE" PassengerTypeCode="ADT" Origin="LHR" Destination="AUH" EffectiveDate="2023-02-17T00:00:00.000+00:00" Amount="NUC338.98" NegotiatedFare="false" NotValidBefore="2023-03-09" NotValidAfter="2023-03-09">
+        <common_v42_0:Endorsement Value="NON ENDO/ REF" />
+        <air:BaggageAllowance>
+          <air:MaxWeight Value="30" Unit="Kilograms" />
+        </air:BaggageAllowance>
+      </air:FareInfo>
+      <air:BookingInfo BookingCode="Q" CabinClass="Economy" FareInfoRef="Q4NLbZUqWDKAdnzACAAAAA==" />
+      <air:BookingInfo BookingCode="Q" CabinClass="Economy" FareInfoRef="Q4NLbZUqWDKAenzACAAAAA==" />
+      <air:TaxInfo Category="GB" Amount="GBP84.00" Key="Q4NLbZUqWDKAlr0ACAAAAA==" />
+      <air:TaxInfo Category="UB" Amount="GBP55.81" Key="Q4NLbZUqWDKAmr0ACAAAAA==" />
+      <air:TaxInfo Category="AE" Amount="GBP16.70" Key="Q4NLbZUqWDKAnr0ACAAAAA==" />
+      <air:TaxInfo Category="F6" Amount="GBP7.80" Key="Q4NLbZUqWDKAor0ACAAAAA==" />
+      <air:TaxInfo Category="TP" Amount="GBP1.10" Key="Q4NLbZUqWDKApr0ACAAAAA==" />
+      <air:TaxInfo Category="ZR" Amount="GBP2.20" Key="Q4NLbZUqWDKAqr0ACAAAAA==" />
+      <air:TaxInfo Category="YQ" Amount="GBP131.00" Key="Q4NLbZUqWDKArr0ACAAAAA==" />
+      <air:FareCalc>AUH EY LON 338.98QLC2AE EY AUH 338.98QLC2AE NUC677.96END ROE3.67275</air:FareCalc>
+      <air:PassengerType Code="ADT" BookingTravelerRef="RTgzQWE2RXJiRXZlbVlzOQ==">
+        <air:FareGuaranteeInfo GuaranteeType="Guaranteed" />
+      </air:PassengerType>
+      <common_v42_0:BookingTravelerRef Key="RTgzQWE2RXJiRXZlbVlzOQ==" />
+      <air:ChangePenalty>
+        <air:Amount>GBP89.00</air:Amount>
+      </air:ChangePenalty>
+      <air:CancelPenalty>
+        <air:Amount>GBP100.00</air:Amount>
+      </air:CancelPenalty>
+    </air:AirPricingInfo>
+    <air:BaggageAllowances>
+      <air:BaggageAllowanceInfo TravelerType="ADT" Origin="AUH" Destination="LHR" Carrier="EY">
+        <air:URLInfo>
+          <air:URL>VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/EY</air:URL>
+        </air:URLInfo>
+        <air:TextInfo>
+          <air:Text>30K</air:Text>
+          <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+        </air:TextInfo>
+        <air:BagDetails ApplicableBags="1stChecked">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:BagDetails>
+        <air:BagDetails ApplicableBags="2ndChecked">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:BagDetails>
+      </air:BaggageAllowanceInfo>
+      <air:BaggageAllowanceInfo TravelerType="ADT" Origin="LHR" Destination="AUH" Carrier="EY">
+        <air:URLInfo>
+          <air:URL>VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/EY</air:URL>
+        </air:URLInfo>
+        <air:TextInfo>
+          <air:Text>30K</air:Text>
+          <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+        </air:TextInfo>
+        <air:BagDetails ApplicableBags="1stChecked">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:BagDetails>
+        <air:BagDetails ApplicableBags="2ndChecked">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:BagDetails>
+      </air:BaggageAllowanceInfo>
+      <air:CarryOnAllowanceInfo Origin="AUH" Destination="LHR" Carrier="EY">
+        <air:TextInfo>
+          <air:Text>7K</air:Text>
+        </air:TextInfo>
+        <air:CarryOnDetails ApplicableCarryOnBags="1">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:CarryOnDetails>
+        <air:CarryOnDetails ApplicableCarryOnBags="2">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:CarryOnDetails>
+      </air:CarryOnAllowanceInfo>
+      <air:CarryOnAllowanceInfo Origin="LHR" Destination="AUH" Carrier="EY">
+        <air:TextInfo>
+          <air:Text>7K</air:Text>
+        </air:TextInfo>
+        <air:CarryOnDetails ApplicableCarryOnBags="1">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:CarryOnDetails>
+        <air:CarryOnDetails ApplicableCarryOnBags="2">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:CarryOnDetails>
+      </air:CarryOnAllowanceInfo>
+    </air:BaggageAllowances>
+  </air:ETR>
+</air:AirTicketingRsp>
+</example>
